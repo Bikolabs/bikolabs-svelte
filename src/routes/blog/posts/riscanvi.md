@@ -38,10 +38,12 @@ Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemo
 
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
-<Image src="https://picsum.photos/1100/600" alt="image" styles="my-5" caption='esto es un pie de foto' />
+<Image src="https://picsum.photos/600/600" alt="image" styles="my-5" caption='esto es un pie de foto en el top' captionposition="top" />
 
 Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
 
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
 <Image src="https://picsum.photos/1200/500" alt="image" styles="border" />
+
+<Image src="https://picsum.photos/500/500" alt="imageAAA" position="right"/>
