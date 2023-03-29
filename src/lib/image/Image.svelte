@@ -14,6 +14,6 @@
       </div>
     </div>
   {:else}
-    <img src={src} alt={alt} />
+    <img {src} {alt} />
   {/if}
 </div>
