@@ -1,7 +1,7 @@
 <script>
   import { goto } from "$app/navigation";
   import { fade, scale } from "svelte/transition";
-
+  import Link from "$lib/components/Link/link.svelte";
   let y;
 </script>
 
@@ -26,7 +26,7 @@
         </svg>
       </div>
       <h1 class="text-5xl font-bold font-primary">Starter Kit</h1>
-      <p class="py-6 font-primary uppercase">
+      <p class="py-6 font-secondary text-primarycolor uppercase">
         🚀 🛸 🏖️ Svelte Kit + TailwindCss + DaisyUI 🦖  🐳    ☠️
       </p>
       {#if !y}
@@ -47,6 +47,7 @@
           class="btn btn-primary">Get Started</button
         >
       {/if}
+      <Link title="Link" link="/blog" />
     </div>
   </div>
 </div>

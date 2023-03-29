@@ -2,32 +2,48 @@
   export let data;
   import { convertDateToString } from "$lib/utils.js";
   import { fade } from "svelte/transition";
+  console.log("data:", data);
 </script>
 
 <div class="container">
   <article
-    in:fade={{ duration: 800 }}
+    in:fade={{ duration: 500 }}
     out:fade={{ duration: 0 }}
     class="mx-40 py-10"
   >
-    <p class="text-sm mb-4">{convertDateToString(data.date)}</p>
-    <h1 class="text-4xl bold mb-4">{data.title}</h1>
-    <div class="tags mb-4">
-      {#each data.tags as tag}
-        <p class="tag">#{tag}</p>
+    <!-- Title, subtitle, fecha, cataegoria... -->
+    <div>
+      <p>{convertDateToString(data.date)}</p>
+      <h1 class="bold text-4xl mb-5">{data.title}</h1>
+      <div><img src="https://picsum.photos/1200/600" alt={data.alt} /></div>
+      <p>
+        {#each data.tags as tag}
+          {tag}
+        {/each}
+      </p>
+      <p>{data.titlelink} {data.link}</p>
+    </div>
+    <!-- -->
+
+    <!-- Texto MD -->
+    <div>
+      <p><svelte:component this={data.content} /></p>
+    </div>
+    <!-- -->
+
+    <!-- Materiales -->
+    <div>
+      <h2 class="bold text-xl mb-5">Materiales</h2>
+      {#each data.materials as material}
+        <p>{material.category}</p>
+        <p><a href={material.link}>{material.titlelink}</a></p>
       {/each}
     </div>
-    <svelte:component this={data.content} />
-    <div class="border-b mt-10 pb-3 flex justify-between">
-      <div><a class="text-pink-500" href="/blog">&larr; Atras</a></div>
-      <div>
-        <label class="swap swap-flip text-xl">
-          <!-- this hidden checkbox controls the state -->
-          <input type="checkbox" />
-          <div class="swap-on">😈</div>
-          <div class="swap-off">😇</div>
-        </label>
-      </div>
-    </div>
+    <!-- -->
   </article>
 </div>
+
+<style>
+  p {
+  }
+</style>

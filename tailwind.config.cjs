@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['"Cabin"'],
+        primary: ['"Lexend"'],
+        secondary: ['"Raleway"'],
+      },
+      colors: {
+        primarycolor: "#EB5482",
+        secondarycolor: "#3E3E54",
       },
     },
     container: {
