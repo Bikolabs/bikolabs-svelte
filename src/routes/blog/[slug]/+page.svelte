@@ -2,7 +2,7 @@
   export let data;
   import { convertDateToString } from "$lib/utils.js";
   import { fade } from "svelte/transition";
-  console.log("data:", data);
+  console.log("data:", data.materials);
 </script>
 
 <div class="container">
@@ -26,14 +26,14 @@
     <!-- -->
 
     <!-- Texto MD -->
-    <div>
+    <div class="super-text">
       <p><svelte:component this={data.content} /></p>
     </div>
     <!-- -->
 
     <!-- Materiales -->
-    <div>
-      <h2 class="bold text-xl mb-5">Materiales</h2>
+    <div class="my-9 py-9">
+      <h2 class="bold text-2xl mb-5">Materiales</h2>
       {#each data.materials as material}
         <p>{material.category}</p>
         <p><a href={material.link}>{material.titlelink}</a></p>
@@ -42,8 +42,3 @@
     <!-- -->
   </article>
 </div>
-
-<style>
-  p {
-  }
-</style>

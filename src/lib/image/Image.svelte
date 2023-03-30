@@ -20,8 +20,8 @@
 <div class={styles}>
   {#if caption}
     <div class={getPosition()}>
-      <div class="flex flex-row border">
-        <div><img {src} {alt} /></div>
+      <div class="flex flex-row">
+        <img {src} {alt} />
         <div class={getCaptionPosition()}>
           <p class="text-sm">{caption}</p>
         </div>
@@ -33,3 +33,9 @@
     </div>
   {/if}
 </div>
+
+<style>
+  .in-row {
+    @apply mt-40 pr-5;
+  }
+</style>
