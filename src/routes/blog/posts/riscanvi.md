@@ -29,7 +29,12 @@ materials:
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
   import Image from "$lib/image/Image.svelte";
   import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
+  import Embed from "$lib/components/Embed/Embed.svelte";
 </script>
+
+<Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
+
+<Embed type="cables" src="https://cables.gl/view/641d61206396c9c47b388a2e" styles="mt-30" />
 
 Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
 

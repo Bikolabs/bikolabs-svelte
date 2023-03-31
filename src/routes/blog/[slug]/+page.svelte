@@ -12,7 +12,7 @@
     class="mx-40 py-10"
   >
     <!-- Title, subtitle, fecha, cataegoria... -->
-    <div>
+    <div class="mb-10">
       <p>{convertDateToString(data.date)}</p>
       <h1 class="bold text-4xl mb-5">{data.title}</h1>
       <div><img src="https://picsum.photos/1200/600" alt={data.alt} /></div>
