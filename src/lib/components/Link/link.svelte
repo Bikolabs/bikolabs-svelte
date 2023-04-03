@@ -1,8 +1,8 @@
 <script>
   export let title;
   export let link;
-  export let styles;
-  export let iconstyles;
+  export let styles = "";
+  export let iconstyles = "";
 
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
 </script>

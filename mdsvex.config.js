@@ -2,9 +2,15 @@ import remarkAbbr from "remark-abbr";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
+import { fileURLToPath } from "url";
+
+const dirname = path.resolve(fileURLToPath(import.meta.url), "../");
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md", ".svx"],
+  layout: {
+    blog: path.join(dirname, "./src/routes/blog/[slug]/+layout.svelte"),
+  },
 
   smartypants: {
     dashes: "oldschool",

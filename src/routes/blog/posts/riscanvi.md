@@ -13,6 +13,8 @@ subtitle: Nam rick grimes malum cerebro.
 tags:
   - historia
 
+layout: blog
+
 materials:
   [
     {
@@ -33,6 +35,8 @@ materials:
 </script>
 
 <Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
+
+# Esto es un h1
 
 <Embed type="cables" src="https://cables.gl/view/641d61206396c9c47b388a2e" styles="mt-30" />
 

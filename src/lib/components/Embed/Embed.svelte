@@ -1,7 +1,7 @@
 <script>
   export let src;
-  export let type;
-  export let styles;
+  export let type = "";
+  export let styles = "";
 </script>
 
 <div class={styles}>
@@ -22,7 +22,7 @@
       src="https://www.youtube.com/embed/F_WC4UxStvs"
       title="YouTube video player"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
       allowfullscreen
     />
   {:else}

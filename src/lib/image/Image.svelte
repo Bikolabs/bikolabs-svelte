@@ -1,10 +1,10 @@
 <script>
   export let src;
   export let alt;
-  export let styles;
-  export let caption;
-  export let captionposition;
-  export let position;
+  export let styles = "";
+  export let caption = "";
+  export let captionposition = "";
+  export let position = "";
 
   export const getPosition = () => {
     if (position === "right") return "flex flex-row-reverse";

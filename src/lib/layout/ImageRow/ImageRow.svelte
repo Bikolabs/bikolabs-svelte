@@ -3,9 +3,9 @@
   export let alt;
   export let lastsrc;
   export let lastalt;
-  export let styles;
-  export let caption;
-  export let captionposition;
+  export let styles = "";
+  export let caption = "";
+  export let captionposition = "";
 
   import Image from "$lib/image/Image.svelte";
 </script>
