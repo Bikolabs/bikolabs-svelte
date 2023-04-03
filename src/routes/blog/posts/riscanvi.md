@@ -3,7 +3,7 @@ title: "Algoritmos para presos: El caso RisCanvi"
 date: "2023"
 
 link: "https://riscanvi.bikolabs.io/"
-titlelink: "riscanvi"
+titlelink: "riscanvic"
 
 imagen: "https://picsum.photos/1200/600"
 alt: "riscanvi"
@@ -14,16 +14,6 @@ tags:
   - historia
 
 layout: blog
-
-materials:
-  [
-    {
-      category: "cables.gl",
-      titlelink: "Cables.gl",
-      link: "https://cables.gl/home",
-    },
-    { category: "web", titlelink: "ver web", link: "https://cables.gl/home" },
-  ]
 ---
 
 <script>
@@ -32,6 +22,12 @@ materials:
   import Image from "$lib/image/Image.svelte";
   import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
   import Embed from "$lib/components/Embed/Embed.svelte";
+  import Materials from "$lib/components/Materials/Materials.svelte";
+   const links = [
+    ['Título 1', 'https://ejemplo.com/1'],
+    ['Título 2', 'https://ejemplo.com/2'],
+    ['Título 3', 'https://ejemplo.com/3']
+  ];
 </script>
 
 <Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
@@ -40,8 +36,7 @@ materials:
 
 <Embed type="cables" src="https://cables.gl/view/641d61206396c9c47b388a2e" styles="mt-30" />
 
-Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
-
+[movida](Cuando) se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
 <Image src="https://picsum.photos/600/600" alt="image" styles="my-5" caption='esto es un pie de foto en el top' captionposition="top" />
@@ -50,7 +45,7 @@ Para que no haya engaños ni confusiones, es hora de comprender qué significan 
 
 Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
 
-## Esto es un h2
+## Esto es otro un h2
 
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
@@ -61,3 +56,16 @@ Para que no haya engaños ni confusiones, es hora de comprender qué significan 
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
 <ImageRow src="https://picsum.photos/300/300" alt="image" lastsrc="https://picsum.photos/300/300" lastalt="image2" />
+
+## Materiales
+
+<Materials category="web" links={[
+['Enlace 1', 'https://ejemplo.com/1'],
+['Enlace 2', 'https://ejemplo.com/2'],
+]}
+/>
+
+<Materials category="libros" links={[
+['Enlace 1', 'https://ejemplo.com/1'],
+]}
+/>
