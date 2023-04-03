@@ -1,9 +1,9 @@
 import { error } from "@sveltejs/kit";
-import { getBlogPosts } from "$lib/utils.js";
+import { getColeccionesPosts } from "$lib/utils.js";
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
-  const sortedPosts = await getBlogPosts();
+  const sortedPosts = await getColeccionesPosts();
   const recentPosts = sortedPosts.slice(0, 3);
 
   return {

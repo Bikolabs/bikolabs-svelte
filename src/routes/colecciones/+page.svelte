@@ -9,13 +9,13 @@
     {#each data.sortedPosts as post}
       <div
         class="mb-4 py-4 border-b border-b-gray-300"
-        on:click={goto(`/blog/${post.slug}`)}
-        on:keydown={goto(`blog/${post.slug}`)}
+        on:click={goto(`/colecciones/${post.slug}`)}
+        on:keydown={goto(`colecciones/${post.slug}`)}
       >
         <p class="text-xs mb-2">{convertDateToString(post.date)}</p>
         <a
           class="text-2xl mb-3 text-pink-600 hover:text-gray-500"
-          href={`/blog/${post.slug}`}>{post.title}</a
+          href={`/colecciones/${post.slug}`}>{post.title}</a
         >
         {#if post.image}
           <img src={`${post.image}`} alt="" />

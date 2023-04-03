@@ -5,8 +5,8 @@ export function convertDateToString(date) {
   return dateAsString;
 }
 
-export async function getBlogPosts() {
-  const posts = import.meta.glob("/src/routes/blog/posts/*.md");
+export async function getColeccionesPosts() {
+  const posts = import.meta.glob("/src/routes/colecciones/posts/*.md");
   let postsList = [];
 
   for (const file in posts) {

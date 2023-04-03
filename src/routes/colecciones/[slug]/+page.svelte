@@ -2,7 +2,12 @@
   export let data;
   import { convertDateToString } from "$lib/utils.js";
   import { fade } from "svelte/transition";
+  import Link from "$lib/components/Link/link.svelte";
 </script>
+
+<div class="m-5">
+  <Link title="Ir a la home" link="/" />
+</div>
 
 <div class="container coleccion-post">
   <article
