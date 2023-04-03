@@ -23,11 +23,6 @@ layout: blog
   import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
   import Embed from "$lib/components/Embed/Embed.svelte";
   import Materials from "$lib/components/Materials/Materials.svelte";
-   const links = [
-    ['Título 1', 'https://ejemplo.com/1'],
-    ['Título 2', 'https://ejemplo.com/2'],
-    ['Título 3', 'https://ejemplo.com/3']
-  ];
 </script>
 
 <Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
