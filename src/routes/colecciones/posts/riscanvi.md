@@ -1,66 +1,54 @@
 ---
 title: "Algoritmos para presos: El caso RisCanvi"
-date: "2023"
+date: "2023-06-20"
 
 link: "https://riscanvi.bikolabs.io/"
-titlelink: "riscanvic"
+titlelink: "Entrar en la story"
 
-imagen: "https://picsum.photos/1200/600"
+image: "https://bikolabs.biko2.com/assets/images/colecciones/riscanvi-h.png"
 alt: "riscanvi"
 
-subtitle: Nam rick grimes malum cerebro.
+subtitle: ¿Cómo medir si un algoritmo acierta cuando toma una decisión?
 
 tags:
-  - historia
+  - Story
 
 layout: blog
 ---
 
 <script>
-  import Link from "$lib/components/Link/link.svelte";
-  import ArrowLink from "$lib/icons/ArrowLink.svelte";
-  import Image from "$lib/image/Image.svelte";
-  import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
-  import Embed from "$lib/components/Embed/Embed.svelte";
   import Materials from "$lib/components/Materials/Materials.svelte";
 </script>
 
-<Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
+Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto. Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
-# Esto es un h1
+## Proceso Investigador
 
-<Embed type="cables" src="https://cables.gl/view/641d61206396c9c47b388a2e" styles="mt-30" />
+Este trabajo se ha basado en el gran artículo de Garay (2016) 2 sobre el sistema de decisión automatizada RisCanvi, titulado "Errores conceptuales en la estimación de riesgo de reincidencia". Los datos utilizados en la story para ejemplificar las medidas pertenecen al único informe general publicado sobre RisCanvi hasta el momento sobre este sistema (del año 2015) 3. Los informes más actuales disponibles utilizan muestras muy específicas (sobre presos en libertad condicional, o de alto riesgo... ) que no permiten una evaluación más global del sistema.
 
-[movida](Cuando) se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
+## Nuevas formas de contar historias
 
-<Image src="https://picsum.photos/600/600" alt="image" styles="my-5" caption='esto es un pie de foto en el top' captionposition="top" />
+Construir historias diferentes en un mundo donde lo homogéneo es casi la norma solo es posible si las propias herramientas permiten una dosis extra de singularidad. Para crear el caso de RisCanvi hemos usado Cables.gl un entorno de programación visual que nos ofrece esta singularidad tanto en el resultado como en la creación
 
-## Esto es un h2
+1 Briz-Redón, A. & Montes, F. (2022). Análisis de los resultados del protocolo RisCanvi. Departament d'Estadística i Investigació Operativa. Universitat de València. https://www.uv.es/montes/informeriscanvi/informe.pdf
 
-Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
+2 Garay, L. M. (2016). Errores conceptuales en la estimación de riesgo de reincidencia. Revista Española de Investigación Criminológica, 14, 1-31.
 
-## Esto es otro un h2
+3 Capdevila, M., Ferrer, M., Blanch, M., Andrés, A., Framis, B., Comas, N., Garrigós, A. y Mora, J.(2015). Tasa de reincidencia Penitenciaria 2014.(Investigaciones CEJFE). Disponible en: http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/
 
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
+### Materiales
 
-<Image src="https://picsum.photos/1200/500" alt="image" styles="border" />
-
-<Image src="https://picsum.photos/500/500" alt="imageAAA" position="right"/>
-
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
-
-<ImageRow src="https://picsum.photos/300/300" alt="image" lastsrc="https://picsum.photos/300/300" lastalt="image2" />
-
-## Materiales
-
-<Materials category="web" links={[
-['Enlace 1', 'https://ejemplo.com/1'],
-['Enlace 2', 'https://ejemplo.com/2'],
+<Materials category="Historia" links={[
+['Algoritmos para presos: El caso RisCanvi', 'https://riscanvi.bikolabs.io/']
 ]}
 />
 
-<Materials category="libros" links={[
-['Enlace 1', 'https://ejemplo.com/1'],
+<Materials category="twitter" links={[
+['Hilo sobre sistemas automatizados para tomar decisiones públicas de calado social', 'https://twitter.com/ujue/status/1613174680910761984']
+]}
+/>
+
+<Materials category="Patch cables" links={[
+['Acceso al Patch de cables.g', 'https://cables.gl/p/1AiNBm'],
 ]}
 />

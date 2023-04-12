@@ -15,18 +15,6 @@
   />
 </svelte:head>
 
-<div>
-  <main>
-    <slot />
-  </main>
-</div>
-
-<style>
-  main {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    min-height: 100vh;
-  }
-</style>
+<main>
+  <slot />
+</main>

@@ -5,6 +5,11 @@ export function convertDateToString(date) {
   return dateAsString;
 }
 
+export function convertYearToString(date) {
+  const dateYear = moment(date).format("YYYY");
+  return dateYear;
+}
+
 export async function getColeccionesPosts() {
   const posts = import.meta.glob("/src/routes/colecciones/posts/*.md");
   let postsList = [];

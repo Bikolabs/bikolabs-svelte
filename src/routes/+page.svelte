@@ -1,5 +1,7 @@
 <script>
-  import Hero from "./components/Hero/Hero.svelte";
+  import Hero from "$lib/components/Hero/Hero.svelte";
+  import Stories from "$lib/views/Stories.svelte";
+  export let data;
 </script>
 
 <svelte:head>
@@ -8,4 +10,5 @@
 </svelte:head>
 <section>
   <Hero />
+  <Stories {data} />
 </section>

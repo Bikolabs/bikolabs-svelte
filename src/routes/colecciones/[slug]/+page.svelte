@@ -1,6 +1,6 @@
 <script>
   export let data;
-  import { convertDateToString } from "$lib/utils.js";
+  import { convertYearToString } from "$lib/utils.js";
   import { fade } from "svelte/transition";
   import Link from "$lib/components/Link/link.svelte";
 </script>
@@ -10,28 +10,48 @@
 </div>
 
 <div class="container coleccion-post">
-  <article
-    in:fade={{ duration: 500 }}
-    out:fade={{ duration: 0 }}
-    class="mx-40 py-10"
-  >
-    <!-- Title, subtitle, fecha, categoria... -->
-    <div class="mb-10">
-      <p>{convertDateToString(data.date)}</p>
-      <h1 class="bold text-4xl mb-5">{data.title}</h1>
-      <div><img src="https://picsum.photos/1200/600" alt={data.alt} /></div>
-      <p>
-        {#each data.tags as tag}
-          {tag}
-        {/each}
-      </p>
-      <p>{data.titlelink} {data.link}</p>
+  <article in:fade={{ duration: 500 }} out:fade={{ duration: 0 }}>
+    <div>
+      <div
+        class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-40 desktop:pl-16"
+      >
+        <div class="w-4/6">
+          <h1
+            class="text-3xl tablet:text-4xl desktop:text-6xl font-primary font-semibold"
+          >
+            {data.title}
+          </h1>
+        </div>
+        <div
+          class="mt-5 desktop:mt-0 desktop:w-1/6 w-full flex items-center desktop:justify-end"
+        >
+          <Link title={data.titlelink} link={data.link} />
+        </div>
+      </div>
     </div>
-    <!-- -->
+    <div class="flex flex-col desktop:flex-row justify-between desktop:pl-16">
+      <div class="desktop:w-1/6 flex flex-col">
+        <p class="uppercase mb-1 text-sm font-light">Fecha lanzamiento</p>
+        <p class="font-primary font-bold">{convertYearToString(data.date)}</p>
+        <p class="uppercase mt-5 mb-1 text-sm font-light">Categoria</p>
+        {#each data.tags as tag}
+          <p class="font-primary font-bold mb-5">{tag}</p>
+        {/each}
+      </div>
+
+      <div class="desktop:w-4/6">
+        <img src={data.image} alt={data.alt} />
+      </div>
+    </div>
+    <div class="desktop:pl-16 desktop:w-3/6 w-full mt-20 mb-12">
+      <h2 class="text-2xl font-light">{data.subtitle}</h2>
+    </div>
 
     <!-- Texto MD -->
     <div>
-      <p><svelte:component this={data.content} /></p>
+      <div class="font-light desktop:pl-16 coleccion-post-text">
+        <svelte:component this={data.content} />
+      </div>
     </div>
     <!-- -->
   </article>

@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-secondary;
+}
+
 .coleccion-post h2 {
   @apply text-3xl;
+}
+
+.coleccion-post-text p:not([class]) {
+  @apply desktop:w-3/6;
+  margin: 0 auto 2rem;
+  line-height: 1.75rem;
+}
+
+.coleccion-post h2:not([class]),
+h1:not([class]) {
+  @apply text-xl font-bold desktop:w-3/6;
+  margin: 0 auto 0.5rem;
+}
+
+.coleccion-post h3:not([class]) {
+  @apply font-bold text-4xl mb-10 mt-20;
 }
