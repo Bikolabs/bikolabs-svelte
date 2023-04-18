@@ -27,13 +27,13 @@ h1:not([class]) {
 }
 
 .coleccion-post video {
-    object-fit: contain;
-    overflow: clip;
+  object-fit: contain;
+  overflow: clip;
 }
 
 .coleccion-post a:not([class]) {
-    text-decoration: underline;
-    transition: all .3s ease;
+  text-decoration: underline;
+  transition: all 0.3s ease;
 }
 
 .coleccion-post a:hover {

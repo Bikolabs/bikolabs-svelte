@@ -6,26 +6,26 @@
 </script>
 
 <div class={styles}>
-    <div class="flex flex-row">
-      <div class="w-5/6">
-        <video
-          muted
-          autoplay
-          loop
-          style="pointer-events: none;"
-          class="video-aspect"
-        >
-          <source src={srcmp4} type="video/mp4" />
-          <source src={srcogg} type="video/ogg" />
-        </video>
-      </div>
-
-      <div
-        class="flex flex-col justify-end w-1/6 mr-[8%] px-3 mb-10 text-tertiarycolor"
+  <div class="flex flex-row">
+    <div class="w-5/6">
+      <video
+        muted
+        autoplay
+        loop
+        style="pointer-events: none;"
+        class="video-aspect"
       >
-        <p class="text-min leading-7">{caption}</p>
-      </div>
+        <source src={srcmp4} type="video/mp4" />
+        <source src={srcogg} type="video/ogg" />
+      </video>
     </div>
+
+    <div
+      class="flex flex-col justify-end w-1/6 mr-[8%] px-3 mb-10 text-tertiarycolor"
+    >
+      <p class="text-min leading-7">{caption}</p>
+    </div>
+  </div>
 </div>
 
 <style>

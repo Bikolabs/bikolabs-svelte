@@ -26,9 +26,6 @@ layout: blog
   import Video from "$lib/components/Video/Video.svelte";
 </script>
 
-
-
-
 se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
 Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 

@@ -23,7 +23,7 @@
       <div class="flex flex-row">
         <img {src} {alt} />
         <div class={getCaptionPosition()}>
-          <p class="text-min text-tertiarycolor ml-7 caption-size ">{caption}</p>
+          <p class="text-min text-tertiarycolor ml-7 caption-size">{caption}</p>
         </div>
       </div>
     </div>
