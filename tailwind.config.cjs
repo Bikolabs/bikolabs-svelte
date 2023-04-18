@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         primarycolor: "#EB5482",
         secondarycolor: "#3E3E54",
+        tertiarycolor: "#acacb6",
+      },
+      fontSize: {
+        min: ["12px", "24px"],
       },
     },
     container: {

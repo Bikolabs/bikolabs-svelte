@@ -5,6 +5,10 @@ export function convertDateToString(date) {
   return dateAsString;
 }
 
+export function getDoubleLine(string) {
+  return string.split("---").join('<br>');
+}
+
 export function convertYearToString(date) {
   const dateYear = moment(date).format("YYYY");
   return dateYear;

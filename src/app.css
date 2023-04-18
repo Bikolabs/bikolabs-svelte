@@ -25,3 +25,17 @@ h1:not([class]) {
 .coleccion-post h3:not([class]) {
   @apply font-bold text-4xl mb-10 mt-20;
 }
+
+.coleccion-post video {
+    object-fit: contain;
+    overflow: clip;
+}
+
+.coleccion-post a:not([class]) {
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+
+.coleccion-post a:hover {
+  text-decoration: none;
+}

@@ -3,6 +3,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
 import { fileURLToPath } from "url";
+import relativeImages from "mdsvex-relative-images";
 
 const dirname = path.resolve(fileURLToPath(import.meta.url), "../");
 
@@ -26,6 +27,7 @@ const config = defineConfig({
       },
     ],
   ],
+  remarkPlugins: [relativeImages],
 });
 
 export default config;

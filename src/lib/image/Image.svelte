@@ -13,7 +13,7 @@
 
   export const getCaptionPosition = () => {
     if (captionposition === "top") return "flex flex-col";
-    return "flex flex-col justify-end";
+    return "flex flex-col justify-end ";
   };
 </script>
 
@@ -23,7 +23,7 @@
       <div class="flex flex-row">
         <img {src} {alt} />
         <div class={getCaptionPosition()}>
-          <p class="text-sm">{caption}</p>
+          <p class="text-min text-tertiarycolor ml-7 caption-size ">{caption}</p>
         </div>
       </div>
     </div>
@@ -37,5 +37,8 @@
 <style>
   .in-row {
     @apply mt-40 pr-5;
+  }
+  .caption-size {
+    @apply w-[175%];
   }
 </style>

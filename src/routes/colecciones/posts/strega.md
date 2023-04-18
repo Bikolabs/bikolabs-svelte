@@ -1,15 +1,14 @@
 ---
-title: "Strega Soniu latente"
+title: "Strega Soniu ---latente"
+date: "2022-01-30"
 
-date: "2023-01-30"
+link: "https://cables.gl/view/2ZQap5"
+titlelink: "Ver la web"
 
-link: "https://riscanvi.bikolabs.io/"
-titlelink: "riscanvic"
+image: "/images/portadadembora.jpeg"
+alt: "Strega Soniu latente"
 
-imagen: "https://picsum.photos/1200/600"
-alt: "riscanvi"
-
-subtitle: Nam rick grimes malum cerebro.
+subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
 
 tags:
   - Story
@@ -18,52 +17,48 @@ layout: blog
 ---
 
 <script>
-  import Link from "$lib/components/Link/link.svelte";
-  import ArrowLink from "$lib/icons/ArrowLink.svelte";
   import Image from "$lib/image/Image.svelte";
   import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
-  import Embed from "$lib/components/Embed/Embed.svelte";
   import Materials from "$lib/components/Materials/Materials.svelte";
+  import Video from "$lib/components/Video/Video.svelte"
 </script>
 
-<Embed type="youtube" src="https://www.youtube.com/watch?v=F_WC4UxStvs" styles="mt-20" />
+Esta exploración visual es la combinación de tres elementos: la sonoridad de los sintetizadores analógicos [Strega de MakeNoise](https://www.makenoisemusic.com/synthesizers/strega) y [Subharmoniconde Moog](https://www.moogmusic.com/products/subharmonicon) ; Los visuales creados [enCables.gl](https://cables.gl/home) ; y las imágenes de cielos estrellados generadas por el modelo neuronal de nuestro proyecto [Denbora Latente](https://bikolabs.biko2.com/collections/denboralatente/).
 
-# Esto es un h1
+<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
+" />
 
-<Embed type="cables" src="https://cables.gl/view/641d61206396c9c47b388a2e" styles="mt-30" />
+Todo empieza con una canción.
+La melodía generada por Subharmonicon es filtrada por Strega como si fuera el abrazo de una bruja. Uno aporta la base drone y el otro juega con los armónicos. Todo unido al módulo eurorack Crimen y ornamento que con sus envolventes dan sentido a esta pieza sonora analógica.
 
-[movida](Cuando) se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
+<ImageRow src="/images/strega.jpg" alt="Strega" lastsrc="/images/subharmonico.jpg" lastalt="image2" caption="Strega de Make noise y Subharmonicon de Moog son dos sintetizadores semimodulares usados en esta pieza sonora" captionposition="top" />
 
-<Image src="https://picsum.photos/600/600" alt="image" styles="my-5" caption='esto es un pie de foto en el top' captionposition="top" />
+La base sonora ha sido combinada con nuestro modelo Stylegan 2 de generación de cielos y Lucid Sonic Dreams Con Lucid sincronizamos la musica y el movimiento por el espacio latente de la red neuronal que genera infinitos cielos. Lucid permite ajustar, en este caso, el movimiento en relación con los armónicos
 
-## Esto es un h2
+<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
+" />
 
-Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto.
+Para la visualización y para la unión de todas estas partes (audio, vídeo, IA) usamos Cables.gl. Cables.gl es una herramienta para crear contenido interactivo en la WebGL en tiempo real. Es un entorno orientada a nodos que permite "programar" con otros paradigmas visuales basados en conexiones.
+Strega Soinu Latente es una nube de partículas que bailan por un espacio latente.
 
-## Esto es otro un h2
+<Image src="/images/cables.jpg" alt="" position="right" styles="my-20" />
 
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
-
-<Image src="https://picsum.photos/1200/500" alt="image" styles="border" />
-
-<Image src="https://picsum.photos/500/500" alt="imageAAA" position="right"/>
-
-Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
-
-BBBBBBBBBBBBPara que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
-
-<ImageRow src="https://picsum.photos/300/300" alt="image" lastsrc="https://picsum.photos/300/300" lastalt="image2" />
-
-## Materiales
+### Materiales
 
 <Materials category="web" links={[
-['Enlace 1', 'https://ejemplo.com/1'],
-['Enlace 2', 'https://ejemplo.com/2'],
+['Strega Make Noise.', 'https://ejemplo.com/1'],
+['Subharmonicon Moog.', 'https://ejemplo.com/2'],
+['Módulo ornament & crime', 'https://ejemplo.com/2'],
 ]}
 />
 
-<Materials category="libros" links={[
-['Enlace 1', 'https://ejemplo.com/1'],
+<Materials category="cables.gl" links={[
+['Cables.gl', 'https://ejemplo.com/1'],
+['Patch de Strega soniu lantente en Cables.gl', 'https://ejemplo.com/1'],
+]}
+/>
+
+<Materials category="IA COLAB" links={[
+['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://ejemplo.com/1'],
 ]}
 />

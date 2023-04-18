@@ -3,7 +3,7 @@
   export let alt;
   export let lastsrc;
   export let lastalt;
-  export let styles = "";
+  export let styles = "my-20";
   export let caption = "";
   export let captionposition = "";
 
@@ -12,7 +12,15 @@
 
 <div class={styles}>
   <div class="flex justify-center">
-    <Image {src} {alt} styles="in-row" />
-    <Image src={lastsrc} alt={lastalt} {caption} {captionposition} />
+    <div class="w-2/6"> <Image {src} {alt} styles="in-row image-size" /></div>
+    <div class="w-2/6"> <Image src={lastsrc} alt={lastalt} {caption} {captionposition} styles="image-size" /></div>
   </div>
 </div>
+
+<style>
+  .image-size {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+</style>
