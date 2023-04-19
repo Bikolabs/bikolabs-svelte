@@ -20,10 +20,14 @@
 <div class={styles}>
   {#if caption}
     <div class={getPosition()}>
-      <div class="flex flex-row">
+      <div class="flex flex-col desktop:flex-row">
         <img {src} {alt} />
         <div class={getCaptionPosition()}>
-          <p class="text-min text-tertiarycolor ml-7 caption-size">{caption}</p>
+          <p
+            class="text-min text-tertiarycolor mt-3 desktop:ml-7 desktop:mt-0 desktop:w-[175%]"
+          >
+            {caption}
+          </p>
         </div>
       </div>
     </div>
@@ -35,9 +39,6 @@
 </div>
 
 <style>
-  .in-row {
-    @apply mt-40 pr-5;
-  }
   .caption-size {
     @apply w-[175%];
   }

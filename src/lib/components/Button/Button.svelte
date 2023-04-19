@@ -3,6 +3,7 @@
   export let type = "primary";
   export let text = "";
   export let href = "";
+  export let styles = "hover:fill-white";
 </script>
 
 {#if type === "primary"}
@@ -20,9 +21,18 @@
 {#if type === "rounded"}
   <a
     {href}
-    class="flex flex-col justify-center items-center w-[128px] h-[128px] text-base font-bold font-secondary uppercase text-center transition-all bg-primarycolor rounded-full hover:text-white"
+    class="link-rounded flex flex-col justify-center items-center w-[128px] h-[128px] text-base font-secondary uppercase text-center transition-all bg-primarycolor rounded-full text-black font-bold hover:text-white"
   >
     <div>{text}</div>
-    <ArrowLink />
+    <ArrowLink styles="ffffhover:fill-white" />
   </a>
 {/if}
+
+<style>
+  .link-rounded:hover {
+    fill: white;
+    width: 140px;
+    height: 140px;
+    transition: all 1s;
+  }
+</style>

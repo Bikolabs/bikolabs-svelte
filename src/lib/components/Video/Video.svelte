@@ -1,13 +1,13 @@
 <script>
-  export let styles = "my-20";
+  export let styles = "my-10 tablet:my-20";
   export let caption = "";
   export let srcogg = "";
   export let srcmp4 = "";
 </script>
 
 <div class={styles}>
-  <div class="flex flex-row">
-    <div class="w-5/6">
+  <div class="flex flex-col tablet:flex-row">
+    <div class="w-full tablet:w-5/6">
       <video
         muted
         autoplay
@@ -21,9 +21,9 @@
     </div>
 
     <div
-      class="flex flex-col justify-end w-1/6 mr-[8%] px-3 mb-10 text-tertiarycolor"
+      class="flex flex-col justify-end w-full tablet:w-1/6 mt-3 tablet:mr-5 tablet:px-3 tablet:mb-10 text-tertiarycolor"
     >
-      <p class="text-min leading-7">{caption}</p>
+      <p class="text-min">{caption}</p>
     </div>
   </div>
 </div>

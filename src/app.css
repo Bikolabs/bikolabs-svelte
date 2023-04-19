@@ -39,3 +39,9 @@ h1:not([class]) {
 .coleccion-post a:hover {
   text-decoration: none;
 }
+
+@layer utilities {
+  .in-row {
+    @apply tablet:mt-40 tablet:pr-5;
+  }
+}

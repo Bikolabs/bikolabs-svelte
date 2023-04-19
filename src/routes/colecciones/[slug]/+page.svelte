@@ -1,6 +1,6 @@
 <script>
   export let data;
-  import { convertYearToString } from "$lib/utils.js";
+  import { convertYearToString, getDoubleLine } from "$lib/utils.js";
   import { fade } from "svelte/transition";
   import Link from "$lib/components/Link/link.svelte";
 </script>
@@ -16,9 +16,7 @@
         class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-40 desktop:pl-16"
       >
         <div class="w-4/6">
-          <h1
-            class="text-3xl tablet:text-4xl desktop:text-6xl font-primary font-semibold"
-          >
+          <h1 class="text-5xl tablet:text-6xl font-primary font-semibold">
             {data.title}
           </h1>
         </div>
@@ -43,7 +41,7 @@
         <img src={data.image} alt={data.alt} />
       </div>
     </div>
-    <div class="desktop:pl-16 desktop:w-3/6 w-full mt-20 mb-12">
+    <div class="desktop:pl-16 desktop:w-3/6 w-full mt-5 tablet:mt-20 mb-12">
       <h2 class="text-2xl font-light">{data.subtitle}</h2>
     </div>
 

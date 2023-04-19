@@ -1,5 +1,5 @@
 ---
-title: "Strega Soniu ---latente"
+title: "Strega Soniu latente"
 date: "2022-01-30"
 
 link: "https://cables.gl/view/2ZQap5"

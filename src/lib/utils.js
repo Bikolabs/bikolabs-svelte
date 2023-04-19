@@ -6,7 +6,7 @@ export function convertDateToString(date) {
 }
 
 export function getDoubleLine(string) {
-  return string.split("---").join("<br>");
+  return string.split("---").join("</br>");
 }
 
 export function convertYearToString(date) {
