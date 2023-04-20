@@ -11,7 +11,7 @@ alt: "Strega Soniu latente"
 subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
 
 tags:
-  - Story
+  - Exploración
 
 layout: blog
 ---

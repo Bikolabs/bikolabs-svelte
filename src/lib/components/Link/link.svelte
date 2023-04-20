@@ -1,5 +1,5 @@
 <script>
-  export let title;
+  export let title = "";
   export let link;
   export let styles = "";
   export let iconstyles = "";

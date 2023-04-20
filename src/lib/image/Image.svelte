@@ -2,6 +2,7 @@
   export let src;
   export let alt;
   export let styles = "";
+  export let imagestyles = "";
   export let caption = "";
   export let captionposition = "";
   export let position = "";
@@ -21,7 +22,7 @@
   {#if caption}
     <div class={getPosition()}>
       <div class="flex flex-col desktop:flex-row">
-        <img {src} {alt} />
+        <img class={imagestyles} {src} {alt} />
         <div class={getCaptionPosition()}>
           <p
             class="text-min text-tertiarycolor mt-3 desktop:ml-7 desktop:mt-0 desktop:w-[175%]"
@@ -33,7 +34,7 @@
     </div>
   {:else}
     <div class={getPosition()}>
-      <img {src} {alt} />
+      <img class={imagestyles} {src} {alt} />
     </div>
   {/if}
 </div>

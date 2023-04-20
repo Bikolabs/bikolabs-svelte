@@ -1,17 +1,17 @@
 <script>
-  export let data;
   import Teaser from "$lib/components/Teaser/Teaser.svelte";
+  import TeaserList from "$lib/components/TeaserList/TeaserList.svelte";
+
+  export let data;
+  console.log(data.recentPosts);
 </script>
 
 <div class="bg-secondarycolor w-full py-20 pb-0">
   <div class="container">
-    <section class="py-10 text-white">
+    <section class="py-10 text-white dektop:pr-[200px]">
       {#each data.recentPosts as stories, i}
         {#if stories.tags == "Story"}
           {#if i == 0}
-            <!-- <a href={`/colecciones/${stories.slug}`}>
-              <h3 class="text-3xl mb-5">{stories.title}</h3>
-            </a> -->
             <Teaser
               title="¿Cómo medir si un algoritmo acierta cuando toma una decisión automatizada?"
               description="Son varias las medidas con las que se mide el acierto algorítmico. Comprendemos las más usadas con un ejemplo real: RisCanvi."
@@ -21,9 +21,15 @@
             />
           {/if}
           {#if i > 0}
-            <a href={`/colecciones/${stories.slug}`}>
-              <p>{stories.title}</p>
-            </a>
+            <TeaserList
+              inverted
+              title={stories.title}
+              description={stories.subtitle}
+              imagesrc="/images/list-strega.jpg"
+              category={stories.tags[0]}
+              linktext={stories.titlelink}
+              link={`/colecciones/${stories.slug}`}
+            />
           {/if}
         {/if}
       {/each}

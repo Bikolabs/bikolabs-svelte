@@ -3,23 +3,21 @@
   import Nav from "$lib/components/Nav/Nav.svelte";
 </script>
 
-<div class="w-100 h-100vh border h-screen flex flex-col">
+<div
+  class="w-100 h-[700px] tablet:h-100vh border tablet:h-screen flex flex-col"
+>
   <Nav />
   <div class="container mt-20">
-    <h1 class="text-6xl font-primary title-wrapper">
+    <h1
+      class="text-5xl tablet:text-6xl font-primary desktop:w-[850px] desktop:leading-[67px]"
+    >
       <span class=" text-primarycolor font-bold"
-        >Investigamos,<br /> invertimos y <br /> divulgamos</span
+        >Investigamos y<br /> modelamos <br /> la interacción</span
       >
-      <span class="">sobre la interacción entre personas y tecnología</span>
+      <span class="">presente y futura entre personas y tecnología</span>
     </h1>
-    <div class="flex justify-end">
+    <div class="flex justify-end my-10 desktop:my-0">
       <Button type="primary" href="/" text="Descubre como" />
     </div>
   </div>
 </div>
-
-<style>
-  .title-wrapper {
-    @apply w-[850px] leading-[67px];
-  }
-</style>

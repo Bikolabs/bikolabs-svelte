@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-tertiarycolor pb-24 mb-10"
+  class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-color pb-10 tablet:pb-24 mb-10"
 >
   <div class="w-full tablet:w-[400px] relative">
     <Image src={imagesrc} alt="" styles="img-square" />
@@ -21,7 +21,7 @@
   </div>
   <div class="w-full tablet:w-[560px]">
     <div class="desktop:pr-28">
-      <h2 class="mb-5 text-4xl font-primary">{title}</h2>
+      <h2 class="mb-5 text-4xl font-secondary font-bold">{title}</h2>
       <p class="text-base text-quaternarycolor desktop:pr-24">{description}</p>
     </div>
     <div class="flex justify-end mt-10 uppercase text-min">
@@ -40,5 +40,9 @@
     transition: width 0.5s, height 0.5s;
     right: 0px;
     bottom: 0px;
+  }
+
+  .border-color {
+    border-color: #59596d;
   }
 </style>

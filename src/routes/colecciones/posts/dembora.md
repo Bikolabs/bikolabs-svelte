@@ -1,6 +1,6 @@
 ---
-title: "Dembora latente"
-date: "2021-02-19"
+title: "¿Podemos los humanos ser creativos (o artistas) cuando usamos la IA?"
+date: "2022-04-19"
 
 link: "https://riscanvi.bikolabs.io/"
 titlelink: "riscanvic"
@@ -11,7 +11,7 @@ alt: "riscanvi"
 subtitle: Nam rick grimes malum cerebro.
 
 tags:
-  - Story
+  - Formacion
 
 layout: blog
 ---

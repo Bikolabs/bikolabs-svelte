@@ -3,7 +3,6 @@
   export let type = "primary";
   export let text = "";
   export let href = "";
-  export let styles = "hover:fill-white";
 </script>
 
 {#if type === "primary"}
