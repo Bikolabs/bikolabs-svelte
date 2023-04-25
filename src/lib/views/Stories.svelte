@@ -6,9 +6,16 @@
 </script>
 
 <div class="bg-secondarycolor aaa w-full py-20 pb-0">
-        <div class="container pt-32 tablet:py-40 flex justify-start">
-          <h1 class="text-5xl tablet:text-5xl font-primary desktop:w-[850px] desktop:leading-[67px] text-white"><span class="font-bold">Stories</span> <span class=""> son el presente y futura entre personas y tecnología</span></h1>
-      </div>
+  <div class="container pt-32 tablet:py-40 flex justify-start">
+    <h1
+      class="text-5xl tablet:text-5xl font-primary desktop:w-[850px] desktop:leading-[67px] text-white"
+    >
+      <span class="font-bold">Stories</span>
+      <span class="">
+        son el presente y futura entre personas y tecnología</span
+      >
+    </h1>
+  </div>
   <div class="container">
     <section class="py-10 text-white dektop:pr-[200px]">
       <Teaser

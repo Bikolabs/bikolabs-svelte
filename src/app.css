@@ -63,8 +63,5 @@ img.image-teaser {
 }
 
 .list-teaser h2:hover {
-  @apply text-primarycolor transition
+  @apply text-primarycolor transition;
 }
-
-
-
