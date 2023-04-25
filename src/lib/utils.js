@@ -9,6 +9,10 @@ export function getDoubleLine(string) {
   return string.split("---").join("</br>");
 }
 
+export function removeTag(string) {
+  return string.replace(/<\/?br\s?\/?>/gi, "");
+}
+
 export function convertYearToString(date) {
   const dateYear = moment(date).format("YYYY");
   return dateYear;

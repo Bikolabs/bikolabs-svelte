@@ -3,10 +3,10 @@ title: "¿Podemos los humanos ser creativos (o artistas) cuando usamos la IA?"
 
 date: "2021-01-30"
 
-link: "https://riscanvi.bikolabs.io/"
-titlelink: "riscanvic"
+link: "/colecciones/taller-dembora-latente"
+titlelink:
 
-imagen: "https://picsum.photos/1200/600"
+image: "https://picsum.photos/1200/600"
 alt: "riscanvi"
 
 subtitle: Nam rick grimes malum cerebro.

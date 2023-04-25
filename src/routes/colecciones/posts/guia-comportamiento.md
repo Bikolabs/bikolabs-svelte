@@ -1,17 +1,17 @@
 ---
-title: "Strega </br> Soniu latente"
-date: "2022-01-30"
+title: "Guía sobre Diseño del <br> Comportamiento"
+date: "2021-01-30"
 
 link: "https://cables.gl/view/2ZQap5"
-titlelink: "Ver la web"
+titlelink: "Leer guia"
 
-image: "/images/portadadembora.jpeg"
-alt: "Strega Soniu latente"
+image: "/images/poster-guia.jpg"
+alt: "Guía sobre Diseño del Comportamiento"
 
-subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
+subtitle: Libro online para comprender la inclusión de Behavioral Economics en tecnología
 
 tags:
-  - Exploración
+  - Formación
 
 layout: blog
 ---

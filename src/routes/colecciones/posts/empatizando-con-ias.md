@@ -1,17 +1,17 @@
 ---
-title: "Strega </br> Soniu latente"
-date: "2022-01-30"
+title: "Empatizando con las IAs"
+date: "2021-10-01"
 
 link: "https://cables.gl/view/2ZQap5"
-titlelink: "Ver la web"
+titlelink: "Visitar la web"
 
-image: "/images/portadadembora.jpeg"
+image: "/images/empatizando-ias.jpeg"
 alt: "Strega Soniu latente"
 
-subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
+subtitle: Ejercicio para empatizar con las IAs de reconocimiento de imágenes
 
 tags:
-  - Exploración
+  - Story
 
 layout: blog
 ---

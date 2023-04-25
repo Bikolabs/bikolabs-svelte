@@ -1,17 +1,17 @@
 ---
-title: "Strega </br> Soniu latente"
-date: "2022-01-30"
+title: "Diseño, Tecnología <br> y Comportamiento"
+date: "2022-11-30"
 
 link: "https://cables.gl/view/2ZQap5"
 titlelink: "Ver la web"
 
-image: "/images/portadadembora.jpeg"
-alt: "Strega Soniu latente"
+image: "/images/nave-v.jpg"
+alt: "Diseño, Tecnología <br> y Comportamiento"
 
-subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
+subtitle: 3ª Edición del Taller en colaboración con La Nave Nodriza
 
 tags:
-  - Exploración
+  - Formación
 
 layout: blog
 ---

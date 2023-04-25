@@ -40,8 +40,31 @@ h1:not([class]) {
   text-decoration: none;
 }
 
+.debug {
+  border: 1px solid red;
+}
+
+.debug-1 {
+  border: 2px solid blue;
+}
+
+.debug-3 {
+  border: 2px solid greenyellow;
+}
+
+img.image-teaser {
+  @apply w-full h-auto tablet:w-[250px] tablet:h-[250px] tablet:object-cover;
+}
+
 @layer utilities {
   .in-row {
     @apply tablet:mt-40 tablet:pr-5;
   }
 }
+
+.list-teaser h2:hover {
+  @apply text-primarycolor transition
+}
+
+
+

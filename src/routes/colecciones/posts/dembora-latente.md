@@ -1,17 +1,17 @@
 ---
-title: "¿Podemos los humanos ser creativos (o artistas) cuando usamos la IA?"
-date: "2022-04-19"
+title: "Denbora Latente"
+date: "2021-11-20"
 
 link: "https://riscanvi.bikolabs.io/"
 titlelink: "riscanvic"
 
-imagen: "https://picsum.photos/1200/600"
-alt: "riscanvi"
+image: "/images/denbora-kursal.png"
+alt: "Denbora Latente"
 
-subtitle: Nam rick grimes malum cerebro.
+subtitle: La fachada de Kursaal Donostia como espacio latente
 
 tags:
-  - Formacion
+  - Instalación
 
 layout: blog
 ---

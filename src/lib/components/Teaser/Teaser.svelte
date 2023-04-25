@@ -2,19 +2,27 @@
   import Link from "$lib/components/Link/link.svelte";
   import Buttom from "$lib/components/Button/Button.svelte";
   import Image from "$lib/image/Image.svelte";
+  import Video from "$lib/components/Video/Video.svelte";
 
   export let title;
   export let description;
-  export let imagesrc;
+  export let imagesrc = "";
   export let linktitle;
   export let link;
+  export let videosrcmp4 = "";
+  export let videosrcogg = "";
 </script>
 
 <div
   class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-color pb-10 tablet:pb-24 mb-10"
 >
   <div class="w-full tablet:w-[400px] relative">
-    <Image src={imagesrc} alt="" styles="img-square" />
+    {#if imagesrc}
+      <Image src={imagesrc} alt="" styles="img-square" />
+    {:else}
+      <Video srcmp4={videosrcmp4} srcogg={videosrcogg} />
+    {/if}
+
     <div class="btn-wrapp hidden desktop:flex justify-end absolute">
       <Buttom type="rounded" text="Entrar" {link} styles="hover:fill-white" />
     </div>

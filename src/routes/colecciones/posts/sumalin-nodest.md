@@ -2,16 +2,13 @@
 title: "Sumalim NodeST"
 date: "2022-06-20"
 
-link: "https://riscanvi.bikolabs.io/"
-titlelink: "Entrar en la story"
-
-image: "https://bikolabs.biko2.com/assets/images/colecciones/riscanvi-h.png"
+image: "/images/nodo.gif"
 alt: "riscanvi"
 
 subtitle: ¿Cómo medir si un algoritmo acierta cuando toma una decisión?
 
 tags:
-  - Story
+  - Proyecto
 
 layout: blog
 ---
