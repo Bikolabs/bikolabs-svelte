@@ -16,9 +16,9 @@
 <div
   class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-color pb-10 tablet:pb-24 mb-10"
 >
-  <div class="w-full tablet:w-[400px] relative">
+  <div class="w-full tablet:w-[650px] relative">
     {#if imagesrc}
-      <Image src={imagesrc} alt="" styles="img-square" />
+      <img class="image-teaserfull" src={imagesrc} alt={title} />
     {:else}
       <Video srcmp4={videosrcmp4} srcogg={videosrcogg} />
     {/if}
@@ -27,10 +27,14 @@
       <Buttom type="rounded" text="Entrar" {link} styles="hover:fill-white" />
     </div>
   </div>
-  <div class="w-full tablet:w-[560px]">
+  <div class="w-full">
     <div class="desktop:pr-28">
       <h2 class="mb-5 text-4xl font-secondary font-bold">{title}</h2>
-      <p class="text-base text-quaternarycolor desktop:pr-24">{description}</p>
+      <div
+        class="text-base text-quaternarycolor desktop:pr-24 teaser-description"
+      >
+        {@html description}
+      </div>
     </div>
     <div class="flex justify-end mt-10 uppercase text-min">
       <Link

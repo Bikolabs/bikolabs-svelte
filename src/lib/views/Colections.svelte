@@ -5,7 +5,7 @@
   export let data;
 </script>
 
-<div class="w-full py-20 pb-0">
+<div id="colecciones" class="w-full py-20 pb-0">
   <div class="container">
     <section class="py-10 text-white">
       {#each data.recentPosts as post}

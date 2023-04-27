@@ -22,6 +22,8 @@ layout: blog
 
 Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto. Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
 
+<img src="/images/nodo.gif" />
+
 ## Proceso Investigador
 
 Este trabajo se ha basado en el gran artículo de Garay (2016) 2 sobre el sistema de decisión automatizada RisCanvi, titulado "Errores conceptuales en la estimación de riesgo de reincidencia". Los datos utilizados en la story para ejemplificar las medidas pertenecen al único informe general publicado sobre RisCanvi hasta el momento sobre este sistema (del año 2015) 3. Los informes más actuales disponibles utilizan muestras muy específicas (sobre presos en libertad condicional, o de alto riesgo... ) que no permiten una evaluación más global del sistema.

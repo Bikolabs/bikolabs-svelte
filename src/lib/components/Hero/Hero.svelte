@@ -8,16 +8,19 @@
 >
   <Nav />
   <div class="container mt-20">
+    <p class="text-2xl text-secondarycolor desktop:leading-[37px] mb-5">
+      Bikolabs el estudio de diseño de Biko
+    </p>
     <h1
-      class="text-5xl tablet:text-6xl font-primary desktop:w-[850px] desktop:leading-[67px]"
+      class="text-5xl tablet:text-6xl font-primary desktop:w-[850px] desktop:leading-[67px] break-line"
     >
       <span class=" text-primarycolor font-bold"
         >Investigamos y<br /> modelamos <br /> la interacción</span
       >
       <span class="">presente y futura entre personas y tecnología</span>
     </h1>
-    <div class="flex justify-end my-10 desktop:my-0">
-      <Button type="primary" href="/" text="Descubre como" />
+    <div class="flex justify-end my-10 desktop:my-20">
+      <Button type="primary" href="#stories" text="Descubre como" />
     </div>
   </div>
 </div>
