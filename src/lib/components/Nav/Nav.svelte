@@ -3,17 +3,20 @@
 "
 >
   <div class="py-4 px-4">
-    <img class="logo" src="/images/web/menulogos.svg" alt="logo" />
+    <a href="/">
+      <img class="logo" src="/images/web/menulogos.svg" alt="logo" />
+    </a>
   </div>
   <div class="w-[270px] flex items-center">
     <div class="nav text-min p-4 w-[270px]">
-      <a class="hover:text-primarycolor hover:font-semibold" href="#stories"
+      <a class="hover:text-primarycolor hover:font-semibold" href="/#stories"
         >Stories</a
       >
-      <a class="hover:text-primarycolor hover:font-semibold" href="#colecciones"
-        >Colecciones</a
+      <a
+        class="hover:text-primarycolor hover:font-semibold"
+        href="/#colecciones">Colecciones</a
       >
-      <a class="hover:text-primarycolor hover:font-semibold" href="#contacto"
+      <a class="hover:text-primarycolor hover:font-semibold" href="/#contacto"
         >Contacto</a
       >
     </div>

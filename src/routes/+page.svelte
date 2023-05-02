@@ -4,13 +4,14 @@
   import Colections from "$lib/views/Colections.svelte";
   import Footer from "$lib/components/Footer/Footer.svelte";
   import AboutUs from "$lib/components/AboutUs/AboutUs.svelte";
+  import Medios from "$lib/components/Medios/Medios.svelte";
 
   export let data;
 </script>
 
 <svelte:head>
   <title>Home</title>
-  <meta name="description" content="Svelte starter Kit" />
+  <meta name="description" content="Bikolabs - " />
 </svelte:head>
 <section>
   <Hero />
@@ -32,6 +33,7 @@
 </section>
 
 <AboutUs />
+<Medios />
 
 <!-- new -->
 <Footer />
