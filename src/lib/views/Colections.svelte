@@ -7,7 +7,7 @@
 
 <div id="colecciones" class="w-full pb-20">
   <div class="container">
-    <section class="text-white">
+    <section class="w-full tablet:w-[1000px] mx-auto text-white">
       {#each data.recentPosts as post}
         {#if post.tags[0] !== "Story"}
           <TeaserList

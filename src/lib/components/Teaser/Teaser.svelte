@@ -27,10 +27,10 @@
     </div>
   </div>
   <div class="w-full">
-    <div class="desktop:pr-28">
+    <div>
       <h2 class="mb-5 text-4xl font-secondary font-bold">{title}</h2>
       <div
-        class="text-base text-quaternarycolor desktop:pr-24 teaser-description"
+        class="text-base text-quaternarycolor desktop:pr-4 teaser-description"
       >
         {@html description}
       </div>
