@@ -1,7 +1,6 @@
 <script>
   import Link from "$lib/components/Link/link.svelte";
   import Buttom from "$lib/components/Button/Button.svelte";
-  import Image from "$lib/image/Image.svelte";
   import Video from "$lib/components/Video/Video.svelte";
 
   export let title;
@@ -16,7 +15,7 @@
 <div
   class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-color pb-10 tablet:pb-24 mb-10"
 >
-  <div class="w-full tablet:w-[650px] relative">
+  <div class="w-full tablet:w-[650px] desktop:w-[850px] relative">
     {#if imagesrc}
       <img class="image-teaserfull" src={imagesrc} alt={title} />
     {:else}

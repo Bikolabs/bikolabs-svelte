@@ -5,7 +5,9 @@
   export let description;
 </script>
 
-<div class="item-wrap">
+<div
+  class="item-wrap text-center desktop:text-left w-full tablet:w-[300px] desktop:w-[215px]"
+>
   <a href={link}>
     <div class="flex items-center justify-center">
       <div class="medios-item mb-5">
@@ -27,6 +29,7 @@
     opacity: 0.6;
 
     object-fit: cover;
+    @apply transition;
   }
   .medios-item {
     width: 100px;
@@ -35,12 +38,14 @@
   }
 
   .item-wrap {
-    @apply w-[230px] p-4 m-4;
+    @apply p-4 m-4;
   }
 
   .item-wrap:hover .item-title {
-    @apply text-primarycolor;
+    @apply text-black;
   }
   .item-wrap:hover img.bw {
+    filter: grayscale(0);
+    opacity: 1;
   }
 </style>

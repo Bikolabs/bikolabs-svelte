@@ -57,11 +57,11 @@ h1:not([class]) {
 }
 
 img.image-teaser {
-  @apply w-full h-auto tablet:w-[250px] tablet:h-[250px] tablet:object-cover;
+  @apply w-full h-auto tablet:w-[395px] tablet:h-[320px] tablet:object-cover;
 }
 
 img.image-teaserfull {
-  @apply w-full h-auto tablet:w-[410px] tablet:h-[410px] tablet:object-cover;
+  @apply w-full h-auto tablet:object-cover;
 }
 
 .break-line br {
@@ -94,6 +94,49 @@ img.image-teaserfull {
 
 .aaa {
   background-color: #3e3e54;
+}
+
+.bbb {
+  background: linear-gradient(148deg, #3e3e54, #4d4d4d, #ae3389);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
 }
 
 .fancy2 {

@@ -2,7 +2,7 @@
   import Item from "./Item.svelte";
 </script>
 
-<div class="container mb-20">
+<div class="container mb-40">
   <div>
     <h3 class="font-bold text-3xl font-primary text-secondarycolor mb-3">
       Se dice, se comenta...
@@ -29,7 +29,7 @@
       link="/"
     />
     <Item
-      title="eduHacking Podcast"
+      title="Elconfidencial"
       description="Entrevista a Ujue y Karlos en el podcast eduHacking"
       logo="/images/web/logos/elconfidencial.svg"
       link="/"

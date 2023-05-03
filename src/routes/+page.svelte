@@ -17,14 +17,14 @@
   <Hero />
   <Stories {data} />
   <div class="w-full">
-    <div class="container pt-32 tablet:pt-40 flex justify-end">
+    <div class="container py-32 tablet:py-40 flex justify-end">
       <div class="w-[670px]">
         <p
-          class="text-5xl font-primary text-tertiarycolor font-bold text-right"
+          class="text-5xl font-secondary text-tertiarycolor font-bold text-right"
         >
-          Pre-cognitions son las <span class="text-secondarycolor fancy">
-            intervenciones</span
-          > que nos permiten adelantarnos al futuro.
+          Nuestra colección de <span class="text-secondarycolor fancy"
+            >intervenciones</span
+          > sobre la tecnología, al completo:
         </p>
       </div>
     </div>

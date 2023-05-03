@@ -1,5 +1,4 @@
 <script>
-  import Link from "$lib/components/Link/link.svelte";
   import Pill from "$lib/components/Pill/Pill.svelte";
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
 
@@ -10,7 +9,6 @@
   export let linktext = "";
   export let category;
   export let inverted = "";
-  export let fullsize = "";
   export const imagestyles = "";
 
   export const isImage = (imagsrc) => {
@@ -19,13 +17,13 @@
   };
 </script>
 
-{#if inverted && !fullsize}
+{#if inverted}
   <a href="/" class="list-teaser">
     <div
       class="flex gap-7 flex-col tablet:flex-row border-b border-color pb-10 mb-10"
     >
       {#if imagesrc}
-        <div class="w-full tablet:w-[240px] relative">
+        <div class="w-full tablet:w-[395px] h-auto relative">
           <img class="image-teaser" src={imagesrc} alt={title} />
         </div>
       {/if}
@@ -57,13 +55,13 @@
   </a>
 {/if}
 
-{#if !inverted && !fullsize}
+{#if !inverted}
   <a href="/" class="list-teaser">
     <div
-      class="flex gap-7 flex-col tablet:flex-row border-b border-tertiarycolor hover:border-primarycolor transition duration-350 ease-out hover:ease-in pb-10 mb-10"
+      class="flex tablet:gap-16 flex-col tablet:flex-row border-b border-tertiarycolor hover:border-primarycolor transition duration-350 ease-out hover:ease-in pb-10 mb-10"
     >
       {#if imagesrc}
-        <div class="w-full tablet:w-[19%] relative border">
+        <div class="w-full tablet:w-[395px] h-auto relative">
           <img class="image-teaser" src={imagesrc} alt={title} />
         </div>
       {/if}
@@ -92,30 +90,6 @@
       </div>
     </div>
   </a>
-{/if}
-
-{#if fullsize && !inverted}
-  <div class="flex gap-7 flex-col border-b border-tertiarycolor pb-10 mb-10">
-    {#if imagesrc}
-      <div class="w-full relative border">
-        <img class="image-teaser" src={imagesrc} alt={title} />
-      </div>
-    {/if}
-    <div class="w-full flex flex-col justify-between">
-      <div class="desktop:pr-28">
-        <h2 class="mb-5 text-4xl font-primary text-black">{title}</h2>
-        <p class="text-base text-secondarycolor desktop:pr-24">{description}</p>
-      </div>
-      <div class="flex mt-10 justify-between">
-        <Pill {inverted} {category} />
-        <Link
-          {link}
-          {linktext}
-          iconstyles="fill-black hover:fill-primarycolor transition"
-        />
-      </div>
-    </div>
-  </div>
 {/if}
 
 <style>

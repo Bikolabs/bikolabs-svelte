@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Title</title>
+  <title>Bikolabs</title>
   <meta name="title" content="Title | Bikolabs" />
   <meta name="description" content="Description" />
 

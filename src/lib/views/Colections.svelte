@@ -5,9 +5,9 @@
   export let data;
 </script>
 
-<div id="colecciones" class="w-full py-20 pb-0">
+<div id="colecciones" class="w-full pb-20">
   <div class="container">
-    <section class="py-10 text-white">
+    <section class="text-white">
       {#each data.recentPosts as post}
         {#if post.tags[0] !== "Story"}
           <TeaserList
