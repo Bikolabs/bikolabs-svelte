@@ -5,7 +5,7 @@
   import Footer from "$lib/components/Footer/Footer.svelte";
   import AboutUs from "$lib/components/AboutUs/AboutUs.svelte";
   import Medios from "$lib/components/Medios/Medios.svelte";
-
+  
   export let data;
 </script>
 
@@ -16,7 +16,7 @@
 <section>
   <Hero />
   <Stories {data} />
-  <div class="w-full">
+  <div class="w-full" transition:blur={options}>
     <div class="container py-32 tablet:py-40 flex justify-end">
       <div class="w-[670px]">
         <p

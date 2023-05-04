@@ -12,12 +12,14 @@
   export let videosrcogg = "";
 </script>
 
-<div
-  class="flex gap-7 flex-col-reverse tablet:flex-row border-b border-color pb-10 tablet:pb-24 mb-10"
->
-  <div class="w-full tablet:w-[650px] desktop:w-[850px] relative">
+<div class="border-b border-color pb-10 tablet:pb-24 mb-10">
+  <div class="relative desktop:w-[1000px] desktop:h-[500px] mb-10 debug">
     {#if imagesrc}
-      <img class="image-teaserfull" src={imagesrc} alt={title} />
+      <img
+        class="objet-cover desktop:w-[1000px] desktop:h-[500px]"
+        src={imagesrc}
+        alt={title}
+      />
     {:else}
       <Video srcmp4={videosrcmp4} srcogg={videosrcogg} />
     {/if}
@@ -26,7 +28,8 @@
       <Buttom type="rounded" text="Entrar" {link} styles="hover:fill-white" />
     </div>
   </div>
-  <div class="w-full">
+
+  <div class="w-full debug-2">
     <div>
       <h2 class="mb-5 text-4xl font-secondary font-bold">{title}</h2>
       <div

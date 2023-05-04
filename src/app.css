@@ -147,3 +147,17 @@ img.image-teaserfull {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.article-storybg {
+  background: rgb(62, 62, 83);
+  background: linear-gradient(
+    180deg,
+    rgba(62, 62, 83, 1) 51%,
+    rgba(56, 56, 72, 1) 100%
+  );
+}
+
+.article-storybg-inverse {
+background: rgb(58,57,73);
+background: linear-gradient(0deg, rgba(58,57,73,1) 13%, rgba(56,56,72,1) 33%);
+}

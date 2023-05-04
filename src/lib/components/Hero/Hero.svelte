@@ -19,8 +19,13 @@
       >
       <span class="">entre personas y tecnología</span>
     </h1>
-    <div class="flex justify-end my-10 desktop:my-20">
+
+
+  <p>
+    
+  </p>
+    <!-- <div class="flex justify-end my-10 desktop:my-20">
       <Button type="primary" href="#stories" text="Descubre como" />
-    </div>
+    </div> -->
   </div>
 </div>
