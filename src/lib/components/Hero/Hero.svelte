@@ -20,10 +20,7 @@
       <span class="">entre personas y tecnología</span>
     </h1>
 
-
-  <p>
-    
-  </p>
+    <p />
     <!-- <div class="flex justify-end my-10 desktop:my-20">
       <Button type="primary" href="#stories" text="Descubre como" />
     </div> -->

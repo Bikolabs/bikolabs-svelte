@@ -19,7 +19,7 @@
     {#if y > 266}
       <div
         class="w-[670px] text-white"
-        transition:fly={{...options, opacity: 0.8, y: 300 }}
+        transition:fly={{ ...options, opacity: 0.8, y: 300 }}
       >
         <p class="text-5xl font-secondary text-white font-bold text-right mb-4">
           Las historias complejas necesitan más que palabras.
@@ -79,16 +79,16 @@
         <div
           class="flex justify-start mt-6 uppercase text-min desktop:w-[850px]"
         >
-        <BoopAction boopParams={{ scale: 1.2, timing: 200 }}>
-          <a
-            class="uppercase flex gap-2 hover:text-primarycolor transition"
-            href="/colecciones/riscanvi"
-          >
-            Radiografía de la story
+          <BoopAction boopParams={{ scale: 1.2, timing: 200 }}>
+            <a
+              class="uppercase flex gap-2 hover:text-primarycolor transition"
+              href="/colecciones/riscanvi"
+            >
+              Radiografía de la story
               <ArrowLink
                 styles="fill-white hover:fill-primarycolor transition"
               />
-          </a>
+            </a>
           </BoopAction>
           {#if y > 1280}
             <div

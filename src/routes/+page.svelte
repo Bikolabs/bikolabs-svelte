@@ -5,7 +5,7 @@
   import Footer from "$lib/components/Footer/Footer.svelte";
   import AboutUs from "$lib/components/AboutUs/AboutUs.svelte";
   import Medios from "$lib/components/Medios/Medios.svelte";
-  
+
   export let data;
 </script>
 
