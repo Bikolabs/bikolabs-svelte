@@ -18,34 +18,25 @@
 </script>
 
 {#if inverted}
-  <a href="/" class="list-teaser">
-    <div
-      class="flex gap-7 flex-col tablet:flex-row border-b border-color pb-10 mb-10"
-    >
+  <a href="/" class="
+  ">
+    <div class="flex gap-14 flex-col tablet:flex-row ">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
-          <img class="image-teaser" src={imagesrc} alt={title} />
+          <img class="image-teaser-inverted" src={imagesrc} alt={title} />
         </div>
       {/if}
       <div class={isImage(imagesrc)}>
         <div class="desktop:pr-28">
           <h2 class="mb-5 text-3xl font-secondary font-semibold">{title}</h2>
-          <p class="text-base text-quaternarycolor desktop:pr-24">
+          <p class="text-xl text-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
             {description}
           </p>
         </div>
         <div class="flex mt-10 justify-between">
-          <div>
-            <Pill {inverted} {category} />
-          </div>
-          <div
-            class="fill-white hover:text-primarycolor hover:fill-primarycolor transition"
-          >
-            <a
-              href={link}
-              class="flex gap-3 hover:text-primarycolor custom-link"
-            >
-              Entra en la story
+          <div class="fill-white hover:text-primarycolor hover:fill-primarycolor transition">
+            <a href={link} class="flex gap-4 hover:text-primarycolor text-quaternarycolor uppercase font-bold font-secondary">
+             Radiografia de la story
               <ArrowLink styles="" />
             </a>
           </div>
@@ -57,9 +48,7 @@
 
 {#if !inverted}
   <a href="/" class="list-teaser">
-    <div
-      class="flex tablet:gap-16 flex-col tablet:flex-row border-b border-tertiarycolor hover:border-primarycolor transition duration-350 ease-out hover:ease-in pb-10 mb-10"
-    >
+    <div class="flex tablet:gap-16 flex-col tablet:flex-row border-b border-tertiarycolor hover:border-primarycolor transition duration-350 ease-out hover:ease-in pb-10 mb-10">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
           <img class="image-teaser" src={imagesrc} alt={title} />
@@ -70,7 +59,7 @@
           <h2 class="mb-5 text-3xl font-secondary font-semibold text-black">
             {title}
           </h2>
-          <p class="text-base text-secondarycolor desktop:pr-24">
+          <p class="text-xl text-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
             {description}
           </p>
         </div>
@@ -79,10 +68,7 @@
             <Pill {inverted} {category} />
           </div>
           <div class="">
-            <a
-              href={link}
-              class="fill-secondarycolor hover:text-primarycolor hover:fill-primarycolor transition"
-            >
+            <a href={link} class="fill-secondarycolor hover:text-primarycolor hover:fill-primarycolor transition">
               <ArrowLink styles="" />
             </a>
           </div>

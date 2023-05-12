@@ -16,13 +16,7 @@
       <Image {src} {alt} styles="in-row image-size" />
     </div>
     <div class="w-full tablet:w-2/3 desktop:w-2/6 mt-4 tablet:mt-0">
-      <Image
-        src={lastsrc}
-        alt={lastalt}
-        {caption}
-        {captionposition}
-        styles="image-size"
-      />
+      <Image src={lastsrc} alt={lastalt} {caption} {captionposition} styles="image-size" />
     </div>
   </div>
 </div>

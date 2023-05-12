@@ -7,33 +7,28 @@
   import Medios from "$lib/components/Medios/Medios.svelte";
 
   export let data;
+
 </script>
 
 <svelte:head>
-  <title>Home</title>
+
+<title>Home</title>
   <meta name="description" content="Bikolabs - " />
 </svelte:head>
 <section>
-  <Hero />
-  <Stories {data} />
-  <div class="w-full" transition:blur={options}>
-    <div class="container py-32 tablet:py-40 flex justify-end">
-      <div class="w-[670px]">
-        <p
-          class="text-5xl font-secondary text-tertiarycolor font-bold text-right"
-        >
-          Nuestra colección de <span class="text-secondarycolor fancy"
-            >intervenciones</span
-          > sobre la tecnología, al completo:
+<Hero />
+<Stories {data} />
+<div class="w-full">
+    <div class="container pt-40 pb-40 flex justify-start">
+      <div class="w-[570px]">
+        <p class="text-4xl font-secondary text-tertiarycolor font-bold">
+          Nuestra colección de <span class="text-black">intervenciones</span> sobre la tecnología
         </p>
       </div>
     </div>
     <Colections {data} />
   </div>
 </section>
-
-<AboutUs />
 <Medios />
-
-<!-- new -->
+<AboutUs />
 <Footer />

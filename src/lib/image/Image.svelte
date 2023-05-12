@@ -24,9 +24,7 @@
       <div class="flex flex-col desktop:flex-row">
         <img class={imagestyles} {src} {alt} />
         <div class={getCaptionPosition()}>
-          <p
-            class="text-min text-tertiarycolor mt-3 desktop:ml-7 desktop:mt-0 desktop:w-[175%]"
-          >
+          <p class="text-min text-tertiarycolor mt-3 desktop:ml-7 desktop:mt-0 desktop:w-[175%]">
             {caption}
           </p>
         </div>

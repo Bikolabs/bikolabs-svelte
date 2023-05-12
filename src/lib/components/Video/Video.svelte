@@ -8,21 +8,13 @@
 <div class={styles}>
   <div class="flex flex-col tablet:flex-row">
     <div class="w-full tablet:w-5/6">
-      <video
-        muted
-        autoplay
-        loop
-        style="pointer-events: none;"
-        class="video-aspect"
-      >
+      <video muted autoplay loop style="pointer-events: none;" class="video-aspect">
         <source src={srcmp4} type="video/mp4" />
         <source src={srcogg} type="video/ogg" />
       </video>
     </div>
 
-    <div
-      class="flex flex-col justify-end w-full tablet:w-1/6 mt-3 tablet:mr-5 tablet:px-3 tablet:mb-10 text-tertiarycolor"
-    >
+    <div class="flex flex-col justify-end w-full tablet:w-1/6 mt-3 tablet:mr-5 tablet:px-3 tablet:mb-10 text-tertiarycolor">
       <p class="text-min">{caption}</p>
     </div>
   </div>

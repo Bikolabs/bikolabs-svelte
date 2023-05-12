@@ -8,7 +8,5 @@
 </script>
 
 <div class={styles}>
-  <a class="flex items-center" href={link}
-    >{title}<ArrowLink styles={iconstyles} /></a
-  >
+  <a class="flex items-center" href={link}>{title}<ArrowLink styles={iconstyles} /></a>
 </div>

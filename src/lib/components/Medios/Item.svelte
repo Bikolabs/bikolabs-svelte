@@ -5,9 +5,7 @@
   export let description;
 </script>
 
-<div
-  class="item-wrap text-center desktop:text-left w-full tablet:w-[300px] desktop:w-[215px]"
->
+<div class="item-wrap text-center desktop:text-left w-full tablet:w-[300px] desktop:w-[215px]">
   <a href={link}>
     <div class="flex items-center justify-center">
       <div class="medios-item mb-5">

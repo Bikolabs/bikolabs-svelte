@@ -2,23 +2,17 @@
   class="flex justify-between align-items-center
 "
 >
-  <div class="py-4 px-4">
+  <div class="py-4 px-4 ml-5">
     <a href="/">
       <img class="logo" src="/images/web/menulogos.svg" alt="logo" />
     </a>
+    <p class="uppercase font-secondary font-bold w-[150px] mt-5 ">Bikolabs el estudio de (intevención) de Biko</p>
   </div>
-  <div class="w-[270px] flex items-center">
+  <div class="w-[270px] flex pt-4">
     <div class="nav text-min p-4 w-[270px]">
-      <a class="hover:text-primarycolor hover:font-semibold" href="/#stories"
-        >Stories</a
-      >
-      <a
-        class="hover:text-primarycolor hover:font-semibold"
-        href="/#colecciones">Colecciones</a
-      >
-      <a class="hover:text-primarycolor hover:font-semibold" href="/#contacto"
-        >Contacto</a
-      >
+      <a class="hover:text-primarycolor hover:font-semibold" href="/#stories">Stories</a>
+      <a class="hover:text-primarycolor hover:font-semibold" href="/#colecciones">Colecciones</a>
+      <a class="hover:text-primarycolor hover:font-semibold" href="/#contacto">Contacto</a>
     </div>
   </div>
 </nav>

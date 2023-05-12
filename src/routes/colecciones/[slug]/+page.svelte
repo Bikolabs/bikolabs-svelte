@@ -12,18 +12,14 @@
 <div class="container coleccion-post">
   <article in:fade={{ duration: 500 }} out:fade={{ duration: 0 }}>
     <div>
-      <div
-        class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-40 desktop:pl-16"
-      >
+      <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-40 desktop:pl-16">
         <div class="w-4/6">
           <h1 class="text-5xl tablet:text-6xl font-primary font-semibold">
             {@html getDoubleLine(data.title)}
           </h1>
         </div>
         {#if data.titlelink}
-          <div
-            class="mt-5 desktop:mt-0 desktop:w-1/6 w-full flex items-center desktop:justify-end"
-          >
+          <div class="mt-5 desktop:mt-0 desktop:w-1/6 w-full flex items-center desktop:justify-end">
             <Link title={data.titlelink} link={data.link} />
           </div>
         {/if}

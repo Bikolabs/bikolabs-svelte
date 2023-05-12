@@ -2,135 +2,70 @@
   import TeaserList from "$lib/components/TeaserList/TeaserList.svelte";
   import Buttom from "$lib/components/Button/Button.svelte";
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
-  import BoopAction from "./BoopAction.svelte";
-  import { linear } from "svelte/easing";
-  import { fade, fly, blur } from "svelte/transition";
 
-  let options = { duration: 2000, easing: linear };
-  let btnoptions = { duration: 1000, easing: linear };
-
-  export let y;
 </script>
 
-<svelte:window bind:scrollY={y} />
-
-<div class="article-storybg w-full py-20 pb-0">
-  <div class="container py-32 tablet:py-40 flex justify-end">
-    {#if y > 266}
-      <div
-        class="w-[670px] text-white"
-        transition:fly={{ ...options, opacity: 0.8, y: 300 }}
-      >
-        <p class="text-5xl font-secondary text-white font-bold text-right mb-4">
-          Las historias complejas necesitan más que palabras.
-        </p>
-        <p class="text-right text-xl">
-          <span class="font-bold text-3xl fancy">Stories</span>
-          <span>
-            es nuestra respuesta a esas historias que exigen una visualización
-            poderosa y un proceso de investigación riguroso para poder ser
-            divulgadas.
-          </span>
-        </p>
-      </div>
-    {/if}
-  </div>
-</div>
-<div class="fixed top-0 left-0 text-red text-xl">
-  <p class="text-secondaycolor">{y}</p>
-</div>
-
-<div class="relative w-full h-screen">
-  <video
-    class="absolute top-0 left-0 w-full h-full object-cover"
-    autoplay
-    muted
-    loop
-  >
+<div class="relative w-full h-[700px]">
+  <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
     <source src="videos/riscanvi.mp4" type="video/mp4" />
   </video>
-  <div
-    class="absolute top-0 left-0 w-full h-full bg-secondarycolor opacity-80"
-  />
-  {#if y > 870}
-    <div class="absolute top-0 left-0 w-full h-full">
-      <div
-        class="container relative pt-32 tablet:py-40 flex flex-col justify-start text-white"
-        transition:fly={{ ...options, opacity: 0.8, y: 100 }}
-      >
-        <p
-          class="desktop:w-[840px] text-5xl font-secondary font-bold desktop:leading-[50px] mb-10"
-        >
-          ¿Cómo medir si un algoritmo acierta cuando toma una decisión
-          automatizada?
-        </p>
+  <div class="absolute top-0 left-0 w-full h-full opacity-80 bg-secondarycolor-dg" />
+  <div class="absolute top-0 left-0 w-full h-full ">
+    <div class="container pt-16">
+                <div class="text-white font-semibold mb-10 uppercase border-decoration w-[210px] text-center">
+            <span class="text-primarycolor">Nuestras Stories</span>
+          </div>
+    </div>
+    <div class="container relative pt-14 tablet:py-14 flex text-white font-secondary">
+  
+      <div class="flex">
+        <div class="desktop:w-[700px]">
 
-        <div
-          class="mb-10 text-2xl tablet:text-2xl font-primary desktop:w-[850px] text-white"
-        >
-          <p>
-            Son varias las medidas con las que se mide el acierto algorítmico.
-            Comprendemos las más usadas con un ejemplo real: <span
-              class="font-bold">RisCanvi</span
-            >
-          </p>
-        </div>
-
-        <div
-          class="flex justify-start mt-6 uppercase text-min desktop:w-[850px]"
-        >
-          <BoopAction boopParams={{ scale: 1.2, timing: 200 }}>
-            <a
-              class="uppercase flex gap-2 hover:text-primarycolor transition"
-              href="/colecciones/riscanvi"
-            >
-              Radiografía de la story
-              <ArrowLink
-                styles="fill-white hover:fill-primarycolor transition"
-              />
+          <p class="text-4xl font-bold desktop:leading-[45px] mb-5">¿Cómo medir si un algoritmo acierta cuando toma una decisión automatizada?</p>
+          <div class="mb-10 text-xl text-tertiarycolor font-medium desktop:pr-5 font-secondary leading-[31.5px]">
+          <p>Son varias las medidas con las que se mide el acierto algorítmico. Comprendemos las más usadas con un ejemplo real: RisCanvi</p>
+          </div>
+          <div class="flex justify-start mt-6 uppercase text-min">
+             <div class="flex mt-10 justify-between">
+          <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
+            <a href="/" class="flex gap-4 text-quaternary hover:text-primarycolor custom-link uppercase font-bold font-secondary text-base">
+             Radiografia de la storys
+              <ArrowLink styles="fill-white" />
             </a>
-          </BoopAction>
-          {#if y > 1280}
-            <div
-              class="btn-position hidden desktop:flex justify-end"
-              transition:blur={btnoptions}
-            >
-              <Buttom
-                type="rounded"
-                text="Entrar"
-                link="http://riscanvi.bikolabs.io"
-                styles="hover:fill-white"
-              />
-            </div>
-          {/if}
+          </div>
+        </div>
+           
+          </div>
+        </div>
+          <div class="btn-wrapp tablet:hidden desktop:flex desktop:w-[300px] flex justify-end items-center
+          ">
+          <Buttom type="rounded" text="Entrar" link="" styles="hover:fill-white" />
         </div>
       </div>
+
+      <div>
+
+      </div>
     </div>
-  {/if}
+  </div>
 </div>
 
 <div class="article-storybg-inverse w-full py-5">
   <div class="container">
-    <section id="stories" class="py-10 text-white w-full mx-auto">
-      {#if y > 1500}
-        <div transition:fly={{ ...options, y: -25 }}>
-          <TeaserList
-            inverted
-            title="Empatizando con las IAs"
-            description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles."
-            imagesrc="images/empatizando-ias.jpeg"
-            category="stories"
-            link="colecciones/empatizando-con-ias"
-          />
-        </div>
-      {/if}
+    <section id="stories" class="pt-20 pb-12 text-white w-full mx-auto">
+      <div>
+        <TeaserList inverted title="Empatizando con las IAs" description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles." imagesrc="images/empatizando-ias.jpeg" category="stories" link="colecciones/empatizando-con-ias" />
+      </div>
     </section>
   </div>
 </div>
 
 <style>
-  .btn-position {
-    position: absolute;
-    right: 100px;
+  .bg-secondarycolor-dg {
+    background: linear-gradient(90deg, rgb(34, 34, 60, 1) 60%, rgb(34, 34, 60, 0.4) 100%);
+  }
+  .border-decoration {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
   }
 </style>

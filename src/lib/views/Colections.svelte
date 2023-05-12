@@ -10,14 +10,7 @@
     <section class="w-full tablet:w-[1000px] mx-auto text-white">
       {#each data.recentPosts as post}
         {#if post.tags[0] !== "Story"}
-          <TeaserList
-            title={removeTag(post.title)}
-            description={post.subtitle}
-            imagesrc={post.image}
-            category={post.tags[0]}
-            linktext={post.titlelink}
-            link={`/colecciones/${post.slug}`}
-          />
+          <TeaserList title={removeTag(post.title)} description={post.subtitle} imagesrc={post.image} category={post.tags[0]} linktext={post.titlelink} link={`/colecciones/${post.slug}`} />
         {/if}
       {/each}
     </section>

@@ -38,10 +38,4 @@
   <script src={pathPatch} on:load={initializeCables}></script>
 </svelte:head>
 
-<canvas
-  class={styles}
-  id="cables_{patch}"
-  {width}
-  {height}
-  style="width: 100%; height: 100%;"
-/>
+<canvas class={styles} id="cables_{patch}" {width} {height} style="width: 100%; height: 100%;" />

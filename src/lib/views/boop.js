@@ -21,18 +21,12 @@ export default function boop(node, params) {
   node.style = `display: inline-block`;
 
   const unsubscribe = springyRotation.subscribe(({ x, y, rotation, scale }) => {
-    node.style.transform =
-      !prefersReducedMotion &&
-      `translate(${x}px, ${y}px) rotate(${rotation}deg) scale(${scale})`;
+    node.style.transform = !prefersReducedMotion && `translate(${x}px, ${y}px) rotate(${rotation}deg) scale(${scale})`;
   });
 
   return {
     update({ isBooped, x = 0, y = 0, rotation = 0, scale = 1, timing }) {
-      springyRotation.set(
-        isBooped
-          ? { x, y, rotation, scale }
-          : { x: 0, y: 0, rotation: 0, scale: 1 }
-      );
+      springyRotation.set(isBooped ? { x, y, rotation, scale } : { x: 0, y: 0, rotation: 0, scale: 1 });
 
       if (isBooped) {
         window.setTimeout(() => setter(false), timing);
