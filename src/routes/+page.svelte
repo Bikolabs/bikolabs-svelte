@@ -7,18 +7,16 @@
   import Medios from "$lib/components/Medios/Medios.svelte";
 
   export let data;
-
 </script>
 
 <svelte:head>
-
-<title>Home</title>
+  <title>Home</title>
   <meta name="description" content="Bikolabs - " />
 </svelte:head>
 <section>
-<Hero />
-<Stories {data} />
-<div class="w-full">
+  <Hero />
+  <Stories {data} />
+  <div class="w-full">
     <div class="container pt-40 pb-40 flex justify-start">
       <div class="w-[570px]">
         <p class="text-4xl font-secondary text-tertiarycolor font-bold">

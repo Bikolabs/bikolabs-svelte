@@ -18,9 +18,12 @@
 </script>
 
 {#if inverted}
-  <a href="/" class="
-  ">
-    <div class="flex gap-14 flex-col tablet:flex-row ">
+  <a
+    href="/"
+    class="
+  "
+  >
+    <div class="flex gap-14 flex-col tablet:flex-row">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
           <img class="image-teaser-inverted" src={imagesrc} alt={title} />
@@ -36,7 +39,7 @@
         <div class="flex mt-10 justify-between">
           <div class="fill-white hover:text-primarycolor hover:fill-primarycolor transition">
             <a href={link} class="flex gap-4 hover:text-primarycolor text-quaternarycolor uppercase font-bold font-secondary">
-             Radiografia de la story
+              Radiografia de la story
               <ArrowLink styles="" />
             </a>
           </div>

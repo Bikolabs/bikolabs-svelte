@@ -15,11 +15,7 @@
 <div class="border-b border-color pb-10 tablet:pb-24 mb-10">
   <div class="relative desktop:w-[1000px] desktop:h-[500px] mb-10 debug">
     {#if imagesrc}
-      <img
-        class="objet-cover desktop:w-[1000px] desktop:h-[500px]"
-        src={imagesrc}
-        alt={title}
-      />
+      <img class="objet-cover desktop:w-[1000px] desktop:h-[500px]" src={imagesrc} alt={title} />
     {:else}
       <Video srcmp4={videosrcmp4} srcogg={videosrcogg} />
     {/if}
@@ -32,18 +28,12 @@
   <div class="w-full debug-2">
     <div>
       <h2 class="mb-5 text-4xl font-secondary font-bold">{title}</h2>
-      <div
-        class="text-base text-quaternarycolor desktop:pr-4 teaser-description"
-      >
+      <div class="text-base text-quaternarycolor desktop:pr-4 teaser-description">
         {@html description}
       </div>
     </div>
     <div class="flex justify-end mt-10 uppercase text-min">
-      <Link
-        title={linktitle}
-        {link}
-        styles="fill-white hover:text-primarycolor hover:fill-primarycolor"
-      />
+      <Link title={linktitle} {link} styles="fill-white hover:text-primarycolor hover:fill-primarycolor" />
     </div>
   </div>
 </div>

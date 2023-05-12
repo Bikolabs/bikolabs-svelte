@@ -2,7 +2,6 @@
   import TeaserList from "$lib/components/TeaserList/TeaserList.svelte";
   import Buttom from "$lib/components/Button/Button.svelte";
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
-
 </script>
 
 <div class="relative w-full h-[700px]">
@@ -10,42 +9,39 @@
     <source src="videos/riscanvi.mp4" type="video/mp4" />
   </video>
   <div class="absolute top-0 left-0 w-full h-full opacity-80 bg-secondarycolor-dg" />
-  <div class="absolute top-0 left-0 w-full h-full ">
+  <div class="absolute top-0 left-0 w-full h-full">
     <div class="container pt-16">
-                <div class="text-white font-semibold mb-10 uppercase border-decoration w-[210px] text-center">
-            <span class="text-primarycolor">Nuestras Stories</span>
-          </div>
+      <div class="text-white font-semibold mb-10 uppercase border-decoration w-[210px] text-center">
+        <span class="text-primarycolor">Nuestras Stories</span>
+      </div>
     </div>
     <div class="container relative pt-14 tablet:py-14 flex text-white font-secondary">
-  
       <div class="flex">
         <div class="desktop:w-[700px]">
-
           <p class="text-4xl font-bold desktop:leading-[45px] mb-5">¿Cómo medir si un algoritmo acierta cuando toma una decisión automatizada?</p>
           <div class="mb-10 text-xl text-tertiarycolor font-medium desktop:pr-5 font-secondary leading-[31.5px]">
-          <p>Son varias las medidas con las que se mide el acierto algorítmico. Comprendemos las más usadas con un ejemplo real: RisCanvi</p>
+            <p>Son varias las medidas con las que se mide el acierto algorítmico. Comprendemos las más usadas con un ejemplo real: RisCanvi</p>
           </div>
           <div class="flex justify-start mt-6 uppercase text-min">
-             <div class="flex mt-10 justify-between">
-          <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
-            <a href="/" class="flex gap-4 text-quaternary hover:text-primarycolor custom-link uppercase font-bold font-secondary text-base">
-             Radiografia de la storys
-              <ArrowLink styles="fill-white" />
-            </a>
+            <div class="flex mt-10 justify-between">
+              <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
+                <a href="/" class="flex gap-4 text-quaternary hover:text-primarycolor custom-link uppercase font-bold font-secondary text-base">
+                  Radiografia de la storys
+                  <ArrowLink styles="fill-white" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-           
-          </div>
-        </div>
-          <div class="btn-wrapp tablet:hidden desktop:flex desktop:w-[300px] flex justify-end items-center
-          ">
+        <div
+          class="btn-wrapp tablet:hidden desktop:flex desktop:w-[300px] flex justify-end items-center
+          "
+        >
           <Buttom type="rounded" text="Entrar" link="" styles="hover:fill-white" />
         </div>
       </div>
 
-      <div>
-
-      </div>
+      <div />
     </div>
   </div>
 </div>

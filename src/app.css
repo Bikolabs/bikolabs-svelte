@@ -156,12 +156,9 @@ img.image-teaserfull {
 }
 
 .article-storybg {
-  
   background: linear-gradient(180deg, rgba(62, 62, 83, 1) 51%, rgba(56, 56, 72, 1) 100%);
 }
 
 .article-storybg-inverse {
-  background: #22223C;
-
+  background: #22223c;
 }
-
