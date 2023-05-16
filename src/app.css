@@ -96,3 +96,7 @@ img.image-teaserfull {
 .article-storybg-inverse {
   background: #22223c;
 }
+
+body {
+  @apply bg-white;
+}
