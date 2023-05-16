@@ -23,8 +23,8 @@
 
 <style>
   img.bw {
-    filter: grayscale(3);
-    opacity: 0.6;
+    filter: grayscale(0);
+    opacity: 1;
 
     object-fit: cover;
     @apply transition;
@@ -43,7 +43,7 @@
     @apply text-black;
   }
   .item-wrap:hover img.bw {
-    filter: grayscale(0);
-    opacity: 1;
+    filter: grayscale(3);
+    opacity: 0.6;
   }
 </style>

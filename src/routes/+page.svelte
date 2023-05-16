@@ -3,7 +3,6 @@
   import Stories from "$lib/views/Stories.svelte";
   import Colections from "$lib/views/Colections.svelte";
   import Footer from "$lib/components/Footer/Footer.svelte";
-  import AboutUs from "$lib/components/AboutUs/AboutUs.svelte";
   import Medios from "$lib/components/Medios/Medios.svelte";
 
   export let data;
@@ -28,7 +27,7 @@
   </div>
 </section>
 <Medios />
-<AboutUs />
+
 <Footer />
 
 <style>

@@ -59,7 +59,7 @@
   .bg-decoration {
     background-image: url("/images/web/bg-arrow-up.svg");
     background-repeat: no-repeat;
-    background-position: 75% 36%;
+    background-position: 75% 38%;
     @media screen and (max-width: 769px) {
       background: none;
     }
