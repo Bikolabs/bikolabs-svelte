@@ -15,11 +15,11 @@
 </svelte:head>
 <section>
   <Hero />
-  <Stories {data} />
+  <Stories />
   <div class="w-full">
     <div class="container pt-40 pb-40 flex justify-start">
       <div class="w-[570px]">
-        <p class="text-4xl font-secondary text-tertiarycolor font-bold">
+        <p class="text-5xl font-secondary text-tertiarycolor font-bold">
           Nuestra colección de <span class="text-black">intervenciones</span> sobre la tecnología
         </p>
       </div>

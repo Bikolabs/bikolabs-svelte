@@ -59,7 +59,7 @@
       {/if}
       <div class={isImage(imagesrc)}>
         <div class="desktop:pr-28">
-          <h2 class="mb-5 text-3xl font-secondary font-semibold text-black">
+          <h2 class="mt-5 tablet:mt-0 mb-5 text-3xl font-secondary font-semibold text-black">
             {title}
           </h2>
           <p class="text-xl text-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">

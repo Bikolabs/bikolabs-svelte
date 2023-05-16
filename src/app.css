@@ -72,7 +72,7 @@ img.image-teaserfull {
 }
 
 .break-line br {
-  @apply hidden tablet:inline;
+  @apply hidden desktop:inline;
 }
 
 @layer utilities {
@@ -81,78 +81,12 @@ img.image-teaserfull {
   }
 }
 
-.list-teaser h2:hover {
+.list-teaser:hover h2 {
   @apply text-primarycolor transition;
 }
 
 .teaser-description p {
   @apply mb-4;
-}
-
-.fancy {
-  @supports (background-clip: text) or (-webkit-background-clip: text) {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiNkZjY2ODgiLz48cGF0aCBkPSJNIDAsMTA4MCBDIDAsMTA4MCAwLDU0MCAwLDU0MCBDIDExMi43OTk5OTk5OTk5OTk5OCw0NjUuNDAwMDAwMDAwMDAwMDMgMjI1LjU5OTk5OTk5OTk5OTk3LDM5MC44MDAwMDAwMDAwMDAwNyAzMTcsNDA2IEMgNDA4LjQwMDAwMDAwMDAwMDAzLDQyMS4xOTk5OTk5OTk5OTk5MyA0NzguNCw1MjYuMTk5OTk5OTk5OTk5OSA2MDIsNTU2IEMgNzI1LjYsNTg1LjgwMDAwMDAwMDAwMDEgOTAyLjgwMDAwMDAwMDAwMDIsNTQwLjQwMDAwMDAwMDAwMDEgMTAxOCw1NjIgQyAxMTMzLjE5OTk5OTk5OTk5OTgsNTgzLjU5OTk5OTk5OTk5OTkgMTE4Ni4zOTk5OTk5OTk5OTk5LDY3Mi4yIDEyODUsNjg0IEMgMTM4My42MDAwMDAwMDAwMDAxLDY5NS44IDE1MjcuNiw2MzAuOCAxNjQxLDU5NCBDIDE3NTQuNCw1NTcuMiAxODM3LjIsNTQ4LjYgMTkyMCw1NDAgQyAxOTIwLDU0MCAxOTIwLDEwODAgMTkyMCwxMDgwIFoiIGZpbGw9IiMzZDEwNTMiIG9wYWNpdHk9IjAuMyIvPjwvc3ZnPg==");
-    background-position: center;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
-
-.aaa {
-  background-color: #3e3e54;
-}
-
-.bbb {
-  background: linear-gradient(148deg, #3e3e54, #4d4d4d, #ae3389);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
-}
-
-.fancy2 {
-  margin-right: -0.2em;
-  padding-right: 0.2em;
-  background-image: linear-gradient(135deg, #994c63, #eb5482);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .article-storybg {
