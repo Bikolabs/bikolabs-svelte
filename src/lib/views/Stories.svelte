@@ -4,7 +4,7 @@
   import ArrowLink from "$lib/icons/ArrowLink.svelte";
 </script>
 
-<div class="relative w-full min-h-[800px] tablet:min-h-[500px] desktop:h-[700px]">
+<div class="relative w-full min-h-[800px] tablet:min-h-[600px] desktop:min-h-[700px]">
   <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
     <source src="videos/riscanvi.mp4" type="video/mp4" />
   </video>
@@ -16,9 +16,9 @@
         <span class="text-primarycolor">Nuestras Stories</span>
       </div>
     </div>
-    <div class="container relative pt-14 tablet:py-14 flex text-white font-secondary">
+    <div class="container relative tablet:mt-0 pt-14 tablet:py-14 flex text-white font-secondary">
       <div class="flex">
-        <div class="desktop:w-[700px]">
+        <div class="desktop:w-[700px] pt-14">
           <p class="text-4xl font-bold leading-[45px] mb-5">¿Cómo medir si un algoritmo acierta cuando toma una decisión automatizada?</p>
           <div class="mb-10 text-xl text-tertiarycolor font-medium desktop:pr-5 font-secondary leading-[31.5px]">
             <p>Son varias las medidas con las que se mide el acierto algorítmico. Comprendemos las más usadas con un ejemplo real: RisCanvi</p>
@@ -38,7 +38,7 @@
           class="btn-wrapp hidden desktop:flex desktop:w-[300px] justify-end items-center
           "
         >
-          <Buttom type="rounded" text="Entrar" link="" styles="hover:fill-white" />
+          <Buttom type="rounded" text="Entrar" />
         </div>
       </div>
 

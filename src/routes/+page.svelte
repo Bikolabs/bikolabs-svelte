@@ -10,7 +10,7 @@
 
 <svelte:head>
   <title>Home</title>
-  <meta name="description" content="Bikolabs - " />
+  <meta name="description" content="Bikolabs - El estudio de intervención de Biko" />
 </svelte:head>
 <section>
   <Hero />

@@ -60,13 +60,8 @@
     background-image: url("/images/web/bg-arrow-up.svg");
     background-repeat: no-repeat;
     background-position: 75% 38%;
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 1280px) {
       background: none;
-    }
-  }
-  .icon-action:hover {
-    & svg {
-      fill: rgb(235 84 130);
     }
   }
 

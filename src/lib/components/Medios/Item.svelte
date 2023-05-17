@@ -46,4 +46,7 @@
     filter: grayscale(3);
     opacity: 0.6;
   }
+  .item-wrap:hover p.item-title {
+    @apply text-primarycolor;
+  }
 </style>
