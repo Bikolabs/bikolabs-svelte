@@ -26,7 +26,7 @@
           <div class="flex justify-start mt-6 uppercase text-min">
             <div class="flex mt-10 justify-between">
               <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
-                <a href="/" class="flex gap-4 text-quaternary hover:text-primarycolor custom-link uppercase font-bold font-secondary text-base">
+                <a href="https://riscanvi.bikolabs.io/" class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base">
                   Radiografia de la storys
                   <ArrowLink styles="fill-white" />
                 </a>
@@ -38,7 +38,7 @@
           class="btn-wrapp hidden desktop:flex desktop:w-[300px] justify-end items-center
           "
         >
-          <Buttom type="rounded" text="Entrar" />
+          <Buttom type="rounded" href="https://riscanvi.bikolabs.io/" text="Entrar" />
         </div>
       </div>
 

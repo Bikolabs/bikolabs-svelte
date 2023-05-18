@@ -1,14 +1,14 @@
 ---
 title: "Paper Frontiers: <br> Assessing Emotion <br> and Sensitivity of AI Artwork"
-date: "2021-01-30"
+date: "2021-06-30"
 
-link: "https://cables.gl/view/2ZQap5"
-titlelink: "Ver la web"
+link: ""
+titlelink: ""
 
-image: "/images/portadadembora.jpeg"
-alt: "Strega Soniu latente"
+image: "/images/paperFrontiers.jpg"
+alt: "Papers frontiers"
 
-subtitle: Una exploración visual de música generativa e inteligencia Artificial y Cables.gl.
+subtitle: Una investigación que contribuye a nuestra comprensión de la sensibilidad y el tipo de habilidades creativas y emocionales que las personas atribuyen a la IA al valorar su obra de arte.
 
 tags:
   - Experimento
@@ -23,42 +23,29 @@ layout: blog
   import Video from "$lib/components/Video/Video.svelte"
 </script>
 
-Esta exploración visual es la combinación de tres elementos: la sonoridad de los sintetizadores analógicos [Strega de MakeNoise](https://www.makenoisemusic.com/synthesizers/strega) y [Subharmoniconde Moog](https://www.moogmusic.com/products/subharmonicon) ; Los visuales creados [enCables.gl](https://cables.gl/home) ; y las imágenes de cielos estrellados generadas por el modelo neuronal de nuestro proyecto [Denbora Latente](https://bikolabs.biko2.com/collections/denboralatente/).
+A pesar de las opiniones contradictorias sobre la respuesta humana a la actuación de la IA en el arte, y a pesar de su amplia penetración en el arte, como afirman Chamberlain et al. (2018) , hay poca comprensión de cómo la sociedad reacciona a la IA en las artes y no hay suficiente investigación que aborde en términos psicológicos la relación entre la interacción humano-computadora (HCI) y la estética.
 
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
+Por estas razones, el propósito de la investigación, [publicada en Frontiers](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.879088/full), fue probar, primero, si las personas realmente experimentan una experiencia diferente del arte cuando saben que fue creado por IA en comparación con cuando creen que fue creado por un humano. Y segundo, si esa valoración diferencial podría atribuirse a una calidad diferencial de la obra de arte, o podría deberse simplemente a prejuicios o sesgos sobre la autoría.
 
-Todo empieza con una canción.
-La melodía generada por Subharmonicon es filtrada por Strega como si fuera el abrazo de una bruja. Uno aporta la base drone y el otro juega con los armónicos. Todo unido al módulo eurorack Crimen y ornamento que con sus envolventes dan sentido a esta pieza sonora analógica.
+En conclusión, nuestros experimentos muestran que las actitudes, estereotipos y sesgos previos que tengamos sobre las capacidades de la IA parecen modular nuestra experiencia con su desempeño artístico.
 
-<ImageRow src="/images/strega.jpg" alt="Strega" lastsrc="/images/subharmonico.jpg" lastalt="image2" caption="Strega de Make noise y Subharmonicon de Moog son dos sintetizadores semimodulares usados en esta pieza sonora" captionposition="top" />
+Por ello, ¿tiene sentido el debate de si la IA es o no creativa? Bueno, creemos que hay que tener cuidado de no presentarlo como una cuestión dicotómica, puesto que probablemente debamos evaluar la capacidad creativa, tanto en humanos como en máquinas, como un gradiente.
 
-La base sonora ha sido combinada con nuestro modelo Stylegan 2 de generación de cielos y Lucid Sonic Dreams Con Lucid sincronizamos la musica y el movimiento por el espacio latente de la red neuronal que genera infinitos cielos. Lucid permite ajustar, en este caso, el movimiento en relación con los armónicos
-
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
-
-Para la visualización y para la unión de todas estas partes (audio, vídeo, IA) usamos Cables.gl. Cables.gl es una herramienta para crear contenido interactivo en la WebGL en tiempo real. Es un entorno orientada a nodos que permite "programar" con otros paradigmas visuales basados en conexiones.
-Strega Soinu Latente es una nube de partículas que bailan por un espacio latente.
-
-<Image src="/images/cables.jpg" alt="" position="right" styles="my-20" />
+Aun así, vistos nuestros resultados y las diferentes reacciones ante el despliegue mostrado por tecnologías como DALLE2, parece que aún queda camino por recorrer hasta que el público experimente y valore una pieza artística generada por IA al mismo nivel que la creada por humanos. Mientras, necesitamos más experimentos.
 
 ### Materiales
 
-<Materials category="web" links={[
-['Strega Make Noise.', 'https://ejemplo.com/1'],
-['Subharmonicon Moog.', 'https://ejemplo.com/2'],
-['Módulo ornament & crime', 'https://ejemplo.com/2'],
+<Materials category="Artículo" links={[
+['Publicación de la investigación en la revista académica Frontiers', 'https://www.frontiersin.org/articles/10.3389/fpsyg.2022.879088/full'],
 ]}
 />
 
-<Materials category="cables.gl" links={[
-['Cables.gl', 'https://ejemplo.com/1'],
-['Patch de Strega soniu lantente en Cables.gl', 'https://ejemplo.com/1'],
+<Materials category="Twitter" links={[
+['Hilo en Twitter sobre el experimento', 'https://twitter.com/ujue/status/1516720327430189064'],
 ]}
 />
 
-<Materials category="IA COLAB" links={[
-['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://ejemplo.com/1'],
+<Materials category="Instalación" links={[
+['Intervención artística creada con IA, Water Color Melody Machine', 'https://t.co/4K5QRiZVxp'],
 ]}
 />

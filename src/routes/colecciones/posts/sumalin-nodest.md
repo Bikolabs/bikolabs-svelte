@@ -1,11 +1,11 @@
 ---
-title: "Sumalim NodeST"
+title: "Sumalim <br> NodeST"
 date: "2022-06-20"
 
 image: "/images/nodo.gif"
 alt: "riscanvi"
 
-subtitle: ¿Cómo medir si un algoritmo acierta cuando toma una decisión?
+subtitle: Una herramienta de enseñanza creada para que educadoras y educadores faciliten el aprendizaje y la práctica de disciplinas STEM.
 
 tags:
   - Proyecto
@@ -14,38 +14,25 @@ layout: blog
 ---
 
 <script>
+  import Image from "$lib/image/Image.svelte";
+  import ImageRow from "$lib/layout/ImageRow/ImageRow.svelte";
+  import Embed from "$lib/components/Embed/Embed.svelte";
+  import Video from "$lib/components/Video/Video.svelte"
   import Materials from "$lib/components/Materials/Materials.svelte";
 </script>
 
-Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto. Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
+Una propuesta educativa en el ambito STEAM, que combina elementos físicos, como el kit de programación, con elementos digitales; ejercicios para practicar en un editor de código. Esta combinación pretende facilitar la comprensión de los conceptos abstractos de la programación, trasladándolos al plano físico de una forma directa e intuitiva.
 
-## Proceso Investigador
+Este proyecto de prototipo es una colaboración con Sumalim. Con este prototipo buscamos comprobar la viabilidad de transformar el nodo del parque interactivo de Sumalim en un proyecto educativo STEAM
 
-Este trabajo se ha basado en el gran artículo de Garay (2016) 2 sobre el sistema de decisión automatizada RisCanvi, titulado "Errores conceptuales en la estimación de riesgo de reincidencia". Los datos utilizados en la story para ejemplificar las medidas pertenecen al único informe general publicado sobre RisCanvi hasta el momento sobre este sistema (del año 2015) 3. Los informes más actuales disponibles utilizan muestras muy específicas (sobre presos en libertad condicional, o de alto riesgo... ) que no permiten una evaluación más global del sistema.
+El prototipo ha constado de varias partes, hemos usado la Raspberry pico como pieza de electrónica creativa, conectándola al nodo y mediante el entorno educativo de Adafruit Circuit python poder crear unas unidades de introducción a la programación
 
-## Nuevas formas de contar historias
-
-Construir historias diferentes en un mundo donde lo homogéneo es casi la norma solo es posible si las propias herramientas permiten una dosis extra de singularidad. Para crear el caso de RisCanvi hemos usado Cables.gl un entorno de programación visual que nos ofrece esta singularidad tanto en el resultado como en la creación
-
-1 Briz-Redón, A. & Montes, F. (2022). Análisis de los resultados del protocolo RisCanvi. Departament d'Estadística i Investigació Operativa. Universitat de València. https://www.uv.es/montes/informeriscanvi/informe.pdf
-
-2 Garay, L. M. (2016). Errores conceptuales en la estimación de riesgo de reincidencia. Revista Española de Investigación Criminológica, 14, 1-31.
-
-3 Capdevila, M., Ferrer, M., Blanch, M., Andrés, A., Framis, B., Comas, N., Garrigós, A. y Mora, J.(2015). Tasa de reincidencia Penitenciaria 2014.(Investigaciones CEJFE). Disponible en: http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/
+<ImageRow src="/images/codeSumalim.png" alt="Code" lastsrc="/images/kitSumalim2-h.jpg" lastalt="Kit" />
+<Image src="/images/packSumalim-h.jpg" alt="Code"  />
 
 ### Materiales
 
-<Materials category="Historia" links={[
-['Algoritmos para presos: El caso RisCanvi', 'https://riscanvi.bikolabs.io/']
-]}
-/>
-
-<Materials category="twitter" links={[
-['Hilo sobre sistemas automatizados para tomar decisiones públicas de calado social', 'https://twitter.com/ujue/status/1613174680910761984']
-]}
-/>
-
-<Materials category="Patch cables" links={[
-['Acceso al Patch de cables.g', 'https://cables.gl/p/1AiNBm'],
+<Materials category="Documentación" links={[
+['Guía NodeST', 'https://sumalim.notion.site/sumalim/NodeST-9e1385c68a3a4a869c7d9437d585b600']
 ]}
 />

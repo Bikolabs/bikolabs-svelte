@@ -5,8 +5,9 @@
   <div class="pt-3 tablet:py-4 tablet:px-4 ml-5">
     <a href="/">
       <img class="logo" src="/images/web/menulogos.svg" alt="logo" />
+
+      <p class="leading-[17px] uppercase font-secondary font-bold tablet:w-[150px] mt-3 tablet:mt-5 text-min tablet:text-base">Bikolabs el estudio de (intervención) de Biko</p>
     </a>
-    <p class="leading-[17px] uppercase font-secondary font-bold tablet:w-[150px] mt-3 tablet:mt-5 text-min tablet:text-base">Bikolabs el estudio de (intevención) de Biko</p>
   </div>
   <div class="flex pt-4">
     <div class="nav text-min p-4 w-[250px] tablet:w-[270px]">

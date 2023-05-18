@@ -44,6 +44,7 @@
     "i": "^0.3.7",
     "mdsvex-relative-images": "^1.0.3",
     "moment": "^2.29.4",
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^2.6.9",
+    "svelte-spa-router": "^3.3.0"
   }
 }

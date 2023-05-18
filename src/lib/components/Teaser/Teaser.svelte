@@ -2,6 +2,7 @@
   import Link from "$lib/components/Link/link.svelte";
   import Buttom from "$lib/components/Button/Button.svelte";
   import Video from "$lib/components/Video/Video.svelte";
+  import ArrowLink from "lib/icons/ArrowLink.svelte";
 
   export let title;
   export let description;
@@ -33,7 +34,11 @@
       </div>
     </div>
     <div class="flex justify-end mt-10 uppercase text-min">
-      <Link title={linktitle} {link} styles="fill-white hover:text-primarycolor hover:fill-primarycolor" />
+      <Link title={linktitle} {link} styles="link-prim fill-white hover:text-primarycolor hover:fill-primarycolor" />ç
+      <a href={link} class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base">
+        {linktitle}
+        <ArrowLink styles="fill-white" />
+      </a>
     </div>
   </div>
 </div>

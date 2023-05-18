@@ -1,15 +1,16 @@
 <script>
-  export let data;
   import { convertYearToString, getDoubleLine } from "$lib/utils.js";
   import { fade } from "svelte/transition";
   import Link from "$lib/components/Link/link.svelte";
+  import Nav from "$lib/components/Nav/Nav.svelte";
+  import Footer from "$lib/components/Footer/Footer.svelte";
+
+  export let data;
 </script>
 
-<div class="m-5">
-  <Link title="Ir a la home" link="/" />
-</div>
+<Nav />
 
-<div class="container coleccion-post">
+<div class="container coleccion-post my-10 desktop:my-32">
   <article in:fade={{ duration: 500 }} out:fade={{ duration: 0 }}>
     <div>
       <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-40 desktop:pl-16">
@@ -52,3 +53,5 @@
     <!-- -->
   </article>
 </div>
+
+<Footer />

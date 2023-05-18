@@ -46,19 +46,19 @@ Strega Soinu Latente es una nube de partículas que bailan por un espacio latent
 ### Materiales
 
 <Materials category="web" links={[
-['Strega Make Noise.', 'https://ejemplo.com/1'],
-['Subharmonicon Moog.', 'https://ejemplo.com/2'],
-['Módulo ornament & crime', 'https://ejemplo.com/2'],
+['Strega Make Noise.', 'https://www.makenoisemusic.com/synthesizers/strega/'],
+['Subharmonicon Moog.', 'https://www.moogmusic.com/products/subharmonicon'],
+['Módulo ornament & crime', 'https://ornament-and-cri.me/'],
 ]}
 />
 
 <Materials category="cables.gl" links={[
-['Cables.gl', 'https://ejemplo.com/1'],
-['Patch de Strega soniu lantente en Cables.gl', 'https://ejemplo.com/1'],
+['Cables.gl', 'https://cables.gl/home'],
+['Patch de Strega soniu lantente en Cables.gl', 'https://cables.gl/edit/2ZQap5'],
 ]}
 />
 
 <Materials category="IA COLAB" links={[
-['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://ejemplo.com/1'],
+['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://bikolabs.biko2.com/collections/intervenir/'],
 ]}
 />

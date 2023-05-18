@@ -1,6 +1,6 @@
 ---
-title: "Guía sobre Diseño del <br> Comportamiento"
-date: "2021-01-30"
+title: "Guía<br> sobre Diseño del <br> Comportamiento"
+date: "2022-03-30"
 
 link: "https://cables.gl/view/2ZQap5"
 titlelink: "Leer guia"
@@ -23,42 +23,32 @@ layout: blog
   import Video from "$lib/components/Video/Video.svelte"
 </script>
 
-Esta exploración visual es la combinación de tres elementos: la sonoridad de los sintetizadores analógicos [Strega de MakeNoise](https://www.makenoisemusic.com/synthesizers/strega) y [Subharmoniconde Moog](https://www.moogmusic.com/products/subharmonicon) ; Los visuales creados [enCables.gl](https://cables.gl/home) ; y las imágenes de cielos estrellados generadas por el modelo neuronal de nuestro proyecto [Denbora Latente](https://bikolabs.biko2.com/collections/denboralatente/).
+Concebida como una Precuela, esta guía interactiva sobre el aterrizaje de la Economía Conductual en la tecnología, permite entender mejor cuál es impacto del diseño del comportamiento en la toma de decisiones humana, y cómo estas corrientes pueden favorecer la delegación de estas decisiones en la tecnología.
 
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
+En los últimos años se ha extendido y aceptado la idea de que las personas somos muy malas tomando decisiones. Que dotarnos de información no resulta en un adecuado encauzamiento de nuestras acciones. Que nuestro comportamiento es irracional (incluso predeciblemente irracional), por lo que necesitamos ser empujados a actuar en la dirección adecuada. O, en última instancia, relevados del propio acto de decidir.
 
-Todo empieza con una canción.
-La melodía generada por Subharmonicon es filtrada por Strega como si fuera el abrazo de una bruja. Uno aporta la base drone y el otro juega con los armónicos. Todo unido al módulo eurorack Crimen y ornamento que con sus envolventes dan sentido a esta pieza sonora analógica.
+Pero, ¿cómo hemos llegado a esta creencia de que somos malas decisoras? ¿Y cómo ha abrazado el sector tecnológico estas corrientes? En esta guía hablamos sobre todo ello, además de demostrar, de forma interactiva, el por qué de dichas creencias.
 
-<ImageRow src="/images/strega.jpg" alt="Strega" lastsrc="/images/subharmonico.jpg" lastalt="image2" caption="Strega de Make noise y Subharmonicon de Moog son dos sintetizadores semimodulares usados en esta pieza sonora" captionposition="top" />
-
-La base sonora ha sido combinada con nuestro modelo Stylegan 2 de generación de cielos y Lucid Sonic Dreams Con Lucid sincronizamos la musica y el movimiento por el espacio latente de la red neuronal que genera infinitos cielos. Lucid permite ajustar, en este caso, el movimiento en relación con los armónicos
-
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
-
-Para la visualización y para la unión de todas estas partes (audio, vídeo, IA) usamos Cables.gl. Cables.gl es una herramienta para crear contenido interactivo en la WebGL en tiempo real. Es un entorno orientada a nodos que permite "programar" con otros paradigmas visuales basados en conexiones.
-Strega Soinu Latente es una nube de partículas que bailan por un espacio latente.
-
-<Image src="/images/cables.jpg" alt="" position="right" styles="my-20" />
+Se trata, además, de un material complementario a varias de nuestras intervenciones: nuestro Crash Course online sobre Intervenir en la tecnología que diseña nuestro comportamiento; el taller de Diseño, Tecnología y Comportamiento realizado en Madrid con La Nave Nodriza; y nuestro artículo en el número 5 del Insights de Biko, titulado “La Automatización Paternalista”.
 
 ### Materiales
 
 <Materials category="web" links={[
-['Strega Make Noise.', 'https://ejemplo.com/1'],
-['Subharmonicon Moog.', 'https://ejemplo.com/2'],
-['Módulo ornament & crime', 'https://ejemplo.com/2'],
+['Lectura online de la Guía sobre Diseño del Comportamiento.', 'http://guiabe.bikolabs.io/'],
 ]}
 />
 
-<Materials category="cables.gl" links={[
-['Cables.gl', 'https://ejemplo.com/1'],
-['Patch de Strega soniu lantente en Cables.gl', 'https://ejemplo.com/1'],
+<Materials category="Documentos" links={[
+['Insights 5 de Biko. Artículo “La Automatización Paternalista”', 'https://www.biko2.com/insights/BIKO-INSIGHTS-5-2022.pdf'],
 ]}
 />
 
-<Materials category="IA COLAB" links={[
-['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://ejemplo.com/1'],
+<Materials category="Curso" links={[
+['Crash Course online “Intervenir en la tecnología que diseña nuestro comportamiento"', 'https://bikolabs.biko2.com/collections/intervenir/'],
+]}
+/>
+
+<Materials category="Curso" links={[
+['Diseño, Tecnología y Comportamiento. Taller en colaboración con La Nave Nodriza.', 'https://bikolabs.biko2.com/collections/cursonave/'],
 ]}
 />

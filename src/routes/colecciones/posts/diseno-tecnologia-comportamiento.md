@@ -23,42 +23,18 @@ layout: blog
   import Video from "$lib/components/Video/Video.svelte"
 </script>
 
-Esta exploración visual es la combinación de tres elementos: la sonoridad de los sintetizadores analógicos [Strega de MakeNoise](https://www.makenoisemusic.com/synthesizers/strega) y [Subharmoniconde Moog](https://www.moogmusic.com/products/subharmonicon) ; Los visuales creados [enCables.gl](https://cables.gl/home) ; y las imágenes de cielos estrellados generadas por el modelo neuronal de nuestro proyecto [Denbora Latente](https://bikolabs.biko2.com/collections/denboralatente/).
+Taller intensivo, codiseñado por Bikolabs y La Nave Nodriza, celebrado en la sede de La Nave. Un día dedicado a profundizar en las ideas erróneas sobre nuestra percepción del mundo y cómo la tecnología nos (des)habilita para tomar decisiones en él.
 
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
-
-Todo empieza con una canción.
-La melodía generada por Subharmonicon es filtrada por Strega como si fuera el abrazo de una bruja. Uno aporta la base drone y el otro juega con los armónicos. Todo unido al módulo eurorack Crimen y ornamento que con sus envolventes dan sentido a esta pieza sonora analógica.
-
-<ImageRow src="/images/strega.jpg" alt="Strega" lastsrc="/images/subharmonico.jpg" lastalt="image2" caption="Strega de Make noise y Subharmonicon de Moog son dos sintetizadores semimodulares usados en esta pieza sonora" captionposition="top" />
-
-La base sonora ha sido combinada con nuestro modelo Stylegan 2 de generación de cielos y Lucid Sonic Dreams Con Lucid sincronizamos la musica y el movimiento por el espacio latente de la red neuronal que genera infinitos cielos. Lucid permite ajustar, en este caso, el movimiento en relación con los armónicos
-
-<Video srcmp4="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.mp4" srcogg="https://bikolabs.biko2.com/assets/videos/colecciones/lucidreams.ogv" caption="Cielos creados por Lucid dreams y nuestro modelo de generación de cielos con Stylegan2
-" />
-
-Para la visualización y para la unión de todas estas partes (audio, vídeo, IA) usamos Cables.gl. Cables.gl es una herramienta para crear contenido interactivo en la WebGL en tiempo real. Es un entorno orientada a nodos que permite "programar" con otros paradigmas visuales basados en conexiones.
-Strega Soinu Latente es una nube de partículas que bailan por un espacio latente.
-
-<Image src="/images/cables.jpg" alt="" position="right" styles="my-20" />
+En él, compartimos nuestras experiencias de intervención, además de una base profunda sobre los mecanismos psicológicos que sustentan la ciencia del cambio comportamental, los nudges digitales y cuál está siendo su aplicación práctica en tecnología.
 
 ### Materiales
 
-<Materials category="web" links={[
-['Strega Make Noise.', 'https://ejemplo.com/1'],
-['Subharmonicon Moog.', 'https://ejemplo.com/2'],
-['Módulo ornament & crime', 'https://ejemplo.com/2'],
+<Materials category="Curso" links={[
+['Detalle del programa en la página del curso.', 'https://bikolabs.biko2.com/curso/']
 ]}
 />
 
-<Materials category="cables.gl" links={[
-['Cables.gl', 'https://ejemplo.com/1'],
-['Patch de Strega soniu lantente en Cables.gl', 'https://ejemplo.com/1'],
-]}
-/>
-
-<Materials category="IA COLAB" links={[
-['Cuaderno colab para crear vídeos con Lucid Dreams', 'https://ejemplo.com/1'],
+<Materials category="Web" links={[
+['Lectura online de la Guía sobre Diseño del Comportamiento.', 'http://guiabe.bikolabs.io/'],
 ]}
 />

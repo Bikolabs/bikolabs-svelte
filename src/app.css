@@ -100,3 +100,12 @@ img.image-teaserfull {
 body {
   @apply bg-white;
 }
+
+a.link-prim:hover svg {
+  transform: translate(8px, 0);
+  fill: rgb(235 84 130);
+}
+
+a.link-prim svg {
+  transition: all 0.5s;
+}
