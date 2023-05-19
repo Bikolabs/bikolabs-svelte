@@ -6,19 +6,24 @@
   import Medios from "$lib/components/Medios/Medios.svelte";
 
   export let data;
+  function toggle() {
+    window.document.body.classList.toggle("dark");
+  }
 </script>
 
 <svelte:head>
   <title>Home</title>
   <meta name="description" content="Bikolabs - El estudio de intervención de Biko" />
 </svelte:head>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div class="w-[3px] h-[3px] tablet:w-[260px] tablet:h-[15px] position absolute top-0 right-0" on:click={toggle} />
 <section>
   <Hero />
   <Stories />
   <div class="w-full">
     <div class="container pt-40 pb-40 flex justify-start">
       <div class="w-[570px]">
-        <p class="text-5xl font-secondary text-tertiarycolor font-bold">
+        <p class="text-5xl font-secondary text-tertiarycolor dark:text-white font-bold">
           Nuestra colección de <span class="text-black animate">intervenciones</span> sobre la tecnología
         </p>
       </div>
@@ -48,5 +53,15 @@
     to {
       background-position: 200% center;
     }
+  }
+
+  :global(body.dark) {
+    background-color: #000000;
+    color: white;
+    transition: all ease-in-out 1s;
+  }
+
+  :global(body) {
+    transition: all ease-in-out 1s;
   }
 </style>

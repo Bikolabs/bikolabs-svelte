@@ -10,7 +10,7 @@
 {/if}
 
 {#if !inverted}
-  <div class="pill border border-secondarycolor rounded-3xl text-min uppercase py-0 px-3 text-black">
+  <div class="pill border border-secondarycolor dark:border-white rounded-3xl text-min uppercase py-0 px-3 text-black dark:text-white">
     {category}
   </div>
 {/if}

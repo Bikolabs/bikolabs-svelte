@@ -18,7 +18,7 @@
 
 <div class="w-100 flex flex-col">
   <Nav />
-  <div class="container mb-20 text-secondarycolor bg-decoration px-5 desktop:px-0">
+  <div class="container mb-20 text-secondarycolor dark:text-white bg-decoration px-5 desktop:px-0">
     <div class="mb-10 font-secondary font-bold text-5xl desktop:leading-[57px] desktop:ml-64">
       <p class="mb-10 desktop:mb-5">Investigamos, intervenimos y divulgamos <br /> sobre la interacción entre personas y <br />tecnología.</p>
       <p classs="mb-10 desktop:mb-5">Y lo hacemos mediante <span class="animate ccc">stories</span> y nuestra <br /> colección de intervenciones <br /> tecnológicas.</p>
