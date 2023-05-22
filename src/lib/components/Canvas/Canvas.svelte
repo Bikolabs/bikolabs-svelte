@@ -32,6 +32,13 @@
   function patchInitialized() {
     // You can now access the patch object (CABLES.patch), register variable watchers and so on
   }
+
+  function patchFinishedLoading() {
+    // You can now access the patch object (CABLES.patch), register variable watchers and so on
+  }
+  function myFunction() {
+    alert("function called!");
+  }
 </script>
 
 <svelte:head>
