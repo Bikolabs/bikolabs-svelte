@@ -4,17 +4,34 @@
   import Colections from "$lib/views/Colections.svelte";
   import Footer from "$lib/components/Footer/Footer.svelte";
   import Medios from "$lib/components/Medios/Medios.svelte";
+  import Canvas from "$lib/components/Canvas/Canvas.svelte";
 
   export let data;
   function toggle() {
-    window.document.body.classList.toggle("dark");
+    window.document.body.classList.toggle("aaa");
   }
+
+  let show = false;
+
+  function toggleDiv() {
+    show = !show;
+  }
+
+
+
 </script>
 
 <svelte:head>
   <title>Home</title>
   <meta name="description" content="Bikolabs - El estudio de intervención de Biko" />
 </svelte:head>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+
+{#if show}
+  <div class="bg-white w-full h-screen">
+  <Canvas patch="glich" width="960px" height="1500px" />
+  </div>
+{/if}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="w-[3px] h-[3px] tablet:w-[260px] tablet:h-[15px] position absolute top-0 right-0" on:click={toggle} />
 <section>
@@ -63,5 +80,10 @@
 
   :global(body) {
     transition: all ease-in-out 1s;
+  }
+
+  :global(body.aaa) {
+    cursor: url('images/G8X.gif'),progress;
+
   }
 </style>

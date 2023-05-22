@@ -8,6 +8,5 @@
 </svelte:head>
 
 <div class="container py-44 border">
-  Aqui canvas
   <Canvas patch="glich" width="960" />
 </div>
