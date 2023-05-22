@@ -6,7 +6,7 @@
 </script>
 
 <div class="item-wrap text-center desktop:text-left w-full tablet:w-[300px] desktop:w-[215px]">
-  <a href={link}>
+  <a href={link} target="_blank">
     <div class="flex items-center justify-center">
       <div class="medios-item mb-5">
         <img class="bw" src={logo} alt={title} />
