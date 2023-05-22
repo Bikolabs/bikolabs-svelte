@@ -9,5 +9,5 @@
 
 <div class="container py-44 border">
   Aqui canvas
-  <!-- <Canvas patch={} /> -->
+  <Canvas patch="movida" />
 </div>
