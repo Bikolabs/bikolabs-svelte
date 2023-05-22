@@ -7,13 +7,10 @@
   import Canvas from "$lib/components/Canvas/Canvas.svelte";
 
   export let data;
-  function toggle() {
-    window.document.body.classList.toggle("aaa");
-  }
-
   let show = false;
 
-  function toggleDiv() {
+  function toggle() {
+    window.document.body.classList.toggle("glitch");
     show = !show;
   }
 </script>
@@ -79,7 +76,10 @@
     transition: all ease-in-out 1s;
   }
 
-  :global(body.aaa) {
+  :global(body.glitch) {
     cursor: url("images/G8X.gif"), progress;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
 </style>
