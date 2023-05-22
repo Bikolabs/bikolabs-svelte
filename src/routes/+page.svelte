@@ -16,9 +16,6 @@
   function toggleDiv() {
     show = !show;
   }
-
-
-
 </script>
 
 <svelte:head>
@@ -29,7 +26,7 @@
 
 {#if show}
   <div class="bg-white w-full h-screen">
-  <Canvas patch="glich" width="960px" height="1500px" />
+    <Canvas patch="glich" width="960px" height="1500px" />
   </div>
 {/if}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -83,7 +80,6 @@
   }
 
   :global(body.aaa) {
-    cursor: url('images/G8X.gif'),progress;
-
+    cursor: url("images/G8X.gif"), progress;
   }
 </style>
