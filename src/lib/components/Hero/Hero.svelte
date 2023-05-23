@@ -31,17 +31,17 @@
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div class="cursor-style flex gap-5 uppercase font-bold hover:fill-primarycolor hover:text-primarycolor allhover transition-all" on:click={toggleDiv}>
         {#if !show}
-          Escríbenos si tienes alguna historia que divulgar <ArrowLink styles="fill-secondarycolor" />
+          Escríbenos si tienes alguna historia que divulgar <ArrowLink styles="fill-secondarycolor dark:fill-white" />
         {/if}
         {#if show}
           <div class="cursor-context-menu" in:fade={{ duration: 800 }}>
             <div class="flex gap-2 items-center">
-              <Mail styles="fill-secondarycolor mb-1" size="24" />
+              <Mail styles="fill-secondarycolor dark:fill-white mb-1" size="24" />
               <p
                 class="
          font-primary text-secondarycolor"
               >
-                <span class="font-bold lowercase hover:text-primarycolor">bikolabs@biko2.com</span>
+                <span class="font-bold lowercase hover:text-primarycolor dark:text-primarycolor">bikolabs@biko2.com</span>
               </p>
             </div>
           </div>

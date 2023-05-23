@@ -7,11 +7,18 @@
   import Canvas from "$lib/components/Canvas/Canvas.svelte";
 
   export let data;
+
+  let glitch = false;
   let show = false;
 
   function toggle() {
+    glitch = !glitch;
     window.document.body.classList.toggle("glitch");
+  }
+
+  function toggleMode() {
     show = !show;
+    window.document.body.classList.toggle("dark");
   }
 </script>
 
@@ -21,17 +28,25 @@
 </svelte:head>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 
-{#if show}
+{#if glitch}
   <div class="bg-white w-full h-screen">
     <Canvas patch="glich" width="960px" height="1500px" />
   </div>
 {/if}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="w-[3px] h-[3px] tablet:w-[260px] tablet:h-[15px] position absolute top-0 right-0" on:click={toggle} />
+<div class="text-xl flex position absolute top-[0px] right-[20px]">
+  {#if !show}
+    <div class="p-2 cursor-pointer" on:click={toggleMode}>🌙</div>
+  {:else}
+    <div class="p-2 cursor-pointer" on:click={toggleMode}>🌞</div>
+  {/if}
+
+  <div class="p-2 cursor-pointer" on:click={toggle}>☠️</div>
+</div>
 <section>
   <Hero />
   <Stories />
-  <div class="w-full">
+  <div id="colecciones" class="w-full">
     <div class="container pt-40 pb-40 flex justify-start">
       <div class="w-[570px]">
         <p class="text-5xl font-secondary text-tertiarycolor dark:text-white font-bold">
@@ -77,7 +92,8 @@
   }
 
   :global(body.glitch) {
-    cursor: url("images/G8X.gif"), progress;
+    /* cursor: url("images/G8X.gif"), progress; */
+    cursor: zoom-in;
     width: 100%;
     height: 100vh;
     overflow: hidden;

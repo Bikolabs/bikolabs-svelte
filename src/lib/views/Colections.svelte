@@ -5,7 +5,7 @@
   export let data;
 </script>
 
-<div id="colecciones" class="w-full pb-20">
+<div class="w-full pb-20">
   <div class="container">
     <section class="w-full desktop:w-[1000px] mx-auto text-white">
       {#each data.recentPosts as post}

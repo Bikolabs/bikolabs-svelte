@@ -1,11 +1,11 @@
 ---
-title: "Algoritmos para presos: El caso RisCanvi"
+title: "Algoritmos para presos: <br> El caso RisCanvi"
 date: "2023-06-20"
 
 link: "https://riscanvi.bikolabs.io/"
 titlelink: "Entrar en la story"
 
-image: "https://bikolabs.biko2.com/assets/images/colecciones/riscanvi-h.png"
+image: "/images/riscanvi-h.png"
 alt: "riscanvi"
 
 subtitle: ¿Cómo medir si un algoritmo acierta cuando toma una decisión?
@@ -21,8 +21,6 @@ layout: blog
 </script>
 
 Cuando se implementa un algoritmo para tomar decisiones importantes, presuponemos que es porque tiene un alto porcentaje de acierto. Pero no siempre conocemos este porcentaje, además de que son varias las medidas con las que se mide dicho acierto. Para que no haya engaños ni confusiones, es hora de comprender qué significan las medidas de acierto más usadas, con un ejemplo real: RisCanvi1.
-
-<img src="/images/nodo.gif" />
 
 ## Proceso Investigador
 

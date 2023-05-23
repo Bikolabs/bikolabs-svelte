@@ -72,7 +72,7 @@
           </div>
           <div class="">
             <a href={link} class="fill-secondarycolor hover:text-primarycolor hover:fill-primarycolor transition">
-              <ArrowLink styles="" />
+              <ArrowLink styles="dark:fill-white" />
             </a>
           </div>
         </div>

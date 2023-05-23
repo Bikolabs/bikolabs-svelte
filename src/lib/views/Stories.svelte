@@ -10,7 +10,7 @@
   </video>
   <div class="absolute top-0 left-0 w-full h-full opacity-80 bg-secondarycolor-dg" />
   <div class="absolute top-0 left-0 w-full h-full">
-    <div class="container pt-16">
+    <div id="stories" class="container pt-16">
       <div class="font-semibold mb-10 uppercase">
         <div class="hidden tablet:flex absolute top-[-230px] tablet:left-[8%] desktop:left-[18%] z-10"><img src="/images/web/bg-arrow.svg" alt="" /></div>
         <span class="text-primarycolor">Nuestras Stories</span>
@@ -26,7 +26,7 @@
           <div class="flex justify-start mt-6 uppercase text-min">
             <div class="flex mt-10 justify-between">
               <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
-                <a href="https://riscanvi.bikolabs.io/" class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base">
+                <a href="/colecciones/riscanvi" target="_blank" class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base">
                   Radiografia de la storys
                   <ArrowLink styles="fill-white" />
                 </a>
@@ -49,7 +49,7 @@
 
 <div class="article-storybg-inverse w-full py-5">
   <div class="container">
-    <section id="stories" class="pt-12 pb-12 text-white w-full mx-auto">
+    <section class="pt-12 pb-12 text-white w-full mx-auto">
       <div>
         <TeaserList inverted title="Empatizando con las IAs" description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles." imagesrc="images/empatizando-ias.jpeg" category="stories" link="colecciones/empatizando-con-ias" />
       </div>

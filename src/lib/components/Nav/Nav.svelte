@@ -9,7 +9,7 @@
       <p class="leading-[17px] uppercase font-secondary font-bold tablet:w-[150px] mt-3 tablet:mt-5 text-min tablet:text-base">Bikolabs el estudio de (intervención) de Biko</p>
     </a>
   </div>
-  <div class="flex pt-4">
+  <div class="flex mt-10 justify-items-star">
     <div class="nav text-min p-4 w-[250px] tablet:w-[270px]">
       <a class="hover:text-primarycolor hover:font-semibold" href="/#stories">Stories</a>
       <a class="hover:text-primarycolor hover:font-semibold" href="/#colecciones">Colecciones</a>
