@@ -9,14 +9,14 @@
     <source src="videos/riscanvi.mp4" type="video/mp4" />
   </video>
   <div class="absolute top-0 left-0 w-full h-full opacity-80 bg-secondarycolor-dg" />
-  <div class="absolute top-0 left-0 w-full h-full">
+  <div class="absolute top-0 left-0 w-full tablet:h-full h-auto">
     <div id="stories" class="container pt-16">
       <div class="font-semibold mb-10 uppercase">
         <div class="hidden tablet:flex absolute top-[-230px] tablet:left-[8%] desktop:left-[18%] z-10"><img src="/images/web/bg-arrow.svg" alt="" /></div>
         <span class="text-primarycolor">Nuestras Stories</span>
       </div>
     </div>
-    <div class="container relative tablet:mt-0 pt-14 tablet:py-14 flex text-white font-secondary">
+    <div class="container relative tablet:mt-0 pt-1 tablet:py-14 flex text-white font-secondary">
       <div class="flex">
         <div class="desktop:w-[700px] pt-14">
           <p class="text-4xl font-bold leading-[45px] mb-5">¿Cómo medir si un algoritmo acierta cuando toma una decisión automatizada?</p>

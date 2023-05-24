@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte";
+
   import Hero from "$lib/components/Hero/Hero.svelte";
   import Stories from "$lib/views/Stories.svelte";
   import Colections from "$lib/views/Colections.svelte";
@@ -20,6 +22,16 @@
     show = !show;
     window.document.body.classList.toggle("dark");
   }
+
+  function checkDarkMode() {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      window.document.body.classList.add("dark");
+    } else {
+      window.document.body.classList.remove("dark");
+    }
+  }
+
+  onMount(checkDarkMode);
 </script>
 
 <svelte:head>
@@ -40,7 +52,6 @@
   {:else}
     <div class="p-2 cursor-pointer" on:click={toggleMode}>🌞</div>
   {/if}
-
   <div class="p-2 cursor-pointer" on:click={toggle}>☠️</div>
 </div>
 <section>

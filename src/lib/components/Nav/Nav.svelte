@@ -6,7 +6,7 @@
     <a href="/">
       <img class="logo" src="/images/web/menulogos.svg" alt="logo" />
 
-      <p class="leading-[17px] uppercase font-secondary font-bold tablet:w-[150px] mt-3 tablet:mt-5 text-min tablet:text-base">Bikolabs el estudio de (intervención) de Biko</p>
+      <p class="leading-[17px] uppercase font-secondary font-bold tablet:w-[150px] w-[100px] mt-3 tablet:mt-5 text-[10px] tablet:text-base">Bikolabs el estudio de (intervención) de Biko</p>
     </a>
   </div>
   <div class="flex mt-10 justify-items-star">
