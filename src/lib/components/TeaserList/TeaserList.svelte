@@ -6,7 +6,6 @@
   export let description;
   export let imagesrc = "";
   export let link;
-  export let linktext = "";
   export let category;
   export let inverted = "";
   export const imagestyles = "";
