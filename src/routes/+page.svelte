@@ -61,7 +61,7 @@
     <div class="container pt-40 pb-40 flex justify-start">
       <div class="w-[570px]">
         <p class="text-5xl font-secondary text-tertiarycolor dark:text-white font-bold">
-          Nuestra colección de <span class="text-black animate">intervenciones</span> sobre la tecnología.
+          Nuestra colección de <span class="text-black animate">intervenciones</span> sobre la tecnología
         </p>
       </div>
     </div>
