@@ -10,7 +10,6 @@
 
   export let data;
 
-
   let glitch = false;
   let show = false;
   let toogle = false;
@@ -50,15 +49,20 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="text-xl flex position absolute top-[0px] right-[20px]">
   {#if glitch}
-  <div class="flex flex-row justify-center align-center">
-    <div class="flex items-center vibrate-1"><input type="checkbox" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
-  </div>
-  <div class="p-2 cursor-pointer vibrate-1">☠️</div>
+    <div class="flex flex-row justify-center align-center">
+      <div class="flex items-center vibrate-1"><input type="checkbox" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
+    </div>
+    <div class="p-2 cursor-pointer vibrate-1">☠️</div>
   {:else}
-   <div class="flex flex-row justify-center align-center">
-    <div class="flex items-center"><input type="checkbox" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
-  </div>
-   <div class="p-2 cursor-pointer" on:click={toggle}>☠️</div>
+    <div class="flex flex-row justify-center align-center">
+      <div class="flex items-center"><input type="checkbox" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
+    </div>
+    {#if !show}
+      <div class="py-2 pl-1 mr-3 cursor-pointer" on:click={toggleMode}>🌙</div>
+    {:else}
+      <div class="py-2 pl-1 mr-3 cursor-pointer" on:click={toggleMode}>🌞</div>
+    {/if}
+    <div class="p-2 cursor-pointer" on:click={toggle}>☠️</div>
   {/if}
 </div>
 <section>
@@ -117,62 +121,61 @@
     overflow: hidden;
   }
 
-.vibrate-1 {
-	-webkit-animation: vibrate-1 0.3s cubic-bezier(0.600, 0.040, 0.980, 0.335) infinite reverse backwards;
-	        animation: vibrate-1 0.3s cubic-bezier(0.600, 0.040, 0.980, 0.335) infinite reverse backwards;
-}
+  .vibrate-1 {
+    -webkit-animation: vibrate-1 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite reverse backwards;
+    animation: vibrate-1 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite reverse backwards;
+  }
 
-@-webkit-keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+  @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+      transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
   }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-32px, 122px);
+      transform: translate(-143px, 22px);
+    }
+    40% {
+      -webkit-transform: translate(-22px, -2px);
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+      transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
   }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-32px, 122px);
-            transform: translate(-143px, 22px);
-  }
-  40% {
-    -webkit-transform: translate(-22px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
 </style>
