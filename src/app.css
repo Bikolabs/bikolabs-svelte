@@ -63,6 +63,10 @@ img.image-teaser {
   @apply w-full h-auto tablet:w-[395px] tablet:h-[320px] tablet:object-cover;
 }
 
+.container-center {
+  @apply w-full tablet:w-[750px] mx-auto;
+}
+
 img.image-teaser-inverted {
   @apply w-full h-auto tablet:w-[100%] tablet:h-[320px] tablet:object-cover;
 }
