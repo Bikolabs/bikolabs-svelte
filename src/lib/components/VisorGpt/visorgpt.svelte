@@ -27,14 +27,13 @@
       <div class="flex Xflex-grow Xflex-col gap-3">
         <div class="flex flex-col items-start gap-4 xxxwhitespace-pre-wrap break-words">
           <div class="markdown prose w-full break-words dark:prose-invert light">
-            {#if active} 
-            <Typewriter cascade interval="10">
-              <slot />
-            </Typewriter>
+            {#if active}
+              <Typewriter cascade interval="10">
+                <slot />
+              </Typewriter>
             {:else}
-            <div class="h-[100px] w-full">|</div>
+              <div class="h-[100px] w-full">|</div>
             {/if}
-           
           </div>
         </div>
       </div>

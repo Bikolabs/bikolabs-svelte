@@ -5,7 +5,7 @@
   import { inview } from "svelte-inview";
 
   const options = {
-    rootMargin: "-210px",
+    rootMargin: "-410px",
     unobserveOnEnter: true,
   };
   // const optionsOne = {
@@ -20,12 +20,14 @@
   const sourceTwo = ["/videos/original.mp4"];
   const sourceBing = ["/videos/empanadas.mp4"];
   const sourceNaranja = ["/videos/naranja.mp4"];
+  const sourceChampan = ["/videos/champan.mp4"];
 
   const poster = "/images/pizza.png";
   const posterOne = "/images/multicrosi.png";
   const posterTwo = "/images/desayuno.png";
   const posterBing = "/images/empa.png";
   const posterNaranja = "/images/naranja.png";
+  const posterChampan = "/images/champan.png";
 </script>
 
 <svelte:head>
@@ -64,8 +66,8 @@
       <div class="mb-2">
         <VideoPlayer source={sourceTwo} poster={posterTwo} color="#19c37d" />
       </div>
-      <div class="mb-5 grid justify-items-end"><div><p class="text-min ">Escena original del Película Pretty Woman</p></div></div>
-      <p class="mb-10 ">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
+      <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original del Película Pretty Woman</p></div></div>
+      <p class="mb-10">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
       <h3 class="title-3 mb-10">Preguntamos a ChatGPT</h3>
     </div>
   </div>
@@ -201,14 +203,14 @@
     >
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">F ---- ¿Seguro que bebe zumo de naranja?</p>
+        <p class="font-bold">¿Seguro que bebe zumo de naranja?</p>
       </div>
       <Visorgpt active={isInView}>Lamento el error en mi respuesta anterior. En la famosa escena del desayuno de "Pretty Woman", Julia Roberts (interpretando a Vivian Ward) en realidad está bebiendo una copa de champán, no jugo de naranja. La película usa este desayuno con champán como una forma de ilustrar la opulencia y el estilo de vida lujoso que el personaje de Richard Gere (Edward Lewis) está introduciendo a Vivian. Lamento la confusión.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
-      <VideoPlayer source={sourceNaranja} poster={posterNaranja} color="#19c37d" />
+      <VideoPlayer source={sourceChampan} poster={posterChampan} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class=""> falta video impaiting </span>
+        <span class="text-xl pr-3">❌</span><span class=""> Si chatGPT dice que Champán... </span>
       </div>
     </div>
   </div>
@@ -217,27 +219,24 @@
     <h3 class="title-3 mb-5">Preguntamos a Bing por lo mismo y....</h3>
     <p class="mb-10">Decidimos probar el chat de Bing con IA para ver sus resultados preguntadole por la misma escena con fallos.</p>
     <div class="chat-wrap-bing">
-    <div class="flex items-center gap-3 py-10 pl-3 bg-white">
-      <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-      <p class="font-bold">pretty woman escena con fallos de raccord</p>
+      <div class="flex items-center gap-3 py-10 pl-3 bg-white">
+        <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
+        <p class="font-bold">pretty woman escena con fallos de raccord</p>
+      </div>
+      <img src="/images/bing.png" alt="resultados en bing" class="" />
+      <div class="pb-5 bg-[#f3f4f6]">
+        <VideoPlayer source={sourceBing} poster={posterBing} color="#19c37d" />
+      </div>
     </div>
-    <img src="/images/bing.png" alt="resultados en bing" class="" />
-    <div class="pb-5 bg-[#f3f4f6]">
-      <VideoPlayer source={sourceBing} poster={posterBing} color="#19c37d" />
-    </div>
-    </div>
-
 
     <p class="mb-10">Aqui no solo indica que esta comiendo hasta 3 cosas diferentes si no que hasta nos dice la referencia en el caso de la empanada. Si seguimos el enlace a <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> vemos que en ningún momento se hace referencia a la "empanada"</p>
   </div>
   <div class="container-center coleccion-post">
     <h3 class="title-3 mb-10">Por qué se equivoca ChatGPT?</h3>
     <p class="mb-5">Nos equivocamos cuando confundimos buscar con generar. ChatGPT es un generador de textos. Google Search, DuckDuck Go, son buscadores. Sus funciones son diferentes, pero a veces no distinguimos entre ellas.</p>
-    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica invención. Si preguntamos a un buscador, busca, lo que implica rescatar información.
-</p>
-<img src="/images/fin.jpg" alt="fin imagen" />
-    <p class="mb-5">Nota: En estos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar a ver cómo se resuelve este tema. 
-</p>
+    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica invención. Si preguntamos a un buscador, busca, lo que implica rescatar información.</p>
+    <img src="/images/fin.jpg" alt="fin imagen" />
+    <p class="mb-5">Nota: En estos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar a ver cómo se resuelve este tema.</p>
   </div>
 </article>
 
@@ -261,9 +260,8 @@
   }
 
   .chat-wrap {
-    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2 ;
+    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2;
     & strong {
-
       background-color: #1ac37e;
       display: inline-block;
       color: white;
@@ -271,6 +269,6 @@
     }
   }
   .chat-wrap-bing {
-    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2 ;
+    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2;
   }
 </style>
