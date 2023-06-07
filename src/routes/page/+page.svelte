@@ -145,8 +145,8 @@
         algo que Edward le corrige con cortesía. Edward, por su parte, pide huevos revueltos, tocino y café negro.
       </Visorgpt>
     </div>
-    <div class="w-full bg-gray-100 mb-20">
-      <div class="flex w-full items-center justify-center">
+    <div class="w-full bg-gray-100">
+      <div class="flex w-full items-center justify-center py-5">
         <div>
           <video muted autoplay loop style="pointer-events: none;" class="w-[385px] h-[350px]">
             <source src="/videos/chatruleta.mp4" type="video/mp4" />
@@ -241,7 +241,7 @@
   </div>
 </article>
 
-<style>
+<style type="text/scss">
   .marker {
     background-color: blueviolet;
     display: inline-block;
@@ -262,6 +262,13 @@
 
   .chat-wrap {
     @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2 ;
+    & strong {
+
+      background-color: #1ac37e;
+      display: inline-block;
+      color: white;
+      padding: 0 2px;
+    }
   }
   .chat-wrap-bing {
     @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2 ;
