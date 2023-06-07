@@ -1,5 +1,7 @@
 <script>
   import Typewriter from "svelte-typewriter";
+
+  export let active;
 </script>
 
 <div class="text-gray-800 text-[13px] dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-100 dark:bg-[#444654]">
@@ -25,9 +27,14 @@
       <div class="flex Xflex-grow Xflex-col gap-3">
         <div class="flex flex-col items-start gap-4 xxxwhitespace-pre-wrap break-words">
           <div class="markdown prose w-full break-words dark:prose-invert light">
+            {#if active} 
             <Typewriter cascade interval="10">
               <slot />
             </Typewriter>
+            {:else}
+            <div class="h-[100px] w-full">|</div>
+            {/if}
+           
           </div>
         </div>
       </div>
