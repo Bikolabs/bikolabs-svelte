@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Visorgpt from "$lib/components/VisorGpt/visorgpt.svelte";
+  import Nav from "$lib/components/Nav/Nav.svelte";
 
   import { inview } from "svelte-inview";
 
@@ -40,7 +41,8 @@
   <title />
   <meta name="description" content="About this app" />
 </svelte:head>
-<article class="coleccion-post">
+<Nav />
+<article class="coleccion-post text-[#3e3e54]}">
   <div class="container-center coleccion-post mt-10 desktop:mt-32">
     <div>
       <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-20">
