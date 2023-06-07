@@ -31,6 +31,9 @@
               <Typewriter cascade interval="10">
                 <slot />
               </Typewriter>
+              <Typewriter cascade interval="10">
+                En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una pizza en la cama y, en una toma, se ve que tiene una porción en la mano derecha. En la siguiente toma, la porción de<strong> pizza</strong> cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.
+              </Typewriter>
             {:else}
               <div class="h-[100px] w-full">|</div>
             {/if}

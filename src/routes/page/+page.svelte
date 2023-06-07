@@ -1,11 +1,11 @@
 <script>
-  import VideoPlayer from "svelte-video-player";
+  import { onMount } from "svelte";
   import Visorgpt from "$lib/components/VisorGpt/visorgpt.svelte";
 
   import { inview } from "svelte-inview";
 
   const options = {
-    rootMargin: "-410px",
+    rootMargin: "-250px",
     unobserveOnEnter: true,
   };
   // const optionsOne = {
@@ -14,6 +14,7 @@
   // };
 
   let isInView = "";
+  let VideoPlayer;
 
   const source = ["/videos/pizza.mp4"];
   const sourceOne = ["/videos/multicrois.mp4"];
@@ -28,6 +29,11 @@
   const posterBing = "/images/empa.png";
   const posterNaranja = "/images/naranja.png";
   const posterChampan = "/images/champan.png";
+
+  onMount(async () => {
+    const component = await import("svelte-video-player");
+    VideoPlayer = component.default;
+  });
 </script>
 
 <svelte:head>
@@ -64,7 +70,7 @@
       <p class="mb-10">Nosotros no hemos querido pedirle tanto. Simplemente que nos describa una escena de la película Pretty Woman sobre la que existen ríos de tinta en Internet. Es una escena especialmente curiosa porque contiene un error de continuidad o raccord, es decir, un error de discontinuidad en la acción o la posición de los personajes entre dos tomas consecutivas.</p>
       <p class="mb-10">En esta escena de Pretty Woman el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel. El croissant que le vemos comer se transforma en una tortita en un cambio de plano.</p>
       <div class="mb-2">
-        <VideoPlayer source={sourceTwo} poster={posterTwo} color="#19c37d" />
+        <svelte:component this={VideoPlayer} source={sourceTwo} poster={posterTwo} color="#19c37d" />
       </div>
       <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original del Película Pretty Woman</p></div></div>
       <p class="mb-10">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
@@ -91,7 +97,7 @@
       <Visorgpt active={isInView}>En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha. En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
-      <VideoPlayer {source} {poster} color="#19c37d" />
+      <svelte:component this={VideoPlayer} {source} {poster} color="#19c37d" />
       <div class="py-3 px-3">
         <span class="text-xl pr-3">❌</span><span class="">Como vemos en la escena real de la pelicula en ningun momento come una Pizza</span>
       </div>
@@ -119,7 +125,7 @@
       </Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
-      <VideoPlayer source={sourceOne} poster={posterOne} color="#19c37d" />
+      <svelte:component this={VideoPlayer} source={sourceOne} poster={posterOne} color="#19c37d" />
       <div class="py-3 px-3">
         <span class="text-xl pr-3">❌</span><span class=""> No se Rick...</span>
       </div>
@@ -128,7 +134,7 @@
 
   <div class="container-center chat-wrap">
     <div
-      use:inview={optionsOne}
+      use:inview={options}
       on:inview_change={(event) => {
         const { inView } = event.detail;
         isInView = inView;
@@ -165,7 +171,7 @@
 
   <div class="container-center chat-wrap">
     <div
-      use:inview={optionsOne}
+      use:inview={options}
       on:inview_change={(event) => {
         const { inView } = event.detail;
         isInView = inView;
@@ -182,7 +188,7 @@
       <Visorgpt active={isInView}>En la famosa escena del desayuno en "Pretty Woman", Julia Roberts (que interpreta a Vivian Ward) está tomando <strong>jugo de naranja</strong>. Aunque el error de raccord con el croissant que se convierte en una <strong>baguette</strong> o en un panqueque es notable, su bebida se mantiene consistente durante la escena.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
-      <VideoPlayer source={sourceNaranja} poster={posterNaranja} color="#19c37d" />
+      <svelte:component this={VideoPlayer} source={sourceNaranja} poster={posterNaranja} color="#19c37d" />
       <div class="py-3 px-3">
         <span class="text-xl pr-3">❌</span><span class=""> ¿Zumo de Naranja? ¿Champán? </span>
       </div>
@@ -208,7 +214,7 @@
       <Visorgpt active={isInView}>Lamento el error en mi respuesta anterior. En la famosa escena del desayuno de "Pretty Woman", Julia Roberts (interpretando a Vivian Ward) en realidad está bebiendo una copa de champán, no jugo de naranja. La película usa este desayuno con champán como una forma de ilustrar la opulencia y el estilo de vida lujoso que el personaje de Richard Gere (Edward Lewis) está introduciendo a Vivian. Lamento la confusión.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
-      <VideoPlayer source={sourceChampan} poster={posterChampan} color="#19c37d" />
+      <svelte:component this={VideoPlayer} source={sourceChampan} poster={posterChampan} color="#19c37d" />
       <div class="py-3 px-3">
         <span class="text-xl pr-3">❌</span><span class=""> Si chatGPT dice que Champán... </span>
       </div>
@@ -225,7 +231,7 @@
       </div>
       <img src="/images/bing.png" alt="resultados en bing" class="" />
       <div class="pb-5 bg-[#f3f4f6]">
-        <VideoPlayer source={sourceBing} poster={posterBing} color="#19c37d" />
+        <svelte:component this={VideoPlayer} source={sourceBing} poster={posterBing} color="#19c37d" />
       </div>
     </div>
 
