@@ -19,9 +19,7 @@
 
 {#if inverted}
   <a
-    href="/"
-    class="
-  "
+    href={link}
   >
     <div class="flex gap-14 flex-col tablet:flex-row">
       {#if imagesrc}
