@@ -50,8 +50,11 @@
 <div class="article-storybg-inverse w-full py-5">
   <div class="container">
     <section class="pt-12 pb-12 text-white w-full mx-auto">
-      <div>
+      <div class="mb-20 border-b border-secondarycolor pb-20 hover:border-primarycolor">
         <TeaserList inverted title="Empatizando con las IAs" description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles." imagesrc="images/empatizando-ias.jpeg" category="stories" link="colecciones/empatizando-con-ias" />
+      </div>
+      <div>
+        <TeaserList inverted title="La empanada de chatGPT" description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles." imagesrc="images/pretty.png" category="stories" link="colecciones/empatizando-con-ias" linktitle="Ver la microstorye" />
       </div>
     </section>
   </div>

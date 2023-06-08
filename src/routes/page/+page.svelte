@@ -2,17 +2,13 @@
   import { onMount } from "svelte";
   import Visorgpt from "$lib/components/VisorGpt/visorgpt.svelte";
   import Nav from "$lib/components/Nav/Nav.svelte";
+  import Footer from "$lib/components/Footer/Footer.svelte";
 
   import { inview } from "svelte-inview";
 
   const options = {
-    rootMargin: "-250px",
-    unobserveOnEnter: true,
+    rootMargin: "-30px",
   };
-  // const optionsOne = {
-  //   rootMargin: "-110px",
-  //   unobserveOnEnter: true,
-  // };
 
   let isInView = "";
   let VideoPlayer;
@@ -42,7 +38,7 @@
   <meta name="description" content="About this app" />
 </svelte:head>
 <Nav />
-<article class="coleccion-post text-[#3e3e54]}">
+<article class="coleccion-post text-[#3e3e54]} mb-32">
   <div class="container-center coleccion-post mt-10 desktop:mt-32">
     <div>
       <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-20">
@@ -52,9 +48,9 @@
     <div>
       <div class="text-min flex">
         <p class="mb-1 font-light">Fecha:</p>
-        <p class="font-primary font-bold ml-1">23/05/23</p>
+        <p class="font-primary font-bold ml-1">8/06/23</p>
         <p class="mb-1 font-light ml-7">Categoria:</p>
-        <p class="font-primary font-bold mb-5 ml-1">Story</p>
+        <p class="font-primary font-bold mb-5 ml-1">MicroStory</p>
       </div>
 
       <div class="mb-10">
@@ -69,12 +65,12 @@
   <div class="container-center">
     <div class="font-light coleccion-post">
       <p class="mb-10">Se han escrito (casi) loas sobre las posibilidades de ChatGPT. Desde que nos permitirá identificar qué retos científicos deberíamos abordar en la próxima época hasta que <strong>sustituirá a buscadores</strong> como el de Google.</p>
-      <p class="mb-10">Nosotros no hemos querido pedirle tanto. Simplemente que nos describa una escena de la película Pretty Woman sobre la que existen ríos de tinta en Internet. Es una escena especialmente curiosa porque contiene un error de continuidad o raccord, es decir, un error de discontinuidad en la acción o la posición de los personajes entre dos tomas consecutivas.</p>
-      <p class="mb-10">En esta escena de Pretty Woman el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel. El croissant que le vemos comer se transforma en una tortita en un cambio de plano.</p>
+      <p class="mb-10">Nosotros no hemos querido pedirle tanto. Simplemente que <strong>nos describa una escena de la película Pretty Woman </strong> sobre la que existen ríos de tinta en Internet. Es una escena especialmente curiosa porque <strong>contiene un error de continuidad o raccord</strong>, es decir, un error de discontinuidad en la acción entre dos tomas consecutivas.</p>
+      <p class="mb-10">En esta escena de Pretty Woman “que nos interesa,”, el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel.<strong>El croissant que le vemos comer se transforma en una tortita</strong> en un cambio de plano.</p>
       <div class="mb-2">
         <svelte:component this={VideoPlayer} source={sourceTwo} poster={posterTwo} color="#19c37d" />
       </div>
-      <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original del Película Pretty Woman</p></div></div>
+      <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original de la película Pretty Woman</p></div></div>
       <p class="mb-10">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
       <h3 class="title-3 mb-10">Preguntamos a ChatGPT</h3>
     </div>
@@ -94,14 +90,17 @@
     >
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">¿Cual es el error de raccord más conocido en la película Pretty Woman?</p>
+        <p class="font-bold">¿Cuáal es el error de raccord más conocido en la película Pretty Woman?</p>
       </div>
-      <Visorgpt active={isInView}>En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha. En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</Visorgpt>
+      <Visorgpt active={isInView}
+        ><p>En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha.</p>
+        <p>En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</p>
+      </Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} {source} {poster} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class="">Como vemos en la escena real de la pelicula en ningun momento come una Pizza</span>
+        <span class="text-xl pr-3">❌</span><span class="">¿Pizza? En ninguna escena de Pretty Woman comen pizza</span>
       </div>
     </div>
   </div>
@@ -120,16 +119,18 @@
     >
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">El error de continuidad de Pretty Woman ocurre cuando Vivian desayuna</p>
+        <p class="font-bold">Te equivocas. El error de continuidad de Pretty Woman ocurre cuando Vivian desayuna.</p>
       </div>
-      <Visorgpt active={isInView}
-        >Tiene razón, me equivoqué al mencionar la escena en la que ocurre el error de continuidad en "Pretty Woman". El error en realidad ocurre cuando Vivian está desayunando en la habitación del hotel. Gracias por señalarlo. En esa escena, Vivian está comiendo una croissant y en una toma se ve que tiene un bocado en la mano, pero en la siguiente toma, el <strong>croissant</strong> está intacto de nuevo. Luego, en otra toma, el croissant vuelve a tener un bocado. Este es un ejemplo claro de un error de continuidad debido a una discontinuidad en la posición de un objeto entre dos tomas consecutivas.
+      <Visorgpt active={isInView}>
+        <p>Tiene razón, me equivoqué al mencionar la escena en la que ocurre el error de continuidad en "Pretty Woman".</p>
+        <p>El error en realidad ocurre cuando Vivian está desayunando en la habitación del hotel. Gracias por señalarlo. En esa escena, Vivian está comiendo una croissant y en una toma se ve que tiene un bocado en la mano, pero en la siguiente toma, el <strong>croissant</strong> está intacto de nuevo.</p>
+        <p>Luego, en otra toma, el croissant vuelve a tener un bocado. Este es un ejemplo claro de un error de continuidad debido a una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</p>
       </Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} source={sourceOne} poster={posterOne} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class=""> No se Rick...</span>
+        <span class="text-xl pr-3">❌</span><span class=""> No sé Rick...</span>
       </div>
     </div>
   </div>
@@ -166,7 +167,7 @@
       </div>
 
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class="">¿Podria ChatGPT darnos infinidad de alimentos?</span>
+        <span class="text-xl pr-3">❌</span><span class="">¿La capacidad de ChatGPT para sugerir alimentos es infinita? </span>
       </div>
     </div>
   </div>
@@ -185,14 +186,14 @@
     >
       <div class="flex items-center gap-3 py-10 pl-4 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">¿Oué bebe Julia Roberts es la escena del desayuno?</p>
+        <p class="font-bold">Me has generado curiosidad. ¿Oué bebe Julia Roberts es la escena del desayuno?</p>
       </div>
       <Visorgpt active={isInView}>En la famosa escena del desayuno en "Pretty Woman", Julia Roberts (que interpreta a Vivian Ward) está tomando <strong>jugo de naranja</strong>. Aunque el error de raccord con el croissant que se convierte en una <strong>baguette</strong> o en un panqueque es notable, su bebida se mantiene consistente durante la escena.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} source={sourceNaranja} poster={posterNaranja} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class=""> ¿Zumo de Naranja? ¿Champán? </span>
+        <span class="text-xl pr-3">❌</span><span class=""> ¿Zumo de Naranja? ¿Baguette? </span>
       </div>
     </div>
   </div>
@@ -218,49 +219,44 @@
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} source={sourceChampan} poster={posterChampan} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class=""> Si chatGPT dice que Champán... </span>
+        <span class="text-xl pr-3">❌</span><span class=""> Si ChatGPT dice que beben Champán... </span>
       </div>
     </div>
   </div>
 
   <div class="container-center">
-    <h3 class="title-3 mb-5">Preguntamos a Bing por lo mismo y....</h3>
-    <p class="mb-10">Decidimos probar el chat de Bing con IA para ver sus resultados preguntadole por la misma escena con fallos.</p>
+    <h3 class="title-3 mb-5">Preguntamos a Bing por lo mismo</h3>
+    <p class="mb-10">Decidimos probar el chat de Bing con IA para comprobar si el problema estaba en la falta de conexión a Internet del ChatGOT y le preguntamos de nuevo por la misma escena con fallo de continuidads. Ahora sin amabilidad. Al grano.</p>
     <div class="chat-wrap-bing">
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">pretty woman escena con fallos de raccord</p>
+        <p class="font-bold">Pretty Woman escena con fallos de raccord</p>
       </div>
       <img src="/images/bing.png" alt="resultados en bing" class="" />
       <div class="pb-5 bg-[#f3f4f6]">
         <svelte:component this={VideoPlayer} source={sourceBing} poster={posterBing} color="#19c37d" />
       </div>
     </div>
-
-    <p class="mb-10">Aqui no solo indica que esta comiendo hasta 3 cosas diferentes si no que hasta nos dice la referencia en el caso de la empanada. Si seguimos el enlace a <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> vemos que en ningún momento se hace referencia a la "empanada"</p>
+    <p class="mb-10">
+      Por fin ChatGPT acierta! <strong>¿O no?</strong> Porque nos dice que el fallo de raccord está en el cambio del croissant a la tortita… pero luego a <strong>¡una empanada!</strong> Y no solo es eso, porque hasta nos facilita la referencia donde supuestamente <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> acredita que esto es así. Lo cual no es cierto. <strong>¡En Xataka no se menciona ninguna empanada!</strong> ¿Por qué se equivoca ChatGPT? En realidad, como siempre que
+      falla la máquina, el error es humano
+    </p>
   </div>
   <div class="container-center coleccion-post">
     <h3 class="title-3 mb-10">Por qué se equivoca ChatGPT?</h3>
-    <p class="mb-5">Nos equivocamos cuando confundimos buscar con generar. ChatGPT es un generador de textos. Google Search, DuckDuck Go, son buscadores. Sus funciones son diferentes, pero a veces no distinguimos entre ellas.</p>
-    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica invención. Si preguntamos a un buscador, busca, lo que implica rescatar información.</p>
+    <p class="mb-5">Y es que nos equivocamos al pedirle una tarea a ChatGPT esperando que, para generar, antes realice una búsqueda. Así que el error se produce porque confundimos buscar con generar.</p>
+    <p class="mb-5">ChatGPT es un generador, mientras que herramientas como Google Search, DuckDuck Go, y similares son buscadores. Las funciones precisas para generar o para buscar son diferentes, pero a veces no distinguimos entre ellas.</p>
+    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT <strong>genera un texto; no busca esa información entre los datos de su entrenamiento</strong>, como podríamos esperar. Solicitarle una tarea como esta, que implica una búsqueda previa, puede provocar que ChatGPT genere un texto con una base inventada, aunque eso sí, <strong>con apariencia de verdad.</strong></p>
+    <p class="mb-5">Por ello, si la tarea que queremos pedirle a ChatGPT implica realizar una búsqueda previa, entonces igual es más conveniente usar un buscador.</p>
     <img src="/images/fin.jpg" alt="fin imagen" />
-    <p class="mb-5">Nota: En estos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar a ver cómo se resuelve este tema.</p>
+    <p class="mb-5">Nota: En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si soluciones así resuelven este tema.</p>
   </div>
 </article>
+<Footer />
 
 <style type="text/scss">
-  .marker {
-    background-color: blueviolet;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    padding: 0 3px;
-  }
   .title-3 {
     @apply font-bold text-4xl  mt-24;
-  }
-  .title-4 {
-    @apply font-bold text-2xl mb-10 mt-20;
   }
 
   strong {

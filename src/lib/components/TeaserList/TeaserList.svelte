@@ -6,6 +6,7 @@
   export let description;
   export let imagesrc = "";
   export let link;
+  export let linktitle = "Radiografía de la story";
   export let category;
   export let inverted = "";
   export const imagestyles = "";
@@ -38,7 +39,7 @@
         <div class="flex mt-10 justify-between">
           <div class="fill-white hover:text-primarycolor hover:fill-primarycolor transition">
             <a href={link} class="link-prim flex gap-4 hover:text-primarycolor text-quaternarycolor uppercase font-bold font-secondary">
-              Radiografia de la story
+              {linktitle}
               <ArrowLink styles="" />
             </a>
           </div>
