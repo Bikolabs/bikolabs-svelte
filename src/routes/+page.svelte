@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { MetaTags } from "svelte-meta-tags";
 
   import Hero from "$lib/components/Hero/Hero.svelte";
   import Stories from "$lib/views/Stories.svelte";
@@ -34,10 +35,34 @@
   onMount(checkDarkMode);
 </script>
 
-<svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Bikolabs - El estudio de intervención de Biko" />
-</svelte:head>
+<MetaTags
+  title="Bikolabs"
+  titleTemplate="%s | Home"
+  description="Bikolabs, el estudio (de intervención) de Biko"
+  canonical="/"
+  openGraph={{
+    url: "https://www.url.ie/a",
+    title: "Bikolabs, el estudio (de intervención) de Biko",
+    description: "Investigamos, intervenimos y divulgamos sobre la interacción entre personas y tecnología",
+    images: [
+      {
+        url: "/images/web/redes/home.png",
+        alt: "Bikolabs",
+      },
+    ],
+    site_name: "Bikolabs",
+    type: "article",
+  }}
+  twitter={{
+    // handle: '@handle',
+    site: "@biko2",
+    cardType: "summary_large_image",
+    title: "Bikolabs",
+    description: "Investigamos, intervenimos y divulgamos sobre la interacción entre personas y tecnología.",
+    image: "/images/web/redes/home.png",
+    imageAlt: "Bikolabs",
+  }}
+/>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 
 {#if glitch}
