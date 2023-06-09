@@ -7,7 +7,8 @@
   import { inview } from "svelte-inview";
 
   const options = {
-    rootMargin: "-30px",
+    // rootMargin: "-10px",
+    threshold: "1",
   };
 
   let isInView = "";
@@ -92,9 +93,8 @@
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
         <p class="font-bold">¿Cuáal es el error de raccord más conocido en la película Pretty Woman?</p>
       </div>
-      <Visorgpt active={isInView}
-        ><p>En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha.</p>
-        <p>En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</p>
+      <Visorgpt active={isInView}>
+        En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha. En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.
       </Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
@@ -122,9 +122,7 @@
         <p class="font-bold">Te equivocas. El error de continuidad de Pretty Woman ocurre cuando Vivian desayuna.</p>
       </div>
       <Visorgpt active={isInView}>
-        <p>Tiene razón, me equivoqué al mencionar la escena en la que ocurre el error de continuidad en "Pretty Woman".</p>
-        <p>El error en realidad ocurre cuando Vivian está desayunando en la habitación del hotel. Gracias por señalarlo. En esa escena, Vivian está comiendo una croissant y en una toma se ve que tiene un bocado en la mano, pero en la siguiente toma, el <strong>croissant</strong> está intacto de nuevo.</p>
-        <p>Luego, en otra toma, el croissant vuelve a tener un bocado. Este es un ejemplo claro de un error de continuidad debido a una discontinuidad en la posición de un objeto entre dos tomas consecutivas.</p>
+        Tiene razón, me equivoqué al mencionar la escena en la que ocurre el error de continuidad en "Pretty Woman". El error en realidad ocurre cuando Vivian está desayunando en la habitación del hotel. Gracias por señalarlo. En esa escena, Vivian está comiendo una croissant y en una toma se ve que tiene un bocado en la mano, pero en la siguiente toma, el <strong>croissant</strong> está intacto de nuevo. Luego, en otra toma, el croissant vuelve a tener un bocado. Este es un ejemplo claro de un error de continuidad debido a una discontinuidad en la posición de un objeto entre dos tomas consecutivas.
       </Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
@@ -214,7 +212,7 @@
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
         <p class="font-bold">¿Seguro que bebe zumo de naranja?</p>
       </div>
-      <Visorgpt active={isInView}>Lamento el error en mi respuesta anterior. En la famosa escena del desayuno de "Pretty Woman", Julia Roberts (interpretando a Vivian Ward) en realidad está bebiendo una copa de champán, no jugo de naranja. La película usa este desayuno con champán como una forma de ilustrar la opulencia y el estilo de vida lujoso que el personaje de Richard Gere (Edward Lewis) está introduciendo a Vivian. Lamento la confusión.</Visorgpt>
+      <Visorgpt active={isInView}>Lamento el error en mi respuesta anterior. En la famosa escena del desayuno de "Pretty Woman", Julia Roberts (interpretando a Vivian Ward) en realidad está bebiendo una <strong>copa de champán</strong>, no jugo de naranja. La película usa este desayuno con champán como una forma de ilustrar la opulencia y el estilo de vida lujoso que el personaje de Richard Gere (Edward Lewis) está introduciendo a Vivian. Lamento la confusión.</Visorgpt>
     </div>
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} source={sourceChampan} poster={posterChampan} color="#19c37d" />
@@ -232,24 +230,26 @@
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
         <p class="font-bold">Pretty Woman escena con fallos de raccord</p>
       </div>
-      <img src="/images/bing.png" alt="resultados en bing" class="" />
+      <img src="/images/bing.png" alt="resultados en bing" />
       <div class="pb-5 bg-[#f3f4f6]">
         <svelte:component this={VideoPlayer} source={sourceBing} poster={posterBing} color="#19c37d" />
       </div>
     </div>
     <p class="mb-10">
-      Por fin ChatGPT acierta! <strong>¿O no?</strong> Porque nos dice que el fallo de raccord está en el cambio del croissant a la tortita… pero luego a <strong>¡una empanada!</strong> Y no solo es eso, porque hasta nos facilita la referencia donde supuestamente <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> acredita que esto es así. Lo cual no es cierto. <strong>¡En Xataka no se menciona ninguna empanada!</strong> ¿Por qué se equivoca ChatGPT? En realidad, como siempre que
-      falla la máquina, el error es humano
+      Por fin ChatGPT acierta! <strong>¿O no?</strong> Porque nos dice que el fallo de raccord está en el cambio del croissant a la tortita… pero luego a <strong>¡una empanada!</strong> Y no solo es eso, porque hasta nos facilita la referencia donde supuestamente <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> acredita que esto es así. Lo cual no es cierto. <strong>¡En Xataka no se menciona ninguna empanada!</strong>
     </p>
   </div>
   <div class="container-center coleccion-post">
-    <h3 class="title-3 mb-10">Por qué se equivoca ChatGPT?</h3>
-    <p class="mb-5">Y es que nos equivocamos al pedirle una tarea a ChatGPT esperando que, para generar, antes realice una búsqueda. Así que el error se produce porque confundimos buscar con generar.</p>
-    <p class="mb-5">ChatGPT es un generador, mientras que herramientas como Google Search, DuckDuck Go, y similares son buscadores. Las funciones precisas para generar o para buscar son diferentes, pero a veces no distinguimos entre ellas.</p>
-    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT <strong>genera un texto; no busca esa información entre los datos de su entrenamiento</strong>, como podríamos esperar. Solicitarle una tarea como esta, que implica una búsqueda previa, puede provocar que ChatGPT genere un texto con una base inventada, aunque eso sí, <strong>con apariencia de verdad.</strong></p>
-    <p class="mb-5">Por ello, si la tarea que queremos pedirle a ChatGPT implica realizar una búsqueda previa, entonces igual es más conveniente usar un buscador.</p>
+    <h3 class="title-3 mb-10">¿Por qué se equivoca ChatGPT?</h3>
+
+    <p class="mb-5">En Bikolabs tenemos la hipótesis de que el error se puede deber a que estamos pidiendo una tarea a ChatGPT para la que esperamos que, antes de generar, primero realice una búsqueda. ChatGPT es un generador, a diferencia de herramientas como Google Search, DuckDuck Go y similares son buscadores.</p>
+
+    <p class="mb-5">Las funciones precisas para generar o para buscar son diferentes, pero a veces las personas no distinguimos entre ellas cuando hacemos una petición a ChatGPT, por lo que creemos que ese podría ser el problema.</p>
+
+    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica cierto grado de invención. Una invención que estará más o menos cercana a la realidad, a pero invención a fin de cuentas. A diferencia de lo que ocurre cuando preguntamos a un buscador, cuya función va a ser rescatar información.</p>
+
     <img src="/images/fin.jpg" alt="fin imagen" />
-    <p class="mb-5">Nota: En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si soluciones así resuelven este tema.</p>
+    <p class="mb-5"><strong>Nota:</strong> En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si este tema implica un cambio de paradigma y resuelve errores como el presentado en esta microhistoria.</p>
   </div>
 </article>
 <Footer />

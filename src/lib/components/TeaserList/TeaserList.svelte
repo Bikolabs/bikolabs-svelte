@@ -18,9 +18,7 @@
 </script>
 
 {#if inverted}
-  <a
-    href={link}
-  >
+  <a href={link}>
     <div class="flex gap-14 flex-col tablet:flex-row">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">

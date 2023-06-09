@@ -24,15 +24,16 @@
       </div>
     </div>
     <div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
-      <div class="flex Xflex-grow Xflex-col gap-3">
-        <div class="flex flex-col items-start gap-4 xxxwhitespace-pre-wrap break-words">
-          <div class="markdown prose w-full break-words dark:prose-invert light">
+      <div class="flex gap-3">
+        <div class="flex flex-col items-start gap-4 break-words">
+          <div class="markdown prose w-full Xbreak-words dark:prose-invert light">
             {#if active}
-              <Typewriter cascade interval="30" element="p">
-                <slot />
+              <Typewriter cascade interval="100">
+                <div><slot /></div>
               </Typewriter>
             {:else}
-              <div class="h-[130px] w-full">|</div>
+              <!-- <div class="h-[130px] w-full">|</div> -->
+              <div class="w-full"><p><slot /></p></div>
             {/if}
           </div>
         </div>
