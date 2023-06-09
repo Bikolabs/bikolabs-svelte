@@ -39,7 +39,7 @@
   <meta name="description" content="About this app" />
 </svelte:head>
 <Nav />
-<article class="coleccion-post text-[#3e3e54]} mb-32">
+<article class="coleccion-post text-[#3e3e54]} mb-32 text-lg">
   <div class="container-center coleccion-post mt-10 desktop:mt-32">
     <div>
       <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-20">
@@ -59,12 +59,12 @@
       </div>
     </div>
   </div>
-  <div class="debug fixed top-0">
+  <!-- <div class="debug fixed top-0">
     {isInView ? "Activo !!!!!!" : "Bye, Bye !!!!!!"}
-  </div>
+  </div> -->
 
   <div class="container-center">
-    <div class="font-light coleccion-post">
+    <div class="font-light coleccion-post text-lg">
       <p class="mb-10">Se han escrito (casi) loas sobre las posibilidades de ChatGPT. Desde que nos permitirá identificar qué retos científicos deberíamos abordar en la próxima época hasta que <strong>sustituirá a buscadores</strong> como el de Google.</p>
       <p class="mb-10">Nosotros no hemos querido pedirle tanto. Simplemente que <strong>nos describa una escena de la película Pretty Woman </strong> sobre la que existen ríos de tinta en Internet. Es una escena especialmente curiosa porque <strong>contiene un error de continuidad o raccord</strong>, es decir, un error de discontinuidad en la acción entre dos tomas consecutivas.</p>
       <p class="mb-10">En esta escena de Pretty Woman “que nos interesa,”, el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel.<strong>El croissant que le vemos comer se transforma en una tortita</strong> en un cambio de plano.</p>
@@ -91,7 +91,7 @@
     >
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">¿Cuáal es el error de raccord más conocido en la película Pretty Woman?</p>
+        <p class="font-bold">¿Cuál es el error de raccord más conocido en la película Pretty Woman?</p>
       </div>
       <Visorgpt active={isInView}>
         En una escena, Vivian Ward (interpretada por Julia Roberts) está comiendo una <strong>pizza</strong> en la cama y, en una toma, se ve que tiene una porción en la mano derecha. En la siguiente toma, la porción de pizza cambia de mano y se encuentra en su mano izquierda. Este es un error de continuidad porque hay una discontinuidad en la posición de un objeto entre dos tomas consecutivas.
@@ -264,7 +264,7 @@
   }
 
   .chat-wrap {
-    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2;
+    @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2 leading-[22px];
     & strong {
       background-color: #1ac37e;
       display: inline-block;
@@ -274,5 +274,9 @@
   }
   .chat-wrap-bing {
     @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2;
+  }
+
+  .microstory-text {
+    @apply text-xl border;
   }
 </style>

@@ -4,7 +4,7 @@
   export let active;
 </script>
 
-<div class="text-gray-800 text-[13px] dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-100 dark:bg-[#444654]">
+<div class="text-gray-800 text-[14px] dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-100 dark:bg-[#444654]">
   <div class="flex p-4 gap-4 md:gap-6 md:max-w-2xl lg:max-w-xl xl:max-w-3xl md:py-6 lg:px-0 m-auto">
     <div class="flex-shrin-0 flex flex-col relative items-end">
       <div class="w-[30px]">
