@@ -50,8 +50,19 @@
 <div class="article-storybg-inverse w-full py-5">
   <div class="container">
     <section class="pt-12 pb-12 text-white w-full mx-auto">
+      <div class="mb-20 border-b border-secondarycolor pb-20 hover:border-primarycolor">
+        <TeaserList inverted title="Pretty Woman y la empanada de ChatGPT" description="Se ha dicho que ChatGPT sustituirá a buscadores como el de Google. Nosotros simplemente le hemos pedido que nos describa una escena de la película Pretty Woman… y la empanada de ChatGPT con esta tarea ha sido impactante" imagesrc="images/pretty.png" category="stories" link="/microstory/pretty-woman" linktitle="Ver la microstory" />
+      </div>
       <div>
-        <TeaserList inverted title="Empatizando con las IAs" description="Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles." imagesrc="images/empatizando-ias.jpeg" category="stories" link="colecciones/empatizando-con-ias" />
+        <TeaserList
+          inverted
+          title="Empatizando con las IAs"
+          description="Esta historia interactiva con cierta carga irónica permite comprender mejor cómo las IAs “ven” diferentes objetos cotidianos y cuál es su potencial capacidad de errar.
+"
+          imagesrc="/images/empatizando-ias.jpeg"
+          category="stories"
+          link="/colecciones/empatizando-con-ias"
+        />
       </div>
     </section>
   </div>

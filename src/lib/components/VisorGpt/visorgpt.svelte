@@ -4,7 +4,7 @@
   export let active;
 </script>
 
-<div class="text-gray-800 text-[13px] dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-100 dark:bg-[#444654]">
+<div class="text-gray-800 text-[14px] dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-100 dark:bg-[#444654]">
   <div class="flex p-4 gap-4 md:gap-6 md:max-w-2xl lg:max-w-xl xl:max-w-3xl md:py-6 lg:px-0 m-auto">
     <div class="flex-shrin-0 flex flex-col relative items-end">
       <div class="w-[30px]">
@@ -24,15 +24,16 @@
       </div>
     </div>
     <div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
-      <div class="flex Xflex-grow Xflex-col gap-3">
-        <div class="flex flex-col items-start gap-4 xxxwhitespace-pre-wrap break-words">
-          <div class="markdown prose w-full break-words dark:prose-invert light">
+      <div class="flex gap-3">
+        <div class="flex flex-col items-start gap-4 break-words">
+          <div class="markdown prose w-full Xbreak-words dark:prose-invert light">
             {#if active}
-              <Typewriter cascade interval="10">
-                <slot />
+              <Typewriter cascade interval="100">
+                <div><slot /></div>
               </Typewriter>
             {:else}
-              <div class="h-[100px] w-full">|</div>
+              <!-- <div class="h-[130px] w-full">|</div> -->
+              <div class="w-full"><p><slot /></p></div>
             {/if}
           </div>
         </div>

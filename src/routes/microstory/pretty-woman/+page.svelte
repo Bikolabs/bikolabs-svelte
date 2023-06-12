@@ -5,9 +5,9 @@
   import Footer from "$lib/components/Footer/Footer.svelte";
 
   import { inview } from "svelte-inview";
+  import { MetaTags } from "svelte-meta-tags";
 
   const options = {
-    // rootMargin: "-10px",
     threshold: "1",
   };
 
@@ -34,10 +34,35 @@
   });
 </script>
 
-<svelte:head>
-  <title />
-  <meta name="description" content="About this app" />
-</svelte:head>
+<MetaTags
+  title="Bikolabs"
+  titleTemplate="%s | Pretty Woman y la empanada de ChatGPT"
+  description="Se ha dicho que ChatGPT sustituirá a buscadores como el de Google. Nosotros simplemente le hemos pedido que nos describa una escena de la película Pretty Woman"
+  canonical="/microstory/pretty-woman"
+  openGraph={{
+    url: "/microstory/pretty-woman",
+    title: "Pretty Woman y la empanada de ChatGPT",
+    description: "Se ha dicho que ChatGPT sustituirá a buscadores como el de Google. Nosotros simplemente le hemos pedido que nos describa una escena de la película Pretty Woman… y la empanada de ChatGPT con esta tarea ha sido impactante",
+    images: [
+      {
+        url: "/images/pretty.png",
+        alt: "Pretty Woman",
+      },
+    ],
+    site_name: "Bikolabs",
+    type: "article",
+  }}
+  twitter={{
+    // handle: '@handle',
+    site: "@biko2",
+    cardType: "summary_large_image",
+    title: "Pretty Woman y la empanada de ChatGPT",
+    description: "Se ha dicho que ChatGPT sustituirá a buscadores como el de Google. Nosotros simplemente le hemos pedido que nos describa una escena de la película Pretty Woman… y la empanada de ChatGPT con esta tarea ha sido impactante",
+    image: "/images/pretty.png",
+    imageAlt: "Pretty Woman",
+  }}
+/>
+
 <Nav />
 <article class="coleccion-post text-[#3e3e54]} mb-32 text-lg">
   <div class="container-center coleccion-post mt-10 desktop:mt-32">
@@ -47,7 +72,7 @@
       </div>
     </div>
     <div>
-      <div class="text-min flex">
+      <div class="flex">
         <p class="mb-1 font-light">Fecha:</p>
         <p class="font-primary font-bold ml-1">8/06/23</p>
         <p class="mb-1 font-light ml-7">Categoria:</p>
@@ -73,7 +98,7 @@
       </div>
       <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original de la película Pretty Woman</p></div></div>
       <p class="mb-10">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
-      <h3 class="title-3 mb-10">Preguntamos a ChatGPT</h3>
+      <h2 class="title-3 mb-10">Preguntamos a ChatGPT</h2>
     </div>
   </div>
 
@@ -230,7 +255,7 @@
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
         <p class="font-bold">Pretty Woman escena con fallos de raccord</p>
       </div>
-      <img src="/images/bing.png" alt="resultados en bing" />
+      <img src="/images/bing.jpg" alt="resultados en bing" />
       <div class="pb-5 bg-[#f3f4f6]">
         <svelte:component this={VideoPlayer} source={sourceBing} poster={posterBing} color="#19c37d" />
       </div>
@@ -274,9 +299,5 @@
   }
   .chat-wrap-bing {
     @apply border-[#f3f4f6] border-t-[15px] mb-12 rounded-[5px] border-l-[15px] border-r-[15px]  border-b-2;
-  }
-
-  .microstory-text {
-    @apply text-xl border;
   }
 </style>
