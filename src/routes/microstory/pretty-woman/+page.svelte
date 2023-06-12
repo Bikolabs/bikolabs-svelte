@@ -8,7 +8,6 @@
   import { MetaTags } from "svelte-meta-tags";
 
   const options = {
-    // rootMargin: "-10px",
     threshold: "1",
   };
 
@@ -73,7 +72,7 @@
       </div>
     </div>
     <div>
-      <div class="text-min flex">
+      <div class="flex">
         <p class="mb-1 font-light">Fecha:</p>
         <p class="font-primary font-bold ml-1">8/06/23</p>
         <p class="mb-1 font-light ml-7">Categoria:</p>
@@ -99,7 +98,7 @@
       </div>
       <div class="mb-5 grid justify-items-end"><div><p class="text-min">Escena original de la película Pretty Woman</p></div></div>
       <p class="mb-10">Así que le pedimos a ChatGPT que busque este error entre los datos de su entrenamiento y nos lo describa.</p>
-      <h3 class="title-3 mb-10">Preguntamos a ChatGPT</h3>
+      <h2 class="title-3 mb-10">Preguntamos a ChatGPT</h2>
     </div>
   </div>
 
@@ -256,7 +255,7 @@
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
         <p class="font-bold">Pretty Woman escena con fallos de raccord</p>
       </div>
-      <img src="/images/bing.png" alt="resultados en bing" />
+      <img src="/images/bing.jpg" alt="resultados en bing" />
       <div class="pb-5 bg-[#f3f4f6]">
         <svelte:component this={VideoPlayer} source={sourceBing} poster={posterBing} color="#19c37d" />
       </div>
