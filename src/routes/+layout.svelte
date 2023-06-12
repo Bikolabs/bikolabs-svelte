@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="/images/web/icons/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="/images/web/icons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/images/web/icons/apple-touch-icon-72x72.png" />
   <link rel="apple-touch-icon" sizes="76x76" href="/images/web/icons/apple-touch-icon-76x76.png" />
