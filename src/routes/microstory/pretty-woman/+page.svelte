@@ -53,7 +53,6 @@
     type: "article",
   }}
   twitter={{
-    // handle: '@handle',
     site: "@biko2",
     cardType: "summary_large_image",
     title: "Pretty Woman y la empanada de ChatGPT",
@@ -65,17 +64,17 @@
 
 <Nav />
 <article class="coleccion-post text-[#3e3e54]} mb-32 text-lg">
-  <div class="container-center coleccion-post mt-10 desktop:mt-32">
+  <div class="container-center coleccion-post mt-10 desktop:mt-12">
     <div>
-      <div class="flex flex-col desktop:flex-row justify-between mb-20 desktop:mb-20">
+      <div class="flex flex-col desktop:flex-row justify-between mb-10 desktop:mb-10">
         <h1 class="text-5xl tablet:text-6xl font-primary font-semibold">Pretty Woman y la empanada de ChatGPT</h1>
       </div>
     </div>
     <div>
-      <div class="flex">
+      <div class="flex text-base">
         <p class="mb-1 font-light">Fecha:</p>
-        <p class="font-primary font-bold ml-1">8/06/23</p>
-        <p class="mb-1 font-light ml-7">Categoria:</p>
+        <p class="font-primary font-bold ml-1">13/06/23</p>
+        <p class="mb-1 font-light ml-7">Categoría:</p>
         <p class="font-primary font-bold mb-5 ml-1">MicroStory</p>
       </div>
 
@@ -92,7 +91,7 @@
     <div class="font-light coleccion-post text-lg">
       <p class="mb-10">Se han escrito (casi) loas sobre las posibilidades de ChatGPT. Desde que nos permitirá identificar qué retos científicos deberíamos abordar en la próxima época hasta que <strong>sustituirá a buscadores</strong> como el de Google.</p>
       <p class="mb-10">Nosotros no hemos querido pedirle tanto. Simplemente que <strong>nos describa una escena de la película Pretty Woman </strong> sobre la que existen ríos de tinta en Internet. Es una escena especialmente curiosa porque <strong>contiene un error de continuidad o raccord</strong>, es decir, un error de discontinuidad en la acción entre dos tomas consecutivas.</p>
-      <p class="mb-10">En esta escena de Pretty Woman “que nos interesa,”, el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel.<strong>El croissant que le vemos comer se transforma en una tortita</strong> en un cambio de plano.</p>
+      <p class="mb-10">En esta escena que nos interesa de Pretty Woman, el error se produce cuando la protagonista, Vivian, se encuentra desayunando en una habitación de hotel. <strong>El croissant que le vemos comer se transforma en una tortita</strong> en un cambio de plano.</p>
       <div class="mb-2">
         <svelte:component this={VideoPlayer} source={sourceTwo} poster={posterTwo} color="#19c37d" />
       </div>
@@ -242,18 +241,18 @@
     <div class="w-full bg-gray-100">
       <svelte:component this={VideoPlayer} source={sourceChampan} poster={posterChampan} color="#19c37d" />
       <div class="py-3 px-3">
-        <span class="text-xl pr-3">❌</span><span class=""> Si ChatGPT dice que beben Champán... </span>
+        <span class="text-xl pr-3">❌</span><span class=""> Si ChatGPT dice que beben champán... </span>
       </div>
     </div>
   </div>
 
   <div class="container-center">
     <h3 class="title-3 mb-5">Preguntamos a Bing por lo mismo</h3>
-    <p class="mb-10">Decidimos probar el chat de Bing con IA para comprobar si el problema estaba en la falta de conexión a Internet del ChatGOT y le preguntamos de nuevo por la misma escena con fallo de continuidads. Ahora sin amabilidad. Al grano.</p>
+    <p class="mb-10">Decidimos probar el chat de Bing con IA para comprobar si el problema estaba en la falta de conexión a Internet del ChatGPT y le preguntamos de nuevo por la misma escena con fallo de continuidad. Ahora sin amabilidad. Al grano.</p>
     <div class="chat-wrap-bing">
       <div class="flex items-center gap-3 py-10 pl-3 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2 ml-1"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">Pretty Woman escena con fallos de raccord</p>
+        <p class="font-bold">pretty woman escena con fallos de raccord</p>
       </div>
       <img src="/images/bing.jpg" alt="resultados en bing" />
       <div class="pb-5 bg-[#f3f4f6]">
@@ -261,17 +260,17 @@
       </div>
     </div>
     <p class="mb-10">
-      Por fin ChatGPT acierta! <strong>¿O no?</strong> Porque nos dice que el fallo de raccord está en el cambio del croissant a la tortita… pero luego a <strong>¡una empanada!</strong> Y no solo es eso, porque hasta nos facilita la referencia donde supuestamente <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> acredita que esto es así. Lo cual no es cierto. <strong>¡En Xataka no se menciona ninguna empanada!</strong>
+      ¡Por fin ChatGPT acierta! <strong>¿O no?</strong> Porque nos dice que el fallo de raccord está en el cambio del croissant a la tortita… pero luego a <strong>¡una empanada!</strong> Y no solo es eso, ya que hasta nos facilita la referencia donde supuestamente <a class="underline" href="https://www.xatakaciencia.com/psicologia/ciegos-a-los-errores-de-continuidad-de-pretty-woman-a-star-wars" target="_blank">Xataka ciencia</a> acredita que esto es así. Lo cual no es cierto. <strong>¡En Xataka no se menciona ninguna empanada!</strong>
     </p>
   </div>
   <div class="container-center coleccion-post">
     <h3 class="title-3 mb-10">¿Por qué se equivoca ChatGPT?</h3>
 
-    <p class="mb-5">En Bikolabs tenemos la hipótesis de que el error se puede deber a que estamos pidiendo una tarea a ChatGPT para la que esperamos que, antes de generar, primero realice una búsqueda. ChatGPT es un generador, a diferencia de herramientas como Google Search, DuckDuck Go y similares son buscadores.</p>
+    <p class="mb-5">En Bikolabs tenemos la hipótesis de que el error se puede deber a que estamos pidiendo una tarea a ChatGPT para la que esperamos que, antes de generar, primero realice una búsqueda. ChatGPT es un generador, a diferencia de herramientas como Google Search, DuckDuck Go y similares que son buscadores.</p>
 
     <p class="mb-5">Las funciones precisas para generar o para buscar son diferentes, pero a veces las personas no distinguimos entre ellas cuando hacemos una petición a ChatGPT, por lo que creemos que ese podría ser el problema.</p>
 
-    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica cierto grado de invención. Una invención que estará más o menos cercana a la realidad, a pero invención a fin de cuentas. A diferencia de lo que ocurre cuando preguntamos a un buscador, cuya función va a ser rescatar información.</p>
+    <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica cierto grado de invención. Una invención que estará más o menos cercana a la realidad, a pero invención a fin de cuentas: a diferencia de lo que ocurre cuando preguntamos a un buscador, cuya función va a ser rescatar información.</p>
 
     <img src="/images/fin.jpg" alt="fin imagen" />
     <p class="mb-5"><strong>Nota:</strong> En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si este tema implica un cambio de paradigma y resuelve errores como el presentado en esta microhistoria.</p>
@@ -281,7 +280,7 @@
 
 <style type="text/scss">
   .title-3 {
-    @apply font-bold text-4xl  mt-24;
+    @apply font-bold text-4xl  mt-12;
   }
 
   strong {
