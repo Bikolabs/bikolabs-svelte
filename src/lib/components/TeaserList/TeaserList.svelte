@@ -7,6 +7,7 @@
   export let imagesrc = "";
   export let link;
   export let linktitle = "Radiografía de la story";
+  export let linkhistory = "";
   export let category;
   export let inverted = "";
   export const imagestyles = "";
@@ -18,7 +19,7 @@
 </script>
 
 {#if inverted}
-  <a href={link}>
+  <a href={linkhistory}>
     <div class="flex gap-14 flex-col tablet:flex-row">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
