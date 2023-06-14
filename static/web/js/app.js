@@ -1,3 +1,9 @@
+jQuery(window).on("load", function () {
+  setInterval(function () {
+    jQuery(".preloader").fadeOut("slow");
+  }, 2500);
+});
+
 jQuery(function () {
   document.getElementById("colecciones") &&
     (960 < $(window).width() &&

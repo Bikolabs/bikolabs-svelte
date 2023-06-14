@@ -1,3 +1,27 @@
+<script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const scriptFiles = ["/web/js/vendors/vendors.js", "/web/js/app.js", "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js", "https://code.jquery.com/jquery-3.6.0.min.js"];
+
+    scriptFiles.forEach((file) => {
+      const script = document.createElement("script");
+      script.src = file;
+      script.async = false;
+      document.body.appendChild(script);
+    });
+  });
+  onMount(() => {
+    setTimeout(() => {
+      const preloader = document.querySelector(".preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    }, 2500);
+  });
+</script>
+
 <div class="d-flex nav-wrap">
   <div id="menu-scroll" class="nav-init-scroll nav-scroll-clear nav-scroll d-flex justify-content-between flex-column">
     <div class="d-flex flex-column align-items-center">
