@@ -9393,7 +9393,7 @@ a.text-dark:hover {
   border-radius: 300px;
   background-color: #c2f5eb;
   overflow: hidden;
-  z-index: -2027;
+  /* z-index: -2027; */
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .box {
@@ -9427,7 +9427,7 @@ a.text-dark:hover {
   border-radius: 300px;
   background-color: #9686cf;
   overflow: hidden;
-  z-index: -2031;
+  /* z-index: -2031; */
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .box2 {
@@ -9492,6 +9492,7 @@ a.text-dark:hover {
   height: 140px;
   width: 267px;
   overflow: hidden;
+  z-index: 11;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .box4 {
@@ -9526,7 +9527,7 @@ a.text-dark:hover {
   left: 443px;
   top: 338px;
   position: absolute;
-  z-index: -2016;
+  /* z-index: -2016; */
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .lines {

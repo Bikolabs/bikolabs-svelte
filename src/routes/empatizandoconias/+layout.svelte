@@ -27,13 +27,15 @@
   <link rel="stylesheet" href="/web/css/customstyles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet" />
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/web/js/vendors/vendors.js"></script>
-  <script src="/web/js/app.js"></script>
-  <script src="/web/js/web.js"></script>
+  <script>
+    jQuery(window).on("load", function () {
+      setInterval(function () {
+        jQuery(".preloader").fadeOut("slow");
+      }, 2500);
+    });
+  </script>
 </head>
 
 <main>
