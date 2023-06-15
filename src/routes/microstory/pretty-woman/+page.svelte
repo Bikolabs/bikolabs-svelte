@@ -14,8 +14,8 @@
   let isInView = "";
   let VideoPlayer;
 
-  const source = ["/videos/pizza.mp4"];
-  const sourceOne = ["/videos/multicrois.mp4"];
+  const source = ["/videos/2xpizza.mp4"];
+  const sourceOne = ["/videos/2xmulticrois.mp4"];
   const sourceTwo = ["/videos/original.mp4"];
   const sourceBing = ["/videos/empanadas.mp4"];
   const sourceNaranja = ["/videos/naranja.mp4"];
@@ -83,9 +83,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="debug fixed top-0">
-    {isInView ? "Activo !!!!!!" : "Bye, Bye !!!!!!"}
-  </div> -->
 
   <div class="container-center">
     <div class="font-light coleccion-post text-lg">

@@ -2,11 +2,11 @@
   <div class="py-10 tablet:py-10 bg-secondarycolor text-tertiarycolor">
     <div class="container">
       <div class="flex flex-col tablet:flex-row justify-between items-center tablet:pl-5 desktop:pl-10">
-        <div class="flex gap-2 flex-col mb-3 tablet:mb-0">
-          <img class="h-[50px] w-[120px]" src="/images/web/logos.svg" alt="logos" />
-          <p class="text-white text-min font-secondary font-bold uppercase leading-[15px] mb-5">
+        <div class="flex gap-2 flex-col mb-3 mt-0 tablet:pt-3 tablet:mb-0">
+          <img class="h-[50px] w-[45px]" src="/images/web/menulogos.svg" alt="logo" />
+          <p class="text-white text-min font-secondary font-bold uppercase leading-[18px] mb-5 mt-1">
             Bikolabs, el estudio <br />
-            (de intervención) de Biko
+            (de intervención)<br /> de Jakala | Biko
           </p>
         </div>
 
