@@ -205,7 +205,7 @@
     >
       <div class="flex items-center gap-3 py-10 pl-4 bg-white">
         <div class="w-[31px] h-[31px] bg-slate-800 flex items-center justify-center p-2"><img width="30" height="35" src="/images/web/menulogos.svg" alt="logo pregunta" /></div>
-        <p class="font-bold">Me has generado curiosidad. ¿Oué bebe Julia Roberts es la escena del desayuno?</p>
+        <p class="font-bold">Me has generado curiosidad. ¿Qué bebe Julia Roberts en la escena del desayuno?</p>
       </div>
       <Visorgpt active={isInView}>En la famosa escena del desayuno en "Pretty Woman", Julia Roberts (que interpreta a Vivian Ward) está tomando <strong>jugo de naranja</strong>. Aunque el error de raccord con el croissant que se convierte en una <strong>baguette</strong> o en un panqueque es notable, su bebida se mantiene consistente durante la escena.</Visorgpt>
     </div>
