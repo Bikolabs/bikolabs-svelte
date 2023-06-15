@@ -49,6 +49,6 @@ Se trata, además, de un material complementario a varias de nuestras intervenci
 />
 
 <Materials category="Curso" links={[
-['Diseño, Tecnología y Comportamiento. Taller en colaboración con La Nave Nodriza.', 'https://bikolabs.biko2.com/collections/cursonave/'],
+['Diseño, Tecnología y Comportamiento. Taller en colaboración con La Nave Nodriza.', 'http://bikolabs.biko2.com/collections/cursonave/'],
 ]}
 />
