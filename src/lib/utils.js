@@ -19,7 +19,7 @@ export function convertYearToString(date) {
 }
 
 export async function getColeccionesPosts() {
-  const posts = import.meta.glob("/src/routes/colecciones/posts/*.md");
+  const posts = import.meta.glob("/src/routes/collections/posts/*.md");
   let postsList = [];
 
   for (const file in posts) {
