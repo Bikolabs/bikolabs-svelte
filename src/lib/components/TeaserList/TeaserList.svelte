@@ -19,7 +19,7 @@
 </script>
 
 {#if inverted}
-  <a href={linkhistory}>
+  <a href={linkhistory} aria-label={title}>
     <div class="flex gap-14 flex-col tablet:flex-row">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
@@ -29,13 +29,13 @@
       <div class={isImage(imagesrc)}>
         <div class="desktop:pr-28">
           <h2 class="mb-5 text-3xl font-secondary font-semibold">{title}</h2>
-          <p class="text-xl text-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
+          <p class="text-xl XXXtext-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
             {description}
           </p>
         </div>
         <div class="flex mt-10 justify-between">
           <div class="fill-white hover:text-primarycolor hover:fill-primarycolor transition">
-            <a href={link} class="link-prim flex gap-4 hover:text-primarycolor text-quaternarycolor uppercase font-bold font-secondary">
+            <a href={link} class="link-prim flex gap-4 hover:text-primarycolor text-quaternarycolor uppercase font-bold font-secondary" aria-label={title} >
               {linktitle}
               <ArrowLink styles="" />
             </a>
@@ -47,7 +47,7 @@
 {/if}
 
 {#if !inverted}
-  <a href={link} class="list-teaser">
+  <a href={link} class="list-teaser" aria-label={title}>
     <div class="flex tablet:gap-16 flex-col tablet:flex-row border-b border-tertiarycolor hover:border-primarycolor transition duration-350 ease-out hover:ease-in pb-10 mb-10">
       {#if imagesrc}
         <div class="w-full tablet:w-[395px] h-auto relative">
@@ -59,7 +59,7 @@
           <h2 class="mt-5 tablet:mt-0 mb-5 text-3xl font-secondary font-semibold text-black dark:text-white">
             {title}
           </h2>
-          <p class="text-xl text-tertiarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
+          <p class="text-xl text-secondarycolor font-medium desktop:pr-24 font-secondary leading-[31.5px]">
             {description}
           </p>
         </div>
@@ -68,7 +68,7 @@
             <Pill {inverted} {category} />
           </div>
           <div class="">
-            <a href={link} class="fill-secondarycolor hover:text-primarycolor hover:fill-primarycolor transition">
+            <a href={link} class="fill-secondarycolor hover:text-primarycolor hover:fill-primarycolor transition" aria-label={title} >
               <ArrowLink styles="dark:fill-white" />
             </a>
           </div>

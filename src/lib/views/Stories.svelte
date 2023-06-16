@@ -26,7 +26,7 @@
           <div class="flex justify-start mt-6 uppercase text-min">
             <div class="flex mt-10 justify-between">
               <div class="fill-white text-quaternarycolor hover:text-primarycolor hover:fill-primarycolor transition">
-                <a href="/collections/riscanvi" target="_blank" class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base">
+                <a href="/collections/riscanvi" target="_blank" class="flex gap-4 text-quaternary hover:text-primarycolor link-prim custom-link uppercase font-bold font-secondary text-base" aria-label="Radiografia de la storys">
                   Radiografia de la storys
                   <ArrowLink styles="fill-white" />
                 </a>

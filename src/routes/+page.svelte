@@ -80,7 +80,7 @@
     <div class="p-2 cursor-pointer vibrate-1">☠️</div>
   {:else}
     <div class="flex flex-row justify-center align-center">
-      <div class="flex items-center"><input type="checkbox" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
+      <div class="flex items-center"><label class="hidden" for="toogledark">toggleMode</label><input type="checkbox" id="toogledark" class="toggle toggle-sm" bind:checked={toogle} on:change={toggleMode} /></div>
     </div>
     {#if !show}
       <div class="py-2 pl-1 mr-3 cursor-pointer" on:click={toggleMode}>🌙</div>
