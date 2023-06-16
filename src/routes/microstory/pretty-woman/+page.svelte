@@ -57,7 +57,7 @@
     cardType: "summary",
     title: "Pretty Woman y la empanada de ChatGPT",
     description: "Se ha dicho que ChatGPT sustituirá a buscadores como el de Google. Nosotros simplemente le hemos pedido que nos describa una escena de la película Pretty Woman… y la empanada de ChatGPT con esta tarea ha sido impactante",
-    image: "/images/twitter-pretty.png",
+    image: "https://www.bikolabs.io/images/twitter-pretty.png",
     imageAlt: "Pretty Woman",
   }}
 />
