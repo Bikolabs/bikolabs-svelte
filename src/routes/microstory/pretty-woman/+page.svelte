@@ -17,7 +17,7 @@
   const source = ["/videos/2xpizza.mp4"];
   const sourceOne = ["/videos/2xmulticrois.mp4"];
   const sourceTwo = ["/videos/original.mp4"];
-  const sourceBing = ["/videos/empanadas.mp4"];
+  const sourceBing = ["/videos/2xempanadas.mp4"];
   const sourceNaranja = ["/videos/naranja.mp4"];
   const sourceChampan = ["/videos/champan.mp4"];
 
@@ -270,7 +270,14 @@
     <p class="mb-5">Cuando preguntamos por la escena de Pretty Woman, ChatGPT genera, lo que implica cierto grado de invención. Una invención que estará más o menos cercana a la realidad, a pero invención a fin de cuentas: a diferencia de lo que ocurre cuando preguntamos a un buscador, cuya función va a ser rescatar información.</p>
 
     <img src="/images/fin.jpg" alt="fin imagen" />
-    <p class="mb-5"><strong>Nota:</strong> En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si este tema implica un cambio de paradigma y resuelve errores como el presentado en esta microhistoria.</p>
+    <p class="mb-16"><strong>Nota:</strong> En estos últimos días, se ha lanzado en ChatGPT una función beta para usar Bing+ChatGPT como búsqueda. Habrá que esperar si este tema implica un cambio de paradigma y resuelve errores como el presentado en esta microhistoria.</p>
+
+    <p class="mb-5 text-base"><strong>En esta historia han participado:</strong> 
+      <a class="underline" href="https://twitter.com/aitor_rl" target="_blank">Aitor Resano</a>,
+      <a class="underline" href="https://twitter.com/ujue" target="_blank">Ujué Agudo</a>,
+      <a class="underline" href="https://twitter.com/patxangas" target="_blank">Karlos G. Liberal</a>,
+      <a class="underline" href="https://twitter.com/simartgo" target="_blank">Silvia Martínez</a>
+    </p>
   </div>
 </article>
 <Footer />
