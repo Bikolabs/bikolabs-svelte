@@ -1,33 +1,21 @@
-<script>
-  import { goto } from "$app/navigation";
-  import { convertDateToString } from "$lib/utils.js";
+<script> 
+  import TeaserList from "$lib/components/TeaserList/TeaserList.svelte";
+  import Nav from "$lib/components/Nav/Nav.svelte"
+  import Footer from "$lib/components/Footer/Footer.svelte";
+  import { removeTag } from "$lib/utils.js";
   export let data;
 </script>
 
-<div class="container">
-  <section class="mx-40 py-10">
-    {#each data.sortedPosts as post}
-      <div class="mb-4 py-4 border-b border-b-gray-300" on:click={goto(`/collections/${post.slug}`)} on:keydown={goto(`collections/${post.slug}`)}>
-        <p class="text-xs mb-2">{convertDateToString(post.date)}</p>
-        <a class="text-2xl mb-3 text-pink-600 hover:text-gray-500" href={`/collections/${post.slug}`}>{post.title}</a>
-        {#if post.image}
-          <img src={`${post.image}`} alt="" />
-        {:else}
-          <p class="mb-2">{post.description}</p>
+<Nav />
+<div class="w-full pb-20">
+  <div class="container">
+    <section class="w-full desktop:w-[1000px] mx-auto text-white">
+      {#each data.sortedPosts as post}
+        {#if post.tags[0] !== "Story"}
+          <TeaserList title={removeTag(post.title)} description={post.subtitle} imagesrc={post.image} category={post.tags[0]} linktitle={post.titlelink} link={`/collections/${post.slug}`} />
         {/if}
-        <div class="text-sm">
-          {#each post.tags as tag}
-            <p class="tag">#{tag}</p>
-          {/each}
-        </div>
-      </div>
-    {/each}
-    <div class="py-10"><a class="text-pink-500" href="/">&larr; Home</a></div>
-  </section>
+      {/each}
+    </section>
+  </div>
 </div>
-
-<style>
-  section {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  }
-</style>
+<Footer />
